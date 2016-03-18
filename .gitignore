@@ -1,3 +1,5 @@
 .idea/
 node_modules/
-dist/
+dist/bower_components
+dist/fonts
+dist/js
