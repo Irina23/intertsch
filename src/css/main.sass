@@ -141,6 +141,42 @@ img
 
     li
       height: 670px
+      //animation: slideInLeft 2s linear infinite
+      //transform-origin: center bottom
+
+      &.active-slide
+        .text-slider
+          .info-slider
+            .number
+
+              animation-duration: 1s
+              animation-fill-mode: both
+              animation: flipInY 0.8s
+              opacity: 1
+            .text-holder
+
+              h4
+
+                animation-duration: 1s
+                animation-fill-mode: both
+                animation: flipInX 1.5s
+                opacity: 1
+
+              .text
+
+                animation-duration: 1s
+                animation-fill-mode: both
+                animation: flipInX 1.7s
+                opacity: 1
+
+              .link_readmore
+
+                a
+
+                  animation-duration: 1s
+                  animation-fill-mode: both
+                  animation: flipInX 2s
+                  opacity: 1
       .text-slider
         //background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(7, 11, 14, 0.17) 16%, #2c3e50 100%)
         background: url("../img/bg/shadow.png") repeat-x
@@ -150,6 +186,8 @@ img
           padding-top: 140px
           width: 940px
           margin:  auto
+
+
           .number
             width: 80px
             height: 90px
@@ -159,6 +197,10 @@ img
             line-height: 85px
             text-align: center
             background-color:  rgba(5, 158, 209, 0.7)
+            opacity: 0
+            /*animation-duration: 1s
+            //animation-fill-mode: both
+            //animation: flipInY 1s
           .text-holder
             width: 620px
             float: left
@@ -176,6 +218,10 @@ img
               overflow: hidden
               box-sizing: border-box
               font-weight: normal
+              opacity: 0
+              //animation-duration: 1s
+              //animation-fill-mode: both
+              //animation: flipInX 1.5s
 
             .text
               width: 100%
@@ -184,6 +230,10 @@ img
               background:  #fff
               padding: 20px
               box-sizing: border-box
+              opacity: 0
+              //animation-duration: 1s
+              //animation-fill-mode: both
+              //animation: flipInX 1.7s
               p
                 font-size: 16px
                 line-height: 1.6em
@@ -204,6 +254,10 @@ img
                 position: relative
                 transition: all 0.35s
                 background:  #059ed1
+                opacity: 0
+                //animation-duration: 1s
+                //animation-fill-mode: both
+                //animation: flipInX 2s
                 &:hover
                   text-decoration: none
                   transition: all 0.35s
@@ -347,9 +401,17 @@ img
         text-align: center
     .bx-wrapper
         padding-bottom: 110px
-        li
-          img
-            //box-shadow: -2px 11px 44px -1px rgba(0,0,0,0.56)
+        .slider_works
+          li
+            opacity: 0
+            &.active-slide
+              opacity: 1
+              animation-duration: 1s
+              animation-fill-mode: both
+              animation: zoomIn 1s
+
+            img
+              //box-shadow: -2px 11px 44px -1px rgba(0,0,0,0.56)
         .bx-controls-direction
           a
             background: url("../img/icons/readmore.png") no-repeat rgba(163, 163, 163, 0.8)
@@ -747,3 +809,54 @@ footer
         color:  #059ed1
         margin-left: 7px
 
+#modal_form
+  box-sizing: border-box
+  h4
+    font-size: 36px
+    line-height: 1em
+    color: #000
+    margin-bottom: 40px
+    font-weight: normal
+  .comment-form
+    .row
+      margin-bottom: 20px
+      &.input>div
+        width: 300px
+        margin-right: 15px
+        display: inline-block
+        vertical-align: middle
+        &:last-child
+          margin-right: 0
+
+      input,textarea
+        border: 1px solid #c5c4c4
+        box-sizing: border-box
+      .error
+        input,textarea
+          border-color: red
+      input
+        padding: 12px
+        width: 100%
+
+
+      textarea
+        width: 100%
+        height: 190px
+        padding: 12px
+
+
+    .submit
+      background:  #059ed1
+      width: 195px
+      height: 45px
+      color:  #feffff
+      font-size: 20px
+      line-height: 42px
+      text-align: center
+      text-transform: uppercase
+      margin: auto
+      cursor: pointer
+      transition: all 0.35s
+      &:hover
+        background: #0584af
+        transition: all 0.35s

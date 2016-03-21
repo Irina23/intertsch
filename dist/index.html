@@ -5,6 +5,7 @@
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/template.css" rel="stylesheet" type="text/css">
     <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
     <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="js/functions.js"></script>
@@ -277,7 +278,7 @@
                     Bonorum appellantur quo at, quo quaestio oportere imperdiet at. Usu malis alienum ex, te pri tollit explicari voluptatum.
                     Cum at fugit equidem, mei soluta accumsan an, odio impetus temporibus nec in.
                     
-                  </p><a href="#" class="link_comment">Leave comment</a>
+                  </p><a href="#modal_form" class="link_comment">Leave comment</a>
                 </div>
               </li>
               <li>
@@ -294,7 +295,7 @@
                     Vel ullum nostro at, delenit iudicabit interpretaris eum id. Ei purto vidit has.
                     Bonorum appellantur quo at, quo quaestio oportere imperdiet at. Usu malis alienum ex, te pri tollit explicari voluptatum.
                     Cum at fugit equidem, mei soluta accumsan an, odio impetus temporibus nec in.
-                  </p><a href="#" class="link_comment">Leave comment</a>
+                  </p><a href="#modal_form" class="link_comment">Leave comment</a>
                 </div>
               </li>
               <li>
@@ -311,7 +312,7 @@
                     Vel ullum nostro at, delenit iudicabit interpretaris eum id. Ei purto vidit has.
                     Bonorum appellantur quo at, quo quaestio oportere imperdiet at. Usu malis alienum ex, te pri tollit explicari voluptatum.
                     Cum at fugit equidem, mei soluta accumsan an, odio impetus temporibus nec in.
-                  </p><a href="#" class="link_comment">Leave comment</a>
+                  </p><a href="#modal_form" class="link_comment">Leave comment</a>
                 </div>
               </li>
             </ul>
@@ -367,6 +368,30 @@
           </div>
         </div>
       </div>
+      <div id="modal_form">
+        <div id="modal_close"></div>
+        <div id="modal_holder">
+          <form class="comment-form">
+            <h4>Leave a comment</h4>
+            <div class="row input">
+              <div>
+                <input type="text" placeholder="Name:" name="name" minlength="2" data-validate="name">
+              </div>
+              <div>
+                <input type="email" placeholder="E-mail:" name="email" data-validate="email">
+              </div>
+            </div>
+            <div class="row">
+              <div>
+                <textarea placeholder="Your message:" name="message" data-validate="name"></textarea>
+              </div>
+            </div>
+            <!--button(type="submit") Отправить-->
+            <div class="btn submit">Send massage</div>
+          </form>
+        </div>
+      </div>
+      <div id="overlay"></div>
       <footer>
         <div class="content">
           <div class="menu nav">

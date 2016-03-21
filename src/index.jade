@@ -172,6 +172,7 @@ html(lang="ru")
                                         img(src="img/content/work1.jpg")
 
 
+
                     #who_we_are
                         .content
                             h3 Who we are
@@ -271,7 +272,7 @@ html(lang="ru")
                                             Bonorum appellantur quo at, quo quaestio oportere imperdiet at. Usu malis alienum ex, te pri tollit explicari voluptatum.
                                             Cum at fugit equidem, mei soluta accumsan an, odio impetus temporibus nec in.
 
-                                        a.link_comment(href="#") Leave comment
+                                        a.link_comment(href="#modal_form") Leave comment
                                 li
 
                                     .info_personal.cf
@@ -286,7 +287,7 @@ html(lang="ru")
                                             Vel ullum nostro at, delenit iudicabit interpretaris eum id. Ei purto vidit has.
                                             Bonorum appellantur quo at, quo quaestio oportere imperdiet at. Usu malis alienum ex, te pri tollit explicari voluptatum.
                                             Cum at fugit equidem, mei soluta accumsan an, odio impetus temporibus nec in.
-                                        a.link_comment(href="#") Leave comment
+                                        a.link_comment(href="#modal_form") Leave comment
                                 li
 
                                     .info_personal.cf
@@ -301,7 +302,7 @@ html(lang="ru")
                                             Vel ullum nostro at, delenit iudicabit interpretaris eum id. Ei purto vidit has.
                                             Bonorum appellantur quo at, quo quaestio oportere imperdiet at. Usu malis alienum ex, te pri tollit explicari voluptatum.
                                             Cum at fugit equidem, mei soluta accumsan an, odio impetus temporibus nec in.
-                                        a.link_comment(href="#") Leave comment
+                                        a.link_comment(href="#modal_form") Leave comment
 
                 #contacts
                     .content
@@ -348,6 +349,25 @@ html(lang="ru")
 
                                     //button(type="submit") Отправить
                                     .btn.submit Send massage
+            #modal_form
+                #modal_close
+                #modal_holder
+                    form.comment-form
+                        h4 Leave a comment
+                        .row.input
+                            div
+
+                                input(type="text", placeholder="Name:", name="name", minlength="2", data-validate="name")
+                            div
+                                input(type="email", placeholder="E-mail:", name="email", data-validate="email")
+
+                        .row
+                            div
+                                textarea( placeholder="Your message:", name="message",data-validate="name")
+
+                        //button(type="submit") Отправить
+                        .btn.submit Send massage
+            #overlay
             include ./footer.jade
 
 
