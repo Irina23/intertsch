@@ -85,8 +85,58 @@ img
 
 #main_slider
   height: 670px
-  .slider_main
+  position: relative
+  .header
+    position: absolute
+    width: 940px
+    left: 50%
+    margin-left: -470px
+    z-index: 2
+    top: 0
+    .logo
+      float: left
+      margin-top: 30px
+      a
+        font-family: Corbel, sans-serif
+        color:  #ffffff
+        font-size: 48px
+        font-weight: 700
+        line-height: 36px
+        text-align: left
+        transition: all 0.35s
+        &:hover
+          text-decoration: none
+          //color:  #059ed1
+          transition: all 0.35s
 
+
+    .menu
+      float: right
+      li
+        display: inline-block
+        vertical-align: top
+
+        &:last-child
+          margin-right: 0
+        &.active
+          a
+            background:  #059ed1
+
+        a
+          color: #fff
+          transition: all 0.35s
+          width: 100px
+          height: 75px
+          display: block
+          text-align: center
+          box-sizing: border-box
+          padding-top: 35px
+          &:hover
+            //color: #059ed1
+            background:  #059ed1
+            transition: all 0.35s
+            text-decoration: none
+  .slider_main
     height: 670px
 
     li
@@ -236,7 +286,7 @@ img
         h3
           height: 80px
           overflow: hidden
-          padding: 15px 20px
+          padding: 14px 20px
           box-sizing: border-box
           background: #059ed1
           color: #fff
@@ -244,6 +294,9 @@ img
           font-size: 20px
           font-family: "SegoeUI-Semibold", sans-serif
           line-height: 1.3em
+          text-overflow: ellipsis
+
+
 
       .text-block
         padding: 15px 15px 0
@@ -259,9 +312,9 @@ img
           transition: all 0.35s
 
           &:hover
-            text-decoration: none
+            //text-decoration: none
             transition: all 0.35s
-            color: #057094
+            //color: #057094
           &:after
             width: 6px
             height: 10px
@@ -294,6 +347,9 @@ img
         text-align: center
     .bx-wrapper
         padding-bottom: 110px
+        li
+          img
+            //box-shadow: -2px 11px 44px -1px rgba(0,0,0,0.56)
         .bx-controls-direction
           a
             background: url("../img/icons/readmore.png") no-repeat rgba(163, 163, 163, 0.8)
@@ -301,9 +357,10 @@ img
             width: 50px
             height: 50px
             display: block
-            margin-top: -25px
+            margin-top: 0
             background-position: 60% center
             transition: all 0.35s
+            top: 195px
             &.bx-prev
               left: 0
               transform: rotate(180deg)
@@ -335,7 +392,7 @@ img
           text-align: left
           font-size: 24px
           line-height: 1em
-          padding-bottom: 25px
+          //padding-bottom: 25px
           border-bottom: 4px solid #74cbe8
           background: none
           font-family: "SegoeUI-Semibold", sans-serif
@@ -347,3 +404,346 @@ img
             color: #059ed1
             transition: all 0.35s
             text-decoration: none
+
+
+#who_we_are
+  padding-top: 80px
+  padding-bottom: 120px
+  .content
+    width: 940px
+    margin: auto
+    h3
+      margin-bottom: 30px
+      text-align: center
+      line-height: 1em
+      font-size: 60px
+      color: #313131
+
+    .text-holder
+      margin-bottom: 70px
+      padding: 0 50px
+      p
+        line-height: 2em
+        text-align: center
+
+    .bx-wrapper
+      padding-bottom: 100px
+      li
+        .img-holder
+          width: 100%
+          margin-bottom: 30px
+        .info_personal
+          h4
+            margin-bottom: 20px
+            line-height: 1em
+            font-size: 30px
+            color: #313131
+            font-weight: normal
+          .text-holder
+            padding: 0
+            text-align: left
+            margin-bottom: 0
+            p
+              text-align: left
+  .bx-controls
+    .bx-controls-direction
+      display: none
+    .bx-pager
+      width: 940px
+      margin: auto
+      left: inherit
+      bottom: 0
+      right: inherit
+
+      .bx-pager-item
+        width: 25%
+        a
+          width: 100%
+          height: 40px
+          margin: 0
+          border-radius: 0
+          transition: all 0.35s
+          color: #74cbe8
+          text-align: left
+          font-size: 24px
+          line-height: 1em
+          //padding-bottom: 25px
+          border-bottom: 4px solid #74cbe8
+          background: none
+          font-family: "SegoeUI-Semibold", sans-serif
+          box-sizing: border-box
+
+
+          &.active, &:hover
+            border-color: #059ed1
+            color: #059ed1
+            transition: all 0.35s
+            text-decoration: none
+
+
+
+#comment
+  background: url("../img/bg/bg_comment.png") no-repeat
+  background-size: cover
+  padding: 100px 0
+  .content
+    width: 940px
+    margin: auto
+    color: #fff
+    .bx-pager
+      display: none
+    .bx-wrapper
+
+
+      .bx-controls-direction
+        a
+          background: url("../img/icons/readmore2.png") no-repeat
+          background-size: 100%
+          width: 21px
+          height: 35px
+          display: block
+          margin-top: -17px
+          transition: all 0.35s
+
+          &.bx-prev
+            left: 0
+            transform: rotate(180deg)
+          &.bx-next
+            right: 0
+
+          &:hover
+            opacity: 0.8
+            transition: all 0.35s
+
+      .bx-viewport
+
+        li
+          text-align: center
+
+
+          .info_personal
+            width: 270px
+            margin: auto
+            margin-bottom: 45px
+            .img-holder
+              width: 60px
+              height: 60px
+              border-radius: 60px
+              display: inline-block
+              vertical-align: middle
+              margin-right: 15px
+              img
+                width: 100%
+              //margin: auto
+            .text-holder
+              display: inline-block
+              vertical-align: middle
+              text-align: left
+              h4
+                font-size: 24px
+                line-height: 1em
+                font-weight: normal
+                margin-bottom: 10px
+                text-overflow: ellipsis
+                white-space: nowrap
+                overflow: hidden
+                max-width: 190px
+              .data
+                font-size: 16px
+                line-height: 1em
+
+          .comment-holder
+            clear: both
+            padding: 0 70px
+            box-sizing: border-box
+            p
+              max-height: 140px
+              overflow: hidden
+              text-overflow: ellipsis
+              line-height: 2em
+              margin-bottom: 40px
+            .link_comment
+              border: 3px #ffffff solid
+              width: 174px
+              height: 44px
+              box-sizing: border-box
+              display: block
+              color: #fff
+              text-decoration: none
+              margin: auto
+              text-align: center
+              line-height: 32px
+              font-size: 24px
+              transition: all 0.35s
+              &:hover
+                color: #059ed1
+                background: #fff
+                transition: all 0.35s
+
+
+
+
+#contacts
+  padding-top: 100px
+  padding-bottom: 135px
+  .content
+    width: 940px
+    margin: auto
+    h3
+      margin-bottom: 30px
+      text-align: center
+      line-height: 1em
+      font-size: 60px
+      color: #313131
+
+    .text-holder
+      margin-bottom: 140px
+      padding: 0 50px
+      p
+        line-height: 2em
+        text-align: center
+    .content-holder
+      .left-holder
+        width: 220px
+        float: left
+        h4
+          margin-bottom: 35px
+          font-size: 30px
+          line-height: 1em
+          //font-weight: normal
+        .contacts-details
+          li
+            margin-bottom: 25px
+            padding-bottom: 10px
+            border-bottom: 1px solid #e9e6e6
+            &:last-child
+              margin-bottom: 0
+              padding-bottom: 0
+              border-bottom: 0
+            &.social
+              a
+                display: inline-block
+                vertical-align: top
+                width: 35px
+                height: 35px
+                background: url("../img/icons/social.png") no-repeat
+                margin-right: 20px
+                transition: all 0.35s
+                &:hover
+                  opacity: 0.8
+                  transition: all 0.35s
+                &:last-child
+                  margin-right: 0
+                &.vk
+                  background-position: -55px 0
+                &.google
+                  background-position: top right
+            h5
+              font-size: 18px
+              line-height: 1em
+              margin-bottom: 20px
+              font-family: "SegoeUI-Semibold", sans-serif
+            p
+              font-size: 18px
+              line-height: 1em
+              color: #000
+              margin-bottom: 15px
+              &:last-child
+                margin-bottom: 0
+
+              a
+                font-size: 18px
+                line-height: 1em
+                color: #000
+                transition: all 0.35s
+                &:hover
+                  color: #059ed1
+                  transition: all 0.35s
+                  text-decoration: none
+
+      .right-holder
+        width: 620px
+        float: right
+        h4
+          margin-bottom: 35px
+          font-size: 30px
+          line-height: 1em
+          //font-weight: normal
+        .contacts-form
+          .row
+            margin-bottom: 20px
+            &.input>div
+              width: 300px
+              margin-right: 15px
+              display: inline-block
+              vertical-align: middle
+              &:last-child
+                margin-right: 0
+
+            input,textarea
+              border: 1px solid #c5c4c4
+              box-sizing: border-box
+            .error
+              input,textarea
+                border-color: red
+            input
+              padding: 12px
+              width: 100%
+
+
+            textarea
+              width: 100%
+              height: 190px
+              padding: 12px
+
+
+          .submit
+            background:  #059ed1
+            width: 195px
+            height: 45px
+            color:  #feffff
+            font-size: 20px
+            line-height: 42px
+            text-align: center
+            text-transform: uppercase
+            margin: auto
+            cursor: pointer
+            transition: all 0.35s
+            &:hover
+              background: #0584af
+              transition: all 0.35s
+
+footer
+  background: #4d4d4d
+  padding: 35px 0
+  .content
+    width: 940px
+    margin: auto
+    .menu
+      display: inline-block
+      vertical-align: top
+      li
+        display: inline-block
+        vertical-align: top
+        margin-right: 40px
+        &:last-child
+          margin-right: 0
+        &.active
+          a
+            color: #059ed1
+        a
+          color: #fff
+          transition: all 0.35s
+          &:hover
+              color: #059ed1
+              transition: all 0.35s
+              text-decoration: none
+
+    .copyright
+      color:  #ffffff
+      float: right
+      span
+        font-family: "SegoeUI-Semibold", sans-serif
+        color:  #059ed1
+        margin-left: 7px
+

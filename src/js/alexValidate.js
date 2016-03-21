@@ -19,19 +19,20 @@
 			var plg = {
 				init: function () {
 					DOM.$fields = $self.find('[data-validate]');
-					 $self.on('.btn.submit', plg.submit);
-					//$self.find('.btn.submit').on('click', plg.submit);
-					// DOM.$fields.on('blur keyup', function () {
+					 //$self.on('submit', plg.submit);
+					$self.find('.btn.submit').on('click', plg.submit);
+					 //DOM.$fields.on('blur keyup', function () {
 					// 	plg.validate( $(this) );
 					// });
 					DOM.$fields.on('focus', function () {
 						plg.removeLabel( $(this) );
 					})
 				},
+
 				test: function (data, type) {
 					switch (type) {
 						case 'name':
-							return /^[а-яА-Яa-zA-Z\-]+\s{0,1}[а-яА-Яa-zA-Z\-]{0,}$/.test(data);
+							return /^[а-яіїєґёА-ЯІЇЄҐЁa-zA-Z\-]+\s{0,1}[а-яіїєґёА-ЯІЇЄҐЁa-zA-Z\-]{0,}$/.test(data);
 						case 'phone':
 							return /^[\(\)0-9\-\s\+]{8,}/.test(data);
 						case 'email':
