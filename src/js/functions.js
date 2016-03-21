@@ -1,6 +1,6 @@
 jQuery(document).ready(function() {
 
-    jQuery(window).load(function() {
+    //jQuery(window).load(function() {
         jQuery('.slider_about').bxSlider({
             auto: true,
             controls: false
@@ -21,11 +21,11 @@ jQuery(document).ready(function() {
 
         });
         //var current = slider.getCurrentSlide();
-        var slideQty_main = 100/jQuery('.slider_main .bx-pager-item').length+'%';
+        var slideQty_main = 100/slider_main.getSlideCount()+'%';
+        //console.log(slideQty_main);
 
 
-
-        jQuery("#main_slider .bx-pager-item").each(function(){
+        jQuery("#main_slider .bx-default-pager  .bx-pager-item").each(function(){
             jQuery(this).css('width', slideQty_main);
         });
 
@@ -83,6 +83,7 @@ jQuery(document).ready(function() {
             jQuery(this).css('width', slideQty_who_we_are);
 
         });
+        //jQuery("#who_we_are .bx-controls .bx-pager .bx-pager-item").siblings().css('width', slideQty_who_we_are);
 
 
 
@@ -121,7 +122,7 @@ jQuery(document).ready(function() {
 
 
 
-    });
+    //});
 
 
 
@@ -161,21 +162,22 @@ jQuery(document).ready(function() {
 
 
     jQuery(window).resize(function() {
-        var slideQty_main = 100/jQuery('.slider_main .bx-pager-item').length+'%';
+        //var slideQty_main = 100/jQuery('.slider_main .bx-pager-item').length+'%';
         jQuery("#main_slider .bx-pager-item").each(function(){
             jQuery(this).css('width', slideQty_main);
         });
 
 
-        var slideQty_w = 100/jQuery('#slider-work .bx-default-pager .bx-pager-item').length+'%';
-        jQuery("#slider-work .bx-default-pager .bx-pager-item").each(function(){
+        //var slideQty_w = 100/jQuery('#slider-work .bx-default-pager .bx-pager-item').length+'%';
+        //console.log(slideQty_w);
+        jQuery("#slider-work .bx-wrapper .bx-default-pager .bx-pager-item").each(function(){
             jQuery(this).css('width', slideQty_w);
         });
 
-        var slideQty_who_we_are = 100/jQuery('#who_we_are .bx-controls .bx-pager .bx-pager-item').length+'%';
-        jQuery("#who_we_are .bx-controls .bx-pager .bx-pager-item").each(function(){
-            jQuery(this).css('width', slideQty_who_we_are);
-
+        //var slideQty_who_we_are = 100/jQuery('#who_we_are .bx-controls .bx-pager .bx-pager-item').length+'%';
+        //jQuery("#who_we_are .bx-controls .bx-pager .bx-pager-item").siblings().css('width', slideQty_who_we_are);
+        jQuery("#who_we_are .bx-wrapper .bx-default-pager .bx-pager-item").each(function(){
+            jQuery(this).css('width', slideQty_w);
         });
     });
 
