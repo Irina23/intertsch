@@ -21,11 +21,12 @@ jQuery(document).ready(function() {
 
         });
         //var current = slider.getCurrentSlide();
-        var slideQty = 100/slider_main.getSlideCount()+'%';
+        var slideQty_main = 100/jQuery('.slider_main .bx-pager-item').length+'%';
+
 
 
         jQuery("#main_slider .bx-pager-item").each(function(){
-            jQuery(this).css('width', slideQty);
+            jQuery(this).css('width', slideQty_main);
         });
 
 
@@ -120,14 +121,6 @@ jQuery(document).ready(function() {
 
 
 
-        jQuery('.slider_main').change(function(){
-            alert('Ёлемент foo был изменен.');
-        });
-
-
-        jQuery( "#main_slider .bx-pager-item a" ).click(function() {
-
-        });
     });
 
 
@@ -168,14 +161,18 @@ jQuery(document).ready(function() {
 
 
     jQuery(window).resize(function() {
+        var slideQty_main = 100/jQuery('.slider_main .bx-pager-item').length+'%';
         jQuery("#main_slider .bx-pager-item").each(function(){
-            jQuery(this).css('width', slideQty);
+            jQuery(this).css('width', slideQty_main);
         });
 
+
+        var slideQty_w = 100/jQuery('#slider-work .bx-default-pager .bx-pager-item').length+'%';
         jQuery("#slider-work .bx-default-pager .bx-pager-item").each(function(){
             jQuery(this).css('width', slideQty_w);
         });
 
+        var slideQty_who_we_are = 100/jQuery('#who_we_are .bx-controls .bx-pager .bx-pager-item').length+'%';
         jQuery("#who_we_are .bx-controls .bx-pager .bx-pager-item").each(function(){
             jQuery(this).css('width', slideQty_who_we_are);
 
