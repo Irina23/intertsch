@@ -896,6 +896,8 @@ footer {
     width: 900px; } }
 
 @media screen and (max-width: 959px) {
+  body {
+    font-size: 16px; }
   #main_slider .bx-controls .bx-pager {
     width: 100%;
     padding: 20px;
@@ -934,15 +936,88 @@ footer {
           padding: 10px; }
   #main_slider .slider_main li .text-slider .info-slider {
     width: 100%;
-    padding: 20px;
+    padding: 0 20px;
     box-sizing: border-box; }
   #services .content, #about .content, #works .content, #who_we_are .content, #comment .content, #contacts .content, footer .content,
   #service .content, #sub_services .content {
     width: 100%;
-    padding: 20px;
+    padding: 0 20px;
     box-sizing: border-box; }
   #works .bx-controls .bx-pager,
   #who_we_are .bx-controls .bx-pager {
     width: 100%;
-    padding: 20px;
-    box-sizing: border-box; } }
+    padding: 0 20px;
+    box-sizing: border-box; }
+  #service {
+    padding: 30px 0; }
+    #service .content h3 {
+      font-size: 24px;
+      margin-bottom: 20px; }
+    #service .content .text-holder {
+      margin-bottom: 30px;
+      padding: 0; }
+      #service .content .text-holder p {
+        line-height: 1.5em; }
+    #service .content .img-holder {
+      margin-bottom: 30px; }
+    #service .content .content-holder p {
+      margin-bottom: 30px; }
+  #sub_services {
+    padding: 30px 0 10px; }
+    #sub_services .content h3 {
+      line-height: 1em;
+      font-size: 24px; }
+    #sub_services .content .text-holder {
+      margin-bottom: 30px; }
+    #sub_services .content .content-holder ul li {
+      display: block;
+      width: auto;
+      padding-right: 0; }
+      #sub_services .content .content-holder ul li .name-holder .name {
+        font-size: 18px; }
+  #contacts {
+    padding: 30px 0; }
+    #contacts .content h3 {
+      font-size: 24px;
+      line-height: 1em; }
+    #contacts .content .text-holder {
+      margin-bottom: 30px;
+      padding: 0; }
+      #contacts .content .text-holder p {
+        line-height: 1.5em; }
+    #contacts .content .content-holder .left-holder {
+      width: 100%;
+      float: none;
+      margin-bottom: 40px;
+      text-align: center; }
+      #contacts .content .content-holder .left-holder h4 {
+        margin-bottom: 30px;
+        font-size: 20px; }
+      #contacts .content .content-holder .left-holder .contacts-details li {
+        margin-bottom: 20px;
+        padding-bottom: 0;
+        border-bottom: 0; }
+        #contacts .content .content-holder .left-holder .contacts-details li h5 {
+          margin-bottom: 10px; }
+        #contacts .content .content-holder .left-holder .contacts-details li p {
+          font-size: 16px; }
+          #contacts .content .content-holder .left-holder .contacts-details li p a {
+            font-size: 16px; }
+    #contacts .content .content-holder .right-holder {
+      width: 100%;
+      float: none; }
+      #contacts .content .content-holder .right-holder h4 {
+        margin-bottom: 30px;
+        font-size: 20px; }
+      #contacts .content .content-holder .right-holder .contacts-form .row.input > div {
+        width: 100%;
+        margin-right: 0;
+        display: block;
+        margin-bottom: 20px; } }
+
+footer .content .menu {
+  display: none; }
+
+footer .content .copyright {
+  float: none;
+  text-align: center; }
