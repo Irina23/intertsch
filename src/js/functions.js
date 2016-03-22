@@ -156,6 +156,12 @@ jQuery(document).ready(function() {
 
 
 
+    //menu
+    jQuery("#menu-icon").on("click", function(){
+        jQuery(this).next().slideToggle();
+        jQuery(this).toggleClass("active");
+        jQuery(".menu").toggleClass("active")
+    });
 
 
 

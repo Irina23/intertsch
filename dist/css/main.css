@@ -79,51 +79,12 @@ img {
   height: 670px; }
   .home #main_slider .header {
     position: absolute;
-    width: 940px;
     left: 50%;
     margin-left: -470px;
     z-index: 2;
     top: 0; }
-    .home #main_slider .header .logo {
-      float: left;
-      margin-top: 30px; }
-      .home #main_slider .header .logo a {
-        font-family: Corbel, sans-serif;
-        color: #ffffff;
-        font-size: 48px;
-        font-weight: 700;
-        line-height: 36px;
-        text-align: left;
-        -webkit-transition: all 0.35s;
-        transition: all 0.35s; }
-        .home #main_slider .header .logo a:hover {
-          text-decoration: none;
-          -webkit-transition: all 0.35s;
-          transition: all 0.35s; }
-    .home #main_slider .header .menu {
-      float: right; }
-      .home #main_slider .header .menu li {
-        display: inline-block;
-        vertical-align: top; }
-        .home #main_slider .header .menu li:last-child {
-          margin-right: 0; }
-        .home #main_slider .header .menu li.active a {
-          background: #059ed1; }
-        .home #main_slider .header .menu li a {
-          color: #fff;
-          -webkit-transition: all 0.35s;
-          transition: all 0.35s;
-          width: 100px;
-          height: 75px;
-          display: block;
-          text-align: center;
-          box-sizing: border-box;
-          padding-top: 35px; }
-          .home #main_slider .header .menu li a:hover {
-            background: #059ed1;
-            -webkit-transition: all 0.35s;
-            transition: all 0.35s;
-            text-decoration: none; }
+    .home #main_slider .header .menu li a {
+      height: 75px; }
 
 #main_slider {
   position: relative;
@@ -149,6 +110,17 @@ img {
           transition: all 0.35s; }
     #main_slider .header .menu {
       float: right; }
+      #main_slider .header .menu #menu-icon {
+        display: none;
+        cursor: pointer; }
+        #main_slider .header .menu #menu-icon .icon-bar {
+          background-color: #fff;
+          display: block;
+          width: 40px;
+          height: 4px;
+          margin-bottom: 7px; }
+          #main_slider .header .menu #menu-icon .icon-bar:last-child {
+            margin-bottom: 0; }
       #main_slider .header .menu li {
         display: inline-block;
         vertical-align: top;
@@ -922,3 +894,55 @@ footer {
   #works .bx-controls .bx-pager,
   #who_we_are .bx-controls .bx-pager {
     width: 900px; } }
+
+@media screen and (max-width: 959px) {
+  #main_slider .bx-controls .bx-pager {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; }
+  #main_slider .header {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; }
+    #main_slider .header .logo {
+      margin-top: 0;
+      position: absolute;
+      top: 15px;
+      left: 20px;
+      z-index: 3; }
+      #main_slider .header .logo a {
+        font-size: 28px; }
+    #main_slider .header .menu {
+      width: 100%;
+      position: relative;
+      z-index: 2;
+      background: #4d4d4d; }
+      #main_slider .header .menu #menu-icon {
+        display: block;
+        float: right; }
+      #main_slider .header .menu ul {
+        clear: both;
+        display: none;
+        padding-top: 20px; }
+      #main_slider .header .menu li {
+        display: block;
+        float: none; }
+        #main_slider .header .menu li a {
+          color: #fff;
+          width: 100%;
+          height: auto;
+          padding: 10px; }
+  #main_slider .slider_main li .text-slider .info-slider {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; }
+  #services .content, #about .content, #works .content, #who_we_are .content, #comment .content, #contacts .content, footer .content,
+  #service .content, #sub_services .content {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; }
+  #works .bx-controls .bx-pager,
+  #who_we_are .bx-controls .bx-pager {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; } }

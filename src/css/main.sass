@@ -87,54 +87,21 @@ img
     height: 670px
     .header
       position: absolute
-      width: 940px
       left: 50%
       margin-left: -470px
       z-index: 2
       top: 0
-      .logo
-        float: left
-        margin-top: 30px
-        a
-          font-family: Corbel, sans-serif
-          color:  #ffffff
-          font-size: 48px
-          font-weight: 700
-          line-height: 36px
-          text-align: left
-          transition: all 0.35s
-          &:hover
-            text-decoration: none
-            //color:  #059ed1
-            transition: all 0.35s
+
 
 
       .menu
-        float: right
-        li
-          display: inline-block
-          vertical-align: top
 
-          &:last-child
-            margin-right: 0
-          &.active
-            a
-              background:  #059ed1
+        li
 
           a
-            color: #fff
-            transition: all 0.35s
-            width: 100px
+
             height: 75px
-            display: block
-            text-align: center
-            box-sizing: border-box
-            padding-top: 35px
-            &:hover
-              //color: #059ed1
-              background:  #059ed1
-              transition: all 0.35s
-              text-decoration: none
+
 
 #main_slider
   //height: 670px
@@ -163,6 +130,18 @@ img
 
     .menu
       float: right
+      #menu-icon
+        display: none
+        cursor: pointer
+        .icon-bar
+          background-color: #fff
+          display: block
+          width: 40px
+          height: 4px
+          margin-bottom: 7px
+  
+          &:last-child
+            margin-bottom: 0
       li
         display: inline-block
         vertical-align: top
@@ -1029,6 +1008,7 @@ footer
         margin-left: -450px
 
 
+
   #main_slider
     .bx-controls
       .bx-pager
@@ -1049,3 +1029,70 @@ footer
   #works .bx-controls .bx-pager,
   #who_we_are .bx-controls .bx-pager
     width: 900px
+
+
+@media screen and (max-width: 959px)
+  #main_slider
+    .bx-controls
+      .bx-pager
+        width: 100%
+        padding: 20px
+        box-sizing: border-box
+    .header
+      width: 100%
+      padding: 20px
+      box-sizing: border-box
+      .logo
+        margin-top: 0
+        position: absolute
+        top: 15px
+        left: 20px
+        z-index: 3
+        a
+          font-size: 28px
+      .menu
+        width: 100%
+        position: relative
+        z-index: 2
+        background: #4d4d4d
+        &.active
+          //z-index: 4
+          #menu-icon
+            //margin-bottom: 20px
+        #menu-icon
+          display: block
+          float: right
+        ul
+          clear: both
+          display: none
+          padding-top: 20px
+        li
+          display: block
+          //margin-bottom: 15px
+          float: none
+          a
+            color: #fff
+            width: 100%
+            height: auto
+            padding: 10px
+
+
+    .slider_main
+      li
+        .text-slider
+          .info-slider
+            width: 100%
+            padding: 20px
+            box-sizing: border-box
+  #services,#about,#works,#who_we_are,#comment, #contacts,footer,
+  #service, #sub_services
+    .content
+      width: 100%
+      padding: 20px
+      box-sizing: border-box
+
+  #works .bx-controls .bx-pager,
+  #who_we_are .bx-controls .bx-pager
+      width: 100%
+      padding: 20px
+      box-sizing: border-box
