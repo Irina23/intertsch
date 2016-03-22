@@ -908,14 +908,16 @@ footer {
         color: #313131; }
 
 @media screen and (max-width: 1023px) {
+  .home #main_slider .header {
+    margin-left: -450px; }
   #main_slider .bx-controls .bx-pager {
     width: 900px; }
   #main_slider .header {
-    width: 900px;
-    margin-left: -450px; }
+    width: 900px; }
   #main_slider .slider_main li .text-slider .info-slider {
     width: 900px; }
-  #services .content, #about .content, #works .content, #who_we_are .content, #comment .content, #contacts .content, footer .content {
+  #services .content, #about .content, #works .content, #who_we_are .content, #comment .content, #contacts .content, footer .content,
+  #service .content, #sub_services .content {
     width: 900px; }
   #works .bx-controls .bx-pager,
   #who_we_are .bx-controls .bx-pager {
