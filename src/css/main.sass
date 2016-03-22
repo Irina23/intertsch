@@ -82,17 +82,68 @@ img
     .bx-controls
       display: none
 
+.home
+  #main_slider
+    height: 670px
+    .header
+      position: absolute
+      width: 940px
+      left: 50%
+      margin-left: -470px
+      z-index: 2
+      top: 0
+      .logo
+        float: left
+        margin-top: 30px
+        a
+          font-family: Corbel, sans-serif
+          color:  #ffffff
+          font-size: 48px
+          font-weight: 700
+          line-height: 36px
+          text-align: left
+          transition: all 0.35s
+          &:hover
+            text-decoration: none
+            //color:  #059ed1
+            transition: all 0.35s
+
+
+      .menu
+        float: right
+        li
+          display: inline-block
+          vertical-align: top
+
+          &:last-child
+            margin-right: 0
+          &.active
+            a
+              background:  #059ed1
+
+          a
+            color: #fff
+            transition: all 0.35s
+            width: 100px
+            height: 75px
+            display: block
+            text-align: center
+            box-sizing: border-box
+            padding-top: 35px
+            &:hover
+              //color: #059ed1
+              background:  #059ed1
+              transition: all 0.35s
+              text-decoration: none
 
 #main_slider
-  height: 670px
+  //height: 670px
   position: relative
+  background: #4d4d4d
   .header
-    position: absolute
+
     width: 940px
-    left: 50%
-    margin-left: -470px
-    z-index: 2
-    top: 0
+    margin: auto
     .logo
       float: left
       margin-top: 30px
@@ -115,6 +166,7 @@ img
       li
         display: inline-block
         vertical-align: top
+        float: left
 
         &:last-child
           margin-right: 0
@@ -126,7 +178,7 @@ img
           color: #fff
           transition: all 0.35s
           width: 100px
-          height: 75px
+          height: 90px
           display: block
           text-align: center
           box-sizing: border-box
@@ -860,3 +912,133 @@ footer
       &:hover
         background: #0584af
         transition: all 0.35s
+
+
+#service
+  padding-top: 80px
+  padding-bottom: 110px
+  .content
+    width: 940px
+    margin: auto
+    h3
+      margin-bottom: 30px
+      text-align: center
+      line-height: 1.3em
+      font-size: 48px
+      color: #313131
+      font-weight: normal
+
+    .text-holder
+      margin-bottom: 60px
+      padding: 0 50px
+      p
+        line-height: 2em
+        text-align: center
+
+    .content-holder
+      .img-holder
+        width: 100%
+        text-align: center
+        margin-bottom: 40px
+        img
+          width: 100%
+      p
+        line-height: 2em
+        margin-bottom: 50px
+        &:last-child
+          margin-bottom: 0
+
+
+#sub_services
+  background: #edf9fd
+  padding: 50px 0
+  .content
+    width: 940px
+    margin: auto
+    h3
+      margin-bottom: 20px
+      line-height: 1.5em
+      font-size: 48px
+      color: #313131
+      font-weight: normal
+
+    .text-holder
+      margin-bottom: 60px
+
+      p
+        line-height: 2em
+
+
+    .content-holder
+      ul
+        li
+          display: inline-block
+          vertical-align: top
+          width: 49%
+          margin-bottom: 20px
+          padding-right: 20px
+          box-sizing: border-box
+          .name-holder
+            position: relative
+            .number
+              background: #059ed1
+              width: 40px
+              height: 40px
+              display: inline-block
+              vertical-align: middle
+              color: #fff
+              text-align: center
+              line-height: 35px
+              font-size: 36px
+              margin-right: 15px
+              position: absolute
+              top: 0
+              left: 0
+            .name
+              color: #000
+              font-size: 24px
+              display: inline-block
+              vertical-align: middle
+              text-overflow: ellipsis
+              white-space: nowrap
+              line-height: 35px
+              height: 40px
+              width: 100%
+              overflow: hidden
+              padding-left: 55px
+              box-sizing: border-box
+
+          .description
+            p
+              line-height: 1.5em
+              color: #313131
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1023px)
+  #main_slider
+    .bx-controls
+      .bx-pager
+        width: 900px
+    .header
+      width: 900px
+      margin-left: -450px
+    .slider_main
+      li
+        .text-slider
+          .info-slider
+            width: 900px
+  #services,#about,#works,#who_we_are,#comment, #contacts,footer
+    .content
+      width: 900px
+
+  #works .bx-controls .bx-pager,
+  #who_we_are .bx-controls .bx-pager
+    width: 900px
