@@ -1013,11 +1013,13 @@ footer {
         width: 100%;
         margin-right: 0;
         display: block;
-        margin-bottom: 20px; } }
-
-footer .content .menu {
-  display: none; }
-
-footer .content .copyright {
-  float: none;
-  text-align: center; }
+        margin-bottom: 20px; }
+  footer .content .menu {
+    display: none; }
+  footer .content .copyright {
+    float: none;
+    text-align: center; }
+  #about .content .text-about {
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1; } }

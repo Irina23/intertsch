@@ -189,4 +189,19 @@ jQuery(document).ready(function() {
         });
     });
 
+
+
+
+    jQuery('#menu').find('a').on("click", function (event) {
+        event.preventDefault();
+        var $self = $(this);
+        jQuery('html, body').animate({ scrollTop:  jQuery('div[id="'+this.hash.slice(1)+'"]').offset().top }, 1000, function () {
+            location.hash = $self.attr('href')
+
+        } );
+
+
+
+    });
+
 });
