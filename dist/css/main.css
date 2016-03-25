@@ -1019,7 +1019,48 @@ footer {
   footer .content .copyright {
     float: none;
     text-align: center; }
-  #about .content .text-about {
-    -webkit-column-count: 1;
-       -moz-column-count: 1;
-            column-count: 1; } }
+  #about {
+    padding: 30px 0; }
+    #about .content h3 {
+      font-size: 24px; }
+    #about .content .text-holder {
+      margin-bottom: 40px;
+      padding: 0; }
+    #about .content .text-about {
+      -webkit-column-count: 1;
+         -moz-column-count: 1;
+              column-count: 1; }
+      #about .content .text-about p {
+        margin-bottom: 30px; }
+  #works {
+    padding: 30px 0; }
+    #works .content h3 {
+      font-size: 24px; }
+    #works .content .text-holder {
+      margin-bottom: 40px;
+      padding: 0; }
+    #works .content .bx-wrapper {
+      padding-bottom: 50px; }
+  #who_we_are {
+    padding: 30px 0; }
+    #who_we_are .content h3 {
+      font-size: 24px; }
+    #who_we_are .content .text-holder {
+      margin-bottom: 40px;
+      padding: 0; }
+  #modal_form {
+    width: calc( 100% - 40px);
+    margin-left: 0;
+    left: 20px;
+    padding: 30px;
+    margin-top: -263px;
+    height: 525px; }
+    #modal_form h4 {
+      font-size: 24px;
+      margin-bottom: 30px; }
+    #modal_form .comment-form .row.input {
+      margin-bottom: 0; }
+      #modal_form .comment-form .row.input > div {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px; } }
