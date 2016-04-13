@@ -322,12 +322,21 @@ img
           transition: all 0.35s
           color: #fff
           text-align: left
-          font-size: 30px
+          font-size: 20px
           line-height: 1em
-          padding-bottom: 25px
+          //padding-bottom: 25px
           border-bottom: 5px solid rgba(255, 255, 255, 0.35)
           background: none
           font-family: "SegoeUI-Semibold", sans-serif
+          position: relative
+          &:after
+            position: absolute
+            content: ""
+            width: 100%
+            height: 312px
+            left: 0
+            right: 0
+            z-index: 100
 
 
           &.active, &:hover
@@ -1097,7 +1106,7 @@ footer
   #works .bx-controls .bx-pager,
   #who_we_are .bx-controls .bx-pager
       width: 100%
-      padding: 0 20px
+      //padding: 0 20px
       box-sizing: border-box
 
 
@@ -1251,3 +1260,13 @@ footer
         width: 100%
         display: block
         margin-bottom: 20px
+
+
+@media screen and (max-width: 870px)
+  #works .content .bx-wrapper .bx-controls-direction a
+    top: 170px
+
+
+@media screen and (max-width: 600px)
+  #works .content .bx-wrapper .bx-controls-direction a
+    top: 150px

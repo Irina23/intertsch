@@ -11,6 +11,7 @@ jQuery(document).ready(function() {
         var slider_main = jQuery('.slider_main').bxSlider({
             auto: true,
             controls: false,
+            speed: 1000,
             onSliderLoad: function () {
                 $('.slider_main>li:not(.bx-clone)').eq(0).addClass('active-slide').siblings().removeClass('active-slide');
             },

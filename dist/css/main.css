@@ -276,12 +276,20 @@ img {
         transition: all 0.35s;
         color: #fff;
         text-align: left;
-        font-size: 30px;
+        font-size: 20px;
         line-height: 1em;
-        padding-bottom: 25px;
         border-bottom: 5px solid rgba(255, 255, 255, 0.35);
         background: none;
-        font-family: "SegoeUI-Semibold", sans-serif; }
+        font-family: "SegoeUI-Semibold", sans-serif;
+        position: relative; }
+        #main_slider .bx-controls .bx-pager .bx-pager-item a:after {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 312px;
+          left: 0;
+          right: 0;
+          z-index: 100; }
         #main_slider .bx-controls .bx-pager .bx-pager-item a.active, #main_slider .bx-controls .bx-pager .bx-pager-item a:hover {
           border-color: #fff;
           -webkit-transition: all 0.35s;
@@ -946,7 +954,6 @@ footer {
   #works .bx-controls .bx-pager,
   #who_we_are .bx-controls .bx-pager {
     width: 100%;
-    padding: 0 20px;
     box-sizing: border-box; }
   #service {
     padding: 30px 0; }
@@ -1064,3 +1071,11 @@ footer {
         width: 100%;
         display: block;
         margin-bottom: 20px; } }
+
+@media screen and (max-width: 870px) {
+  #works .content .bx-wrapper .bx-controls-direction a {
+    top: 170px; } }
+
+@media screen and (max-width: 600px) {
+  #works .content .bx-wrapper .bx-controls-direction a {
+    top: 150px; } }
