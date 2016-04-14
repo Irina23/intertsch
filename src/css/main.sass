@@ -95,20 +95,7 @@ img
           //color:  #059ed1
           transition: all 0.35s
 
-    .lang
-      float: right
-      padding-top: 30px
-      margin-left: 60px
-      li
-        display: inline-block
-        vertical-align: middle
-        margin-right: 40px
-        color: #fff
-        cursor: pointer
-        &.active
-          color: #0584af
-        &:last-child
-          margin-right: 0
+
 
 
     .menu
@@ -116,6 +103,8 @@ img
       #menu-icon
         display: none
         cursor: pointer
+        position: relative
+        z-index: 10
         .icon-bar
           background-color: #fff
           display: block
@@ -125,31 +114,52 @@ img
   
           &:last-child
             margin-bottom: 0
-      li
+
+      ul.nav
         display: inline-block
         vertical-align: top
-        float: left
+        li
+          display: inline-block
+          vertical-align: top
+          float: left
 
-        &:last-child
-          margin-right: 0
-        &.active
+          &:last-child
+            margin-right: 0
+          &.active
+            a
+              background:  #059ed1
+
           a
-            background:  #059ed1
-
-        a
-          color: #fff
-          transition: all 0.35s
-          width: 100px
-          height: 90px
-          display: block
-          text-align: center
-          box-sizing: border-box
-          padding-top: 35px
-          &:hover
-            //color: #059ed1
-            background:  #059ed1
+            color: #fff
             transition: all 0.35s
-            text-decoration: none
+            width: 100px
+            height: 90px
+            display: block
+            text-align: center
+            box-sizing: border-box
+            padding-top: 35px
+            &:hover
+              //color: #059ed1
+              background:  #059ed1
+              transition: all 0.35s
+              text-decoration: none
+
+
+      .lang
+        display: inline-block
+        vertical-align: top
+        padding-top: 30px
+        margin-left: 60px
+        li
+          display: inline-block
+          vertical-align: middle
+          margin-right: 40px
+          color: #fff
+          cursor: pointer
+          &.active
+            color: #0584af
+          &:last-child
+            margin-right: 0
   .slider_main
     height: 670px
 
@@ -424,7 +434,7 @@ img
     p
       line-height: 2em
   .bx-wrapper
-      padding-bottom: 40px
+      margin-bottom: 40px
 
 
       .bx-controls-direction
@@ -434,10 +444,10 @@ img
           width: 50px
           height: 50px
           display: block
-          margin-top: 0
           background-position: 50% center
           transition: all 0.35s
-          top: 195px
+          top: 50%
+          margin-top: -25px
           &.bx-prev
             left: 0
             transform: rotate(180deg)
@@ -546,13 +556,47 @@ img
     line-height: 1em
     font-size: 60px
     color: #313131
-
+  #slider_who_we_are_mobile
+    display: none
   .text-holder
     margin-bottom: 70px
     padding: 0 50px
     p
       line-height: 2em
       text-align: center
+  #slider_who_we_are_mobile
+    .bx-wrapper
+
+
+
+      .bx-controls-direction
+        display: block
+        a
+          background: url("../img/icons/readmore.png") no-repeat rgba(163, 163, 163, 0.8)
+          background-size: 45%
+          width: 50px
+          height: 50px
+          display: block
+          background-position: 50% center
+          transition: all 0.35s
+          top: 50%
+          margin-top: -25px
+          &.bx-prev
+            left: 0
+            transform: rotate(180deg)
+          &.bx-next
+            right: 0
+
+          &:hover
+            background: url("../img/icons/readmore.png") no-repeat rgba(163, 163, 163, 0.9)
+            background-size: 45%
+            background-position: 50% center
+            transition: all 0.35s
+    .bx-controls
+      .bx-pager
+        display: none
+
+
 
   .bx-wrapper
     padding-bottom: 100px
@@ -560,6 +604,8 @@ img
       .img-holder
         width: 100%
         margin-bottom: 30px
+        img
+          margin: auto
       .info_personal
         h4
           margin-bottom: 20px
@@ -688,6 +734,7 @@ img
         li
           text-align: center
           .br-widget
+            margin-bottom: 30px
             .br-current-rating
               display: none
             a
@@ -1124,14 +1171,17 @@ footer
         .text-slider
           .info-slider
             width: 900px
-  #services,#about,#works,#who_we_are,#comment, #contacts,footer,
-  #service, #sub_services
-    .content
+  .content
       width: 900px
 
-  #works .bx-controls .bx-pager,
+
   #who_we_are .bx-controls .bx-pager
     width: 900px
+
+  #contacts
+    padding: 70px 0
+    .text-holder
+      margin-bottom: 70px
 
 
 @media screen and (max-width: 959px)
@@ -1146,41 +1196,56 @@ footer
         box-sizing: border-box
     .header
       width: 100%
-      padding: 20px
+      //padding: 20px
       box-sizing: border-box
       .logo
         margin-top: 0
-        position: absolute
-        top: 15px
-        left: 20px
+        //position: absolute
+        //top: 15px
+        //left: 20px
+        position: relative
         z-index: 3
+        padding: 15px 0
+        margin-left: 20px
         a
           font-size: 28px
       .menu
         width: 100%
-        position: relative
+        position: absolute
+        top: 20px
+        right: 0
+        //position: relative
         z-index: 2
         background: #4d4d4d
-        &.active
-          //z-index: 4
-          #menu-icon
-            //margin-bottom: 20px
+
         #menu-icon
           display: block
           float: right
+          margin-right: 20px
+        .mobile-menu
+          display: none
+          padding: 50px 0 20px
+          width: 100%
         ul
           clear: both
-          display: none
-          padding-top: 20px
-        li
           display: block
-          //margin-bottom: 15px
-          float: none
-          a
-            color: #fff
-            width: 100%
-            height: auto
-            padding: 10px
+          margin-bottom: 20px
+        .lang
+          display: block
+          margin: auto
+          padding: 0
+          text-align: center
+        ul.nav
+          display: block
+          li
+            display: block
+            //margin-bottom: 15px
+            float: none
+            a
+              color: #fff
+              width: 100%
+              height: auto
+              padding: 10px
 
 
     .slider_main
@@ -1190,18 +1255,16 @@ footer
             width: 100%
             padding: 0 20px
             box-sizing: border-box
-  #services,#about,#works,#who_we_are,#comment, #contacts,footer,
-  #service, #sub_services
-    .content
+  .content
       width: 100%
       padding: 0 20px
       box-sizing: border-box
 
-  #works .bx-controls .bx-pager,
+
   #who_we_are .bx-controls .bx-pager
       width: 100%
-      //padding: 0 20px
-      box-sizing: border-box
+
+
 
 
   #service
@@ -1241,7 +1304,7 @@ footer
     padding: 30px 0
     .content
       h3
-        font-size: 24px
+        font-size: 45px
         line-height: 1em
 
       .text-holder
@@ -1303,64 +1366,177 @@ footer
 
 
   #about
-    padding: 30px 0
+    margin-bottom: 50px
     .content
       h3
-        font-size: 24px
+        font-size: 45px
       .text-holder
         margin-bottom: 40px
         padding: 0
       .text-about
-          column-count: 1
-          p
+          //column-count: 1
+          //p
             margin-bottom: 30px
 
 
 
   #works
-    padding: 30px 0
+    padding: 50px 0
     .content
       h3
-        font-size: 24px
+        font-size: 45px
       .text-holder
         margin-bottom: 40px
         padding: 0
-      .bx-wrapper
-        padding-bottom: 50px
+
 
   #who_we_are
-    padding: 30px 0
+    padding: 0 0 50px
     .content
       h3
-        font-size: 24px
-      .text-holder
+        font-size: 45px
+      //.text-holder
         margin-bottom: 40px
         padding: 0
 
+  #product
+    margin-bottom: 50px
+    h3
+      font-size: 45px
+  #comment
+    h3
+      font-size: 45px
 
-  #modal_form
-    width: calc( 100% - 40px )
-    margin-left: 0
-    left: 20px
-    padding: 30px
-    margin-top: -263px
-    height: 525px
-    h4
-      font-size: 24px
-      margin-bottom: 30px
-    .comment-form .row.input
-      margin-bottom: 0
-      > div
-        width: 100%
-        display: block
-        margin-bottom: 20px
+
+
+
+
+
+@media screen and (max-width: 900px)
+  #comment
+    .content
+      .bx-wrapper
+        .bx-viewport
+          li
+            .info_personal
+              &:before
+                left: 65px
 
 
 @media screen and (max-width: 870px)
-  #works .content .bx-wrapper .bx-controls-direction a
-    top: 170px
+  #comment
+    .content
+      .bx-wrapper
+        .bx-viewport
+          li
+            .info_personal
+              &:before
+                left: 45px
+
+
+
+@media screen and (max-width: 850px)
+  #who_we_are .bx-wrapper
+    padding-bottom: 70px
+    li .info_personal h4
+      font-size: 24px
+
+
+@media screen and (max-width: 830px)
+  #comment
+    .content
+      .bx-wrapper
+        .bx-viewport
+          li
+            .info_personal
+              &:before
+                left: 25px
+
+
+@media screen and (max-width: 800px)
+  #works .content h3,
+  #about .content h3,
+  #product h3,
+  #who_we_are .content h3,
+  #comment h3,
+  #contacts .content h3
+    font-size: 36px
+  #product .text-holder,
+  #who_we_are .text-holder
+    padding: 0
+    margin-bottom: 40px
+
+  #modal_form
+   width: calc( 100% - 40px )
+
+   margin-left: 0
+   left: 20px
+   padding: 20px
+   margin-top: -230px
+   height: 460px
+   h4
+     font-size: 24px
+     margin-bottom: 30px
+   .comment-form
+      .row
+        input
+          padding: 7px 10px
+        textarea
+          height: 120px
+      .row.input
+       margin-bottom: 0
+       > div
+         width: 100%
+         display: block
+         margin-bottom: 20px
+
+  #comment .content .bx-wrapper .bx-viewport li .info_personal
+    padding-bottom: 65px
+    &:before
+      top: inherit
+      bottom: 0
+      left: 50%
+      margin-left: -121px
+      background: url("../img/icons/portfolio_mobile.png") no-repeat
+      width: 243px
+      height: 58px
+    
 
 
 @media screen and (max-width: 600px)
-  #works .content .bx-wrapper .bx-controls-direction a
-    top: 150px
+  body
+    min-width: 320px
+
+  #works .content h3,
+  #about .content h3,
+  #product h3,
+  #who_we_are .content h3,
+  #comment h3,
+  #contacts .content h3
+    font-size: 24px
+
+  #works .text-works, #about .text-about,
+  #product .text-product
+    column-count: 1
+    p
+      margin-bottom: 30px
+      &:last-child
+        margin-bottom: 0
+
+
+  #comment .content .bx-wrapper .bx-viewport li .comment-holder
+    padding: 0 20px
+  #comment .content .bx-wrapper .bx-controls-direction a.bx-next
+    right: -10px
+  #comment .content .bx-wrapper .bx-controls-direction a.bx-prev
+    left: -10px
+
+  #who_we_are
+    #slider_who_we_are
+      display: none
+    #slider_who_we_are_mobile
+      display: block
+    .bx-wrapper
+      padding-bottom: 0
+      li .info_personal h4
+        text-align: center

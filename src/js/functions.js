@@ -7,7 +7,7 @@ jQuery(document).ready(function() {
 
         });
 
-        jQuery('.slider_works, .slider_comment').bxSlider({
+        jQuery('.slider_works, .slider_comment, .slider_who_we_are_mobile').bxSlider({
 
             nextText: "",
             prevText: ""
@@ -18,7 +18,8 @@ jQuery(document).ready(function() {
         var slider_main = jQuery('.slider_main').bxSlider({
             auto: true,
             controls: false,
-            speed: 1000,
+            speed: 1500,
+            pause: 7000,
             onSliderLoad: function () {
                 $('.slider_main>li:not(.bx-clone)').eq(0).addClass('active-slide').siblings().removeClass('active-slide');
             },
@@ -120,8 +121,8 @@ jQuery(document).ready(function() {
     //menu
     jQuery("#menu-icon").on("click", function(){
         jQuery(this).next().slideToggle();
-        jQuery(this).toggleClass("active");
-        jQuery(".menu").toggleClass("active")
+        //jQuery(this).toggleClass("active");
+        //jQuery(".menu").toggleClass("active")
     });
 
 

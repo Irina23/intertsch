@@ -14,24 +14,25 @@ html(lang="ru")
                         .header.cf
                             .logo
                                 a(href="index.html") Intertech
-                            .lang
-                                ul
-                                    li.active En
-                                    li De
-                            .menu.nav
+                            .menu
                                 #menu-icon
                                     span.icon-bar
                                     span.icon-bar
                                     span.icon-bar
-                                ul
-                                    li.active
-                                        a(href="index.html") Home
-                                    li
-                                        a(href="#about") About us
-                                    li
-                                        a(href="#") Services
-                                    li
-                                        a(href="#contacts") Contacts
+                                .mobile-menu
+                                    ul.nav
+                                        li.active
+                                            a(href="index.html") Home
+                                        li
+                                            a(href="index.html#about") About us
+                                        li
+                                            a(href="#") Services
+                                        li
+                                            a(href="#contacts") Contacts
+
+                                    ul.lang
+                                        li.active En
+                                        li De
 
                         ul.slider_main
 
@@ -44,7 +45,7 @@ html(lang="ru")
                                             .text
                                                 p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                             .link_readmore
-                                                a(href="#") Read more
+                                                a(href="web.html") Read more
 
 
                             li(style="background: url('img/content/slider1.jpg') no-repeat center; background-size: cover;")
@@ -56,7 +57,7 @@ html(lang="ru")
                                             .text
                                                 p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                             .link_readmore
-                                                a(href="#") Read more
+                                                a(href="design.html") Read more
                             li(style="background: url('img/content/slider1.jpg') no-repeat center; background-size: cover;")
                                 .text-slider
                                     .info-slider.cf
@@ -186,6 +187,31 @@ html(lang="ru")
                             .text-holder
                                 p Lorem ipsum dolor sit amet, electram gubergren interesset et usu, inani iriure accusam mei no. Graeco singulis necessitatibus id sea. Lorem viris ex his, has in tota quaestio praesent.
 
+                            #slider_who_we_are_mobile
+
+                                ul.slider_who_we_are_mobile
+                                    li
+                                        .img-holder
+                                            img(src="img/content/sergii.jpg")
+                                        .info_personal
+                                            h4 Zanizdra Sergii
+                                            .text-holder
+                                                p Lorem ipsum dolor sit amet, electram gubergren interesset et usu, inani iriure accusam mei no.
+
+                                    li
+                                        .img-holder
+                                            img(src="img/content/egor.jpg")
+                                        .info_personal
+                                            h4 Larionov Egor
+                                            .text-holder
+                                                p Lorem ipsum dolor sit amet, electram gubergren interesset et usu, inani iriure accusam mei no.
+                                    li
+                                        .img-holder
+                                            img(src="img/content/oleksandr.jpg")
+                                        .info_personal
+                                            h4 Koshovyi Oleksandr
+                                            .text-holder
+                                                p Lorem ipsum dolor sit amet, electram gubergren interesset et usu, inani iriure accusam mei no.
                             #slider_who_we_are
 
                                 ul.slider_who_we_are
