@@ -153,4 +153,13 @@ jQuery(document).ready(function() {
         });
     });
 
+
+////rating
+    $('.rating').barrating({
+        theme: ''
+    });
+    $('.rating_show').barrating({
+        theme: '',
+        readonly: true
+    });
 });

@@ -687,11 +687,30 @@ img
         z-index: 2
         li
           text-align: center
-          .rating
+          .br-widget
+            .br-current-rating
+              display: none
+            a
+              display: inline-block
+              vertical-align: middle
+              width: 19px
+              height: 19px
+              margin: 0 7px
+              background: url("../img/icons/star.png") no-repeat
+              background-size: 100%
+              cursor: default
+              &.br-active, &.br-current, &.br-selected
+                background: url("../img/icons/star_active.png") no-repeat
+                background-size: 100%
+
+
+
+
+          //.rating
             width: 155px
             height: 20px
             margin:  0 auto 30px
-            background: url("../img/icons/star.png")
+            //background: url("../img/icons/star.png")
 
 
           .info_personal
@@ -941,7 +960,29 @@ footer
         height: 190px
         padding: 12px
 
+    .rating_block
+        margin-bottom: 20px
+        .title_rating
+          color: #9c9b9b
+          font-size: 18px
+          line-height: 1em
+          margin-bottom: 10px
 
+
+        .br-widget
+          .br-current-rating
+            display: none
+          a
+            display: inline-block
+            vertical-align: middle
+            width: 26px
+            height: 25px
+            margin: 0 2px
+            background: url("../img/icons/star.png") no-repeat
+            &:first-child
+              margin-left: 0
+            &.br-active, &.br-selected
+              background: url("../img/icons/star_active.png") no-repeat
     .submit
       background:  #059ed1
       width: 195px

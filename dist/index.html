@@ -318,7 +318,13 @@
             <div id="slider_comment">
               <ul class="slider_comment">
                 <li>
-                  <div class="rating"></div>
+                  <select class="rating_show">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4" selected>4</option>
+                    <option value="5">5</option>
+                  </select>
                   <div class="comment-holder">
                     <p>
                       Ut pri dicat fierent perpetua, id quod commune mandamus sit.
@@ -336,7 +342,13 @@
                   </div>
                 </li>
                 <li>
-                  <div class="rating"></div>
+                  <select class="rating_show">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5" selected>5</option>
+                  </select>
                   <div class="comment-holder">
                     <p>
                       Ut pri dicat fierent perpetua, id quod commune mandamus sit.
@@ -426,6 +438,16 @@
                 <textarea placeholder="Your message:" name="message" data-validate="name"></textarea>
               </div>
             </div>
+            <div class="rating_block">
+              <div class="title_rating">Evaluate the work</div>
+              <select class="rating">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
             <!--button(type="submit") Отправить-->
             <div class="btn submit">Send massage</div>
           </form>
@@ -449,6 +471,7 @@
       <script src="js/functions.js"></script>
       <script src="js/alexValidate.js"></script>
       <script src="js/jquery.bxslider.js"></script>
+      <script src="bower_components/jquery-bar-rating/jquery.barrating.js"></script>
       <div id="cache"></div>
     </div>
   </body>
