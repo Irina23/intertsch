@@ -1,9 +1,16 @@
 jQuery(document).ready(function() {
 
-    //jQuery(window).load(function() {
+
         jQuery('.slider_about').bxSlider({
             auto: true,
             controls: false
+
+        });
+
+        jQuery('.slider_works, .slider_comment').bxSlider({
+
+            nextText: "",
+            prevText: ""
 
         });
 
@@ -15,58 +22,11 @@ jQuery(document).ready(function() {
             onSliderLoad: function () {
                 $('.slider_main>li:not(.bx-clone)').eq(0).addClass('active-slide').siblings().removeClass('active-slide');
             },
-            onSlideAfter: function ($slideElement, oldIndex, newIndex) {
-                //$('.slide').removeClass('active-slide');
+            onSlideAfter: function ($slideElement) {
                 $($slideElement).addClass('active-slide').siblings().removeClass('active-slide');
             }
 
         });
-        if($("body").hasClass("slider_main")){
-
-            //var current = slider.getCurrentSlide();
-            var slideQty_main = 100/slider_main.getSlideCount()+'%';
-            //console.log(slideQty_main);
-
-
-            jQuery("#main_slider .bx-default-pager  .bx-pager-item").each(function(){
-                jQuery(this).css('width', slideQty_main);
-            });
-        }
-
-
-
-
-
-        var minslide = 3;
-        jQuery('.slider_works').bxSlider({
-            minSlides: 3,
-            maxSlides: 3,
-            slideWidth: 300,
-            nextText: "",
-            prevText: "",
-            slideMargin: 20,
-            onSliderLoad: function(elem, old, newi){
-                $('.slider_works>li:not(.bx-clone)').eq(0).addClass('active-slide');
-                $('.slider_works>li:not(.bx-clone)').eq(1).addClass('active-slide');
-                $('.slider_works>li:not(.bx-clone)').eq(2).addClass('active-slide');
-            },
-            onSlideAfter: function(elem, old, newi){
-                $('.slider_works li').removeClass('active-slide')
-                // calculate offset
-
-                si = minslide*newi;
-                ei = minslide*(newi+1);
-                active_slides = $('.slider_works li').not('.bx-clone').slice(si, ei).addClass('active-slide');  // key point
-                //console.log(active_slides);
-            }
-        });
-        var slideQty_w = 100/jQuery('#slider-work .bx-default-pager .bx-pager-item').length+'%';
-        //console.log(slideQty_w);
-
-        jQuery("#slider-work .bx-default-pager .bx-pager-item").each(function(){
-            jQuery(this).css('width', slideQty_w);
-        });
-
 
 
 
@@ -80,24 +40,24 @@ jQuery(document).ready(function() {
         });
 
         var slideQty_who_we_are = 100/jQuery('#who_we_are .bx-controls .bx-pager .bx-pager-item').length+'%';
-        //console.log(slideQty_who_we_are);
+
 
         jQuery("#who_we_are .bx-controls .bx-pager .bx-pager-item").each(function(){
             jQuery(this).css('width', slideQty_who_we_are);
 
         });
-        //jQuery("#who_we_are .bx-controls .bx-pager .bx-pager-item").siblings().css('width', slideQty_who_we_are);
 
 
+        jQuery(window).resize(function() {
 
-
-
-        jQuery('.slider_comment').bxSlider({
-            //auto: true,
-            nextText: "",
-            prevText: ""
-
+            jQuery("#who_we_are .bx-wrapper .bx-default-pager .bx-pager-item").each(function(){
+                jQuery(this).css('width', slideQty_who_we_are);
+            });
         });
+
+
+
+
         jQuery("form").validate({
 
             rules:{
@@ -125,7 +85,7 @@ jQuery(document).ready(function() {
 
 
 
-    //});
+
 
 
 
@@ -170,25 +130,7 @@ jQuery(document).ready(function() {
 
 
 
-    jQuery(window).resize(function() {
-        //var slideQty_main = 100/jQuery('.slider_main .bx-pager-item').length+'%';
-        jQuery("#main_slider .bx-pager-item").each(function(){
-            jQuery(this).css('width', slideQty_main);
-        });
 
-
-        //var slideQty_w = 100/jQuery('#slider-work .bx-default-pager .bx-pager-item').length+'%';
-        //console.log(slideQty_w);
-        jQuery("#slider-work .bx-wrapper .bx-default-pager .bx-pager-item").each(function(){
-            jQuery(this).css('width', slideQty_w);
-        });
-
-        //var slideQty_who_we_are = 100/jQuery('#who_we_are .bx-controls .bx-pager .bx-pager-item').length+'%';
-        //jQuery("#who_we_are .bx-controls .bx-pager .bx-pager-item").siblings().css('width', slideQty_who_we_are);
-        jQuery("#who_we_are .bx-wrapper .bx-default-pager .bx-pager-item").each(function(){
-            jQuery(this).css('width', slideQty_w);
-        });
-    });
 
 
 

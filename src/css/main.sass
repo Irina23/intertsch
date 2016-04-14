@@ -50,37 +50,10 @@ img
   display: none
 
 
+.content
+  width: 940px
+  margin: auto
 
-#about
-  .content
-    width: 940px
-    margin: auto
-    padding: 75px 0 85px
-    h3
-      margin-bottom: 30px
-      text-align: center
-      line-height: 1em
-      font-size: 60px
-      color: #313131
-
-    .text-holder
-      margin-bottom: 70px
-      padding: 0 50px
-      p
-        line-height: 2em
-        text-align: center
-
-    .text-about
-      column-width: 50%
-      column-count: 2
-      column-gap: 30px
-      p
-        line-height: 2em
-
-  #slider
-    margin-bottom: 40px
-    .bx-controls
-      display: none
 
 .home
   #main_slider
@@ -92,14 +65,9 @@ img
       z-index: 2
       top: 0
 
-
-
       .menu
-
         li
-
           a
-
             height: 75px
 
 
@@ -126,6 +94,21 @@ img
           text-decoration: none
           //color:  #059ed1
           transition: all 0.35s
+
+    .lang
+      float: right
+      padding-top: 30px
+      margin-left: 60px
+      li
+        display: inline-block
+        vertical-align: middle
+        margin-right: 40px
+        color: #fff
+        cursor: pointer
+        &.active
+          color: #0584af
+        &:last-child
+          margin-right: 0
 
 
     .menu
@@ -352,8 +335,7 @@ img
   padding-bottom: 60px
   position: relative
   .content
-    width: 940px
-    margin: auto
+
     margin-top: -140px
     .item-holder
       width: 33.3%
@@ -420,133 +402,177 @@ img
 
 
 #works
-  background: url("../img/bg/bg_work.jpg") no-repeat
-  background-size: cover
-  padding: 50px 0
-  .content
-    width: 940px
-    margin: auto
-    h3
-      margin-bottom: 30px
+
+  padding: 90px 0
+  h3
+    margin-bottom: 30px
+    text-align: center
+    line-height: 1em
+    font-size: 60px
+    color: #313131
+
+  .text-holder
+    margin-bottom: 90px
+    padding: 0 50px
+    p
+      line-height: 2em
       text-align: center
-      line-height: 1em
-      font-size: 60px
-      color: #313131
+  .text-works
+    column-width: 50%
+    column-count: 2
+    column-gap: 30px
+    p
+      line-height: 2em
+  .bx-wrapper
+      padding-bottom: 40px
 
-    .text-holder
-      margin-bottom: 90px
-      padding: 0 50px
-      p
-        line-height: 2em
-        text-align: center
-    .bx-wrapper
-        padding-bottom: 110px
-        .slider_works
-          li
-            opacity: 0
-            &.active-slide
-              opacity: 1
-              animation-duration: 1s
-              animation-fill-mode: both
-              animation: zoomIn 1s
 
-            img
-              //box-shadow: -2px 11px 44px -1px rgba(0,0,0,0.56)
-        .bx-controls-direction
-          a
-            background: url("../img/icons/readmore.png") no-repeat rgba(163, 163, 163, 0.8)
-            background-size: 50%
-            width: 50px
-            height: 50px
-            display: block
-            margin-top: 0
-            background-position: 60% center
+      .bx-controls-direction
+        a
+          background: url("../img/icons/readmore.png") no-repeat rgba(163, 163, 163, 0.8)
+          background-size: 45%
+          width: 50px
+          height: 50px
+          display: block
+          margin-top: 0
+          background-position: 50% center
+          transition: all 0.35s
+          top: 195px
+          &.bx-prev
+            left: 0
+            transform: rotate(180deg)
+          &.bx-next
+            right: 0
+
+          &:hover
+            background: url("../img/icons/readmore.png") no-repeat rgba(163, 163, 163, 0.9)
+            background-size: 45%
+            background-position: 50% center
             transition: all 0.35s
-            top: 195px
-            &.bx-prev
-              left: 0
-              transform: rotate(180deg)
-            &.bx-next
-              right: 0
-
-            &:hover
-              background: url("../img/icons/readmore.png") no-repeat rgba(163, 163, 163, 0.9)
-              background-size: 50%
-              background-position: 60% center
-              transition: all 0.35s
   .bx-controls
     .bx-pager
-      width: 940px
-      margin: auto
-      left: inherit
-      bottom: 0
-      right: inherit
-
-      .bx-pager-item
-        width: 25%
-        a
-          width: 100%
-          height: 40px
-          margin: 0
-          border-radius: 0
-          transition: all 0.35s
-          color: #74cbe8
-          text-align: left
-          font-size: 24px
-          line-height: 1em
-          //padding-bottom: 25px
-          border-bottom: 4px solid #74cbe8
-          background: none
-          font-family: "SegoeUI-Semibold", sans-serif
-          box-sizing: border-box
+      display: none
 
 
-          &.active, &:hover
-            border-color: #059ed1
-            color: #059ed1
-            transition: all 0.35s
-            text-decoration: none
 
+
+#about
+  margin-bottom: 90px
+
+  h3
+    margin-bottom: 30px
+    text-align: center
+    line-height: 1em
+    font-size: 60px
+    color: #313131
+
+  .text-holder
+    margin-bottom: 70px
+    padding: 0 50px
+    p
+      line-height: 2em
+      text-align: center
+
+  .text-about
+    column-width: 50%
+    column-count: 2
+    column-gap: 30px
+    p
+      line-height: 2em
+
+  #slider
+    margin-bottom: 40px
+    .bx-controls
+      display: none
+
+
+#product
+  margin-bottom: 90px
+
+  h3
+    margin-bottom: 30px
+    text-align: center
+    line-height: 1em
+    font-size: 60px
+    color: #313131
+
+  .text-holder
+    margin-bottom: 70px
+    padding: 0 50px
+    p
+      line-height: 2em
+      text-align: center
+
+  .text-product
+    column-width: 50%
+    column-count: 2
+    column-gap: 30px
+    p
+      line-height: 2em
+
+  .img-holder
+    margin-bottom: 40px
+    text-align: center
+  .link
+    text-align: center
+    a
+      margin-top: 50px
+      display: inline-block
+      vertical-align: middle
+      text-align: center
+      text-transform: uppercase
+      color: #059ed1
+      border: 4px solid #059ed1
+      transition: all 0.35s
+      line-height: 1em
+      font-size: 14px
+      font-family: "SegoeUI-Semibold" ,sans-serif
+      letter-spacing: 1px
+      box-sizing: border-box
+      padding: 15px 25px
+      &:hover
+        transition: all 0.35s
+        background: #059ed1
+        text-decoration: none
+        color: #fff
 
 #who_we_are
-  padding-top: 80px
-  padding-bottom: 120px
-  .content
-    width: 940px
-    margin: auto
-    h3
-      margin-bottom: 30px
+  //padding-top: 80px
+  padding-bottom: 100px
+
+  h3
+    margin-bottom: 30px
+    text-align: center
+    line-height: 1em
+    font-size: 60px
+    color: #313131
+
+  .text-holder
+    margin-bottom: 70px
+    padding: 0 50px
+    p
+      line-height: 2em
       text-align: center
-      line-height: 1em
-      font-size: 60px
-      color: #313131
 
-    .text-holder
-      margin-bottom: 70px
-      padding: 0 50px
-      p
-        line-height: 2em
-        text-align: center
-
-    .bx-wrapper
-      padding-bottom: 100px
-      li
-        .img-holder
-          width: 100%
-          margin-bottom: 30px
-        .info_personal
-          h4
-            margin-bottom: 20px
-            line-height: 1em
-            font-size: 30px
-            color: #313131
-            font-weight: normal
-          .text-holder
-            padding: 0
+  .bx-wrapper
+    padding-bottom: 100px
+    li
+      .img-holder
+        width: 100%
+        margin-bottom: 30px
+      .info_personal
+        h4
+          margin-bottom: 20px
+          line-height: 1em
+          font-size: 30px
+          color: #313131
+          font-weight: normal
+        .text-holder
+          padding: 0
+          text-align: left
+          margin-bottom: 0
+          p
             text-align: left
-            margin-bottom: 0
-            p
-              text-align: left
   .bx-controls
     .bx-controls-direction
       display: none
@@ -587,17 +613,54 @@ img
 #comment
   background: url("../img/bg/bg_comment.png") no-repeat
   background-size: cover
-  padding: 100px 0
-  .content
-    width: 940px
-    margin: auto
+  padding: 50px 0
+  h3
+    margin-bottom: 20px
+    text-align: center
+    line-height: 1em
+    font-size: 60px
     color: #fff
+
+  .text-holder
+    margin-bottom: 1px
+    padding: 0 50px
+    p
+      line-height: 2em
+      text-align: center
+
+  .content
+    color: #fff
+    .link_comment
+      text-align: center
+      margin-top: 40px
+      a
+        display: inline-block
+        vertical-align: middle
+        border: 3px #ffffff solid
+        //width: 174px
+        //height: 44px
+        box-sizing: border-box
+        //display: block
+        color: #fff
+        text-decoration: none
+        margin: auto
+        text-align: center
+        line-height: 1em
+        font-size: 14px
+        font-family: "SegoeUI-Semibold" ,sans-serif
+        letter-spacing: 1px
+        text-transform: uppercase
+        padding: 15px 25px
+        transition: all 0.35s
+        &:hover
+          color: #059ed1
+          background: #fff
+          transition: all 0.35s
     .bx-pager
       display: none
     .bx-wrapper
-
-
       .bx-controls-direction
+
         a
           background: url("../img/icons/readmore2.png") no-repeat
           background-size: 100%
@@ -606,6 +669,8 @@ img
           display: block
           margin-top: -17px
           transition: all 0.35s
+          opacity: 1
+          z-index: 3
 
           &.bx-prev
             left: 0
@@ -618,15 +683,28 @@ img
             transition: all 0.35s
 
       .bx-viewport
-
+        position: relative
+        z-index: 2
         li
           text-align: center
+          .rating
+            width: 155px
+            height: 20px
+            margin:  0 auto 30px
+            background: url("../img/icons/star.png")
 
 
           .info_personal
-            width: 270px
-            margin: auto
-            margin-bottom: 45px
+            position: relative
+            &:before
+              position: absolute
+              content: ""
+              top: 5px
+              left: 85px
+              background: url("../img/icons/portfolio.png") no-repeat
+              width: 241px
+              height: 56px
+
             .img-holder
               width: 60px
               height: 60px
@@ -641,6 +719,7 @@ img
               display: inline-block
               vertical-align: middle
               text-align: left
+              padding: 0
               h4
                 font-size: 24px
                 line-height: 1em
@@ -659,28 +738,10 @@ img
             padding: 0 70px
             box-sizing: border-box
             p
-              max-height: 140px
-              overflow: hidden
-              text-overflow: ellipsis
+
               line-height: 2em
-              margin-bottom: 40px
-            .link_comment
-              border: 3px #ffffff solid
-              width: 174px
-              height: 44px
-              box-sizing: border-box
-              display: block
-              color: #fff
-              text-decoration: none
-              margin: auto
-              text-align: center
-              line-height: 32px
-              font-size: 24px
-              transition: all 0.35s
-              &:hover
-                color: #059ed1
-                background: #fff
-                transition: all 0.35s
+              margin-bottom: 20px
+
 
 
 
@@ -688,166 +749,162 @@ img
 #contacts
   padding-top: 100px
   padding-bottom: 135px
-  .content
-    width: 940px
-    margin: auto
-    h3
-      margin-bottom: 30px
-      text-align: center
-      line-height: 1em
-      font-size: 60px
-      color: #313131
 
-    .text-holder
-      margin-bottom: 140px
-      padding: 0 50px
-      p
-        line-height: 2em
-        text-align: center
-    .content-holder
-      .left-holder
-        width: 220px
-        float: left
-        h4
-          margin-bottom: 35px
-          font-size: 30px
-          line-height: 1em
-          //font-weight: normal
-        .contacts-details
-          li
-            margin-bottom: 25px
-            padding-bottom: 10px
-            border-bottom: 1px solid #e9e6e6
+  h3
+    margin-bottom: 30px
+    text-align: center
+    line-height: 1em
+    font-size: 60px
+    color: #313131
+
+  .text-holder
+    margin-bottom: 140px
+    padding: 0 50px
+    p
+      line-height: 2em
+      text-align: center
+  .content-holder
+    .left-holder
+      width: 220px
+      float: left
+      h4
+        margin-bottom: 35px
+        font-size: 30px
+        line-height: 1em
+        //font-weight: normal
+      .contacts-details
+        li
+          margin-bottom: 25px
+          padding-bottom: 10px
+          border-bottom: 1px solid #e9e6e6
+          &:last-child
+            margin-bottom: 0
+            padding-bottom: 0
+            border-bottom: 0
+          &.social
+            a
+              display: inline-block
+              vertical-align: top
+              width: 35px
+              height: 35px
+              background: url("../img/icons/social.png") no-repeat
+              margin-right: 20px
+              transition: all 0.35s
+              &:hover
+                opacity: 0.8
+                transition: all 0.35s
+              &:last-child
+                margin-right: 0
+              &.vk
+                background-position: -55px 0
+              &.google
+                background-position: top right
+          h5
+            font-size: 18px
+            line-height: 1em
+            margin-bottom: 20px
+            font-family: "SegoeUI-Semibold", sans-serif
+          p
+            font-size: 18px
+            line-height: 1em
+            color: #000
+            margin-bottom: 15px
             &:last-child
               margin-bottom: 0
-              padding-bottom: 0
-              border-bottom: 0
-            &.social
-              a
-                display: inline-block
-                vertical-align: top
-                width: 35px
-                height: 35px
-                background: url("../img/icons/social.png") no-repeat
-                margin-right: 20px
-                transition: all 0.35s
-                &:hover
-                  opacity: 0.8
-                  transition: all 0.35s
-                &:last-child
-                  margin-right: 0
-                &.vk
-                  background-position: -55px 0
-                &.google
-                  background-position: top right
-            h5
-              font-size: 18px
-              line-height: 1em
-              margin-bottom: 20px
-              font-family: "SegoeUI-Semibold", sans-serif
-            p
+
+            a
               font-size: 18px
               line-height: 1em
               color: #000
-              margin-bottom: 15px
-              &:last-child
-                margin-bottom: 0
-
-              a
-                font-size: 18px
-                line-height: 1em
-                color: #000
-                transition: all 0.35s
-                &:hover
-                  color: #059ed1
-                  transition: all 0.35s
-                  text-decoration: none
-
-      .right-holder
-        width: 620px
-        float: right
-        h4
-          margin-bottom: 35px
-          font-size: 30px
-          line-height: 1em
-          //font-weight: normal
-        .contacts-form
-          .row
-            margin-bottom: 20px
-            &.input>div
-              width: 300px
-              margin-right: 15px
-              display: inline-block
-              vertical-align: middle
-              &:last-child
-                margin-right: 0
-
-            input,textarea
-              border: 1px solid #c5c4c4
-              box-sizing: border-box
-            .error
-              input,textarea
-                border-color: red
-            input
-              padding: 12px
-              width: 100%
-
-
-            textarea
-              width: 100%
-              height: 190px
-              padding: 12px
-
-
-          .submit
-            background:  #059ed1
-            width: 195px
-            height: 45px
-            color:  #feffff
-            font-size: 20px
-            line-height: 42px
-            text-align: center
-            text-transform: uppercase
-            margin: auto
-            cursor: pointer
-            transition: all 0.35s
-            &:hover
-              background: #0584af
               transition: all 0.35s
+              &:hover
+                color: #059ed1
+                transition: all 0.35s
+                text-decoration: none
+
+    .right-holder
+      width: 620px
+      float: right
+      h4
+        margin-bottom: 35px
+        font-size: 30px
+        line-height: 1em
+        //font-weight: normal
+      .contacts-form
+        .row
+          margin-bottom: 20px
+          &.input>div
+            width: 300px
+            margin-right: 15px
+            display: inline-block
+            vertical-align: middle
+            &:last-child
+              margin-right: 0
+
+          input,textarea
+            border: 1px solid #c5c4c4
+            box-sizing: border-box
+          .error
+            input,textarea
+              border-color: red
+          input
+            padding: 12px
+            width: 100%
+
+
+          textarea
+            width: 100%
+            height: 190px
+            padding: 12px
+
+
+        .submit
+          background:  #059ed1
+          width: 195px
+          height: 45px
+          color:  #feffff
+          font-size: 20px
+          line-height: 42px
+          text-align: center
+          text-transform: uppercase
+          margin: auto
+          cursor: pointer
+          transition: all 0.35s
+          &:hover
+            background: #0584af
+            transition: all 0.35s
 
 footer
   background: #4d4d4d
   padding: 35px 0
-  .content
-    width: 940px
-    margin: auto
-    .menu
+
+  .menu
+    display: inline-block
+    vertical-align: top
+    li
       display: inline-block
       vertical-align: top
-      li
-        display: inline-block
-        vertical-align: top
-        margin-right: 40px
-        &:last-child
-          margin-right: 0
-        &.active
-          a
-            color: #059ed1
+      margin-right: 40px
+      &:last-child
+        margin-right: 0
+      &.active
         a
-          color: #fff
-          transition: all 0.35s
-          &:hover
-              color: #059ed1
-              transition: all 0.35s
-              text-decoration: none
+          color: #059ed1
+      a
+        color: #fff
+        transition: all 0.35s
+        &:hover
+            color: #059ed1
+            transition: all 0.35s
+            text-decoration: none
 
-    .copyright
-      color:  #ffffff
-      float: right
-      span
-        font-family: "SegoeUI-Semibold", sans-serif
-        color:  #059ed1
-        margin-left: 7px
+  .copyright
+    color:  #ffffff
+    float: right
+    span
+      font-family: "SegoeUI-Semibold", sans-serif
+      color:  #059ed1
+      margin-left: 7px
 
 #modal_form
   box-sizing: border-box
@@ -905,101 +962,97 @@ footer
 #service
   padding-top: 80px
   padding-bottom: 110px
-  .content
-    width: 940px
-    margin: auto
-    h3
-      margin-bottom: 30px
+
+  h3
+    margin-bottom: 30px
+    text-align: center
+    line-height: 1.3em
+    font-size: 48px
+    color: #313131
+    font-weight: normal
+
+  .text-holder
+    margin-bottom: 60px
+    padding: 0 50px
+    p
+      line-height: 2em
       text-align: center
-      line-height: 1.3em
-      font-size: 48px
-      color: #313131
-      font-weight: normal
 
-    .text-holder
-      margin-bottom: 60px
-      padding: 0 50px
-      p
-        line-height: 2em
-        text-align: center
-
-    .content-holder
-      .img-holder
+  .content-holder
+    .img-holder
+      width: 100%
+      text-align: center
+      margin-bottom: 40px
+      img
         width: 100%
-        text-align: center
-        margin-bottom: 40px
-        img
-          width: 100%
-      p
-        line-height: 2em
-        margin-bottom: 50px
-        &:last-child
-          margin-bottom: 0
+    p
+      line-height: 2em
+      margin-bottom: 50px
+      &:last-child
+        margin-bottom: 0
 
 
 #sub_services
   background: #edf9fd
   padding: 50px 0
-  .content
-    width: 940px
-    margin: auto
-    h3
-      margin-bottom: 20px
-      line-height: 1.5em
-      font-size: 48px
-      color: #313131
-      font-weight: normal
 
-    .text-holder
-      margin-bottom: 60px
+  h3
+    margin-bottom: 20px
+    line-height: 1.5em
+    font-size: 48px
+    color: #313131
+    font-weight: normal
 
-      p
-        line-height: 2em
+  .text-holder
+    margin-bottom: 60px
+
+    p
+      line-height: 2em
 
 
-    .content-holder
-      ul
-        li
-          display: inline-block
-          vertical-align: top
-          width: 49%
-          margin-bottom: 20px
-          padding-right: 20px
-          box-sizing: border-box
-          .name-holder
-            position: relative
-            .number
-              background: #059ed1
-              width: 40px
-              height: 40px
-              display: inline-block
-              vertical-align: middle
-              color: #fff
-              text-align: center
-              line-height: 35px
-              font-size: 36px
-              margin-right: 15px
-              position: absolute
-              top: 0
-              left: 0
-            .name
-              color: #000
-              font-size: 24px
-              display: inline-block
-              vertical-align: middle
-              text-overflow: ellipsis
-              white-space: nowrap
-              line-height: 35px
-              height: 40px
-              width: 100%
-              overflow: hidden
-              padding-left: 55px
-              box-sizing: border-box
+  .content-holder
+    ul
+      li
+        display: inline-block
+        vertical-align: top
+        width: 49%
+        margin-bottom: 20px
+        padding-right: 20px
+        box-sizing: border-box
+        .name-holder
+          position: relative
+          .number
+            background: #059ed1
+            width: 40px
+            height: 40px
+            display: inline-block
+            vertical-align: middle
+            color: #fff
+            text-align: center
+            line-height: 35px
+            font-size: 36px
+            margin-right: 15px
+            position: absolute
+            top: 0
+            left: 0
+          .name
+            color: #000
+            font-size: 24px
+            display: inline-block
+            vertical-align: middle
+            text-overflow: ellipsis
+            white-space: nowrap
+            line-height: 35px
+            height: 40px
+            width: 100%
+            overflow: hidden
+            padding-left: 55px
+            box-sizing: border-box
 
-          .description
-            p
-              line-height: 1.5em
-              color: #313131
+        .description
+          p
+            line-height: 1.5em
+            color: #313131
 
 
 
