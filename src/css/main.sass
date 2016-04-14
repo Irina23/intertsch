@@ -1194,6 +1194,7 @@ footer
         width: 100%
         padding: 20px
         box-sizing: border-box
+        bottom: 140px
     .header
       width: 100%
       //padding: 20px
@@ -1253,7 +1254,7 @@ footer
         .text-slider
           .info-slider
             width: 100%
-            padding: 0 20px
+            padding: 90px 20px 0
             box-sizing: border-box
   .content
       width: 100%
@@ -1408,9 +1409,33 @@ footer
       font-size: 45px
 
 
+  .home #main_slider
+    height: 480px
+    li
+      //height: 480px
+    .slider_main li
+        .text-slider .info-slider
+          .text-holder
+            h4
+              line-height: 45px
+              height: 50px
+              font-size: 36px
+            .text
+              font-size: 14px
+              padding: 12px
+              height: auto
+          .number
+              width: 55px
+              height: 50px
+              font-size: 36px
+              line-height: 50px
 
 
-
+    .header
+      margin-left: 0
+      left: 0
+      width: 100%
+      background: #4d4d4d
 
 @media screen and (max-width: 900px)
   #comment
@@ -1422,7 +1447,8 @@ footer
               &:before
                 left: 65px
 
-
+  #services .content .item-holder .img-block h3
+    font-size: 18px
 @media screen and (max-width: 870px)
   #comment
     .content
@@ -1452,6 +1478,8 @@ footer
               &:before
                 left: 25px
 
+  #services .content .item-holder .img-block h3
+      font-size: 17px
 
 @media screen and (max-width: 800px)
   #works .content h3,
@@ -1502,6 +1530,30 @@ footer
       height: 58px
     
 
+  #main_slider
+    .slider_main li .text-slider .info-slider
+      padding: 140px 20px 0
+    .bx-controls .bx-pager
+
+      bottom: 20px
+      .bx-pager-item a:after
+        display: none
+  #services
+    padding-top: 50px
+    .content
+      margin-top: 0
+      .item-holder
+        display: block
+        width: 100%
+        margin-bottom: 30px
+        &:last-child
+          margin-bottom: 0
+
+
+@media screen and (max-width: 720px)
+  #main_slider .slider_main li .text-slider .info-slider .text-holder
+    width: 500px
+
 
 @media screen and (max-width: 600px)
   body
@@ -1540,3 +1592,24 @@ footer
       padding-bottom: 0
       li .info_personal h4
         text-align: center
+
+  .home #main_slider .slider_main li .text-slider .info-slider
+
+    .number
+      display: none
+    .text-holder
+      width: 100%
+
+
+@media screen and (max-width: 430px)
+  .home #main_slider .slider_main li .text-slider .info-slider
+    padding-top: 100px
+
+@media screen and (max-width: 410px)
+  .home #main_slider .slider_main li .text-slider .info-slider
+
+    .text-holder
+      h4
+        line-height: 45px
+        height: 50px
+        font-size: 24px

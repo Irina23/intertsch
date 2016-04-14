@@ -16,7 +16,7 @@ jQuery(document).ready(function() {
 
 
         var slider_main = jQuery('.slider_main').bxSlider({
-            auto: true,
+            //auto: true,
             controls: false,
             speed: 1500,
             pause: 7000,
