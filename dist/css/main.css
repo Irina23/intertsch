@@ -129,7 +129,12 @@ img {
           margin-right: 10px;
           color: #fff;
           cursor: pointer; }
-          #main_slider .header .menu .lang li.active {
+          #main_slider .header .menu .lang li a {
+            color: #fff; }
+            #main_slider .header .menu .lang li a:hover {
+              color: #0584af;
+              text-decoration: none; }
+          #main_slider .header .menu .lang li.active a {
             color: #0584af; }
           #main_slider .header .menu .lang li:last-child {
             margin-right: 0; }
