@@ -65,7 +65,7 @@ img
       z-index: 2
       top: 0
 
-      .menu
+      //.menu
         li
           a
             height: 75px
@@ -82,6 +82,7 @@ img
     .logo
       float: left
       margin-top: 15px
+      width: 60px
       a
         font-family: Corbel, sans-serif
         color:  #ffffff
@@ -96,7 +97,31 @@ img
           transition: all 0.35s
 
 
+    .lang
+        display: inline-block
+        vertical-align: top
+        padding-top: 20px
+        margin-left: 20px
 
+        li
+          display: inline-block
+          vertical-align: middle
+          margin-right: 10px
+          color: #fff
+          cursor: pointer
+          a
+            color: #fff
+            font-size: 14px
+            text-transform: uppercase
+            font-family: "SegoeUI-Semibold", sans-serif
+            &:hover
+              color: #0584af
+              text-decoration: none
+          &.active
+            a
+              color: #0584af
+          &:last-child
+            margin-right: 0
 
     .menu
       float: right
@@ -122,30 +147,34 @@ img
           display: inline-block
           vertical-align: top
           float: left
+          margin-top: 27px
 
           &:last-child
             margin-right: 0
           &.active
             a
-              background:  #059ed1
+              color:  #0584af
 
           a
             color: #fff
             transition: all 0.35s
             //width: 100px
-            padding: 35px 15px 0
-            height: 90px
+            padding: 0 13px
+            //height: 90px
             display: block
             text-align: center
             box-sizing: border-box
-            //font-family: "SegoeUI-Semibold", sans-serif
+            font-size: 14px
+            text-transform: uppercase
+
+            font-family: "SegoeUI-Semibold", sans-serif
 
 
             //font-size: 14px
             //text-transform: uppercase
             &:hover
               //color: #059ed1
-              background:  #059ed1
+              color:  #0584af
               transition: all 0.35s
               text-decoration: none
 
@@ -155,6 +184,7 @@ img
         vertical-align: top
         padding-top: 30px
         margin-left: 20px
+        display: none
         li
           display: inline-block
           vertical-align: middle
@@ -1280,8 +1310,7 @@ footer
     .text-holder
       margin-bottom: 70px
 
-  #main_slider .header .menu ul.nav li a
-    font-size: 16px
+
 @media screen and (max-width: 959px)
   body
     font-size: 16px
@@ -1345,6 +1374,8 @@ footer
               width: 100%
               height: auto
               padding: 10px
+              font-size: 16px
+              text-transform: uppercase
 
 
     .slider_main
@@ -1539,6 +1570,10 @@ footer
     width: 60px
     a
       display: block
+
+
+  #main_slider .header >.lang
+    display: none
 @media screen and (max-width: 900px)
   #comment
     .content

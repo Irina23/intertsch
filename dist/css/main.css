@@ -53,8 +53,6 @@ img {
     margin-left: -470px;
     z-index: 2;
     top: 0; }
-    .home #main_slider .header .menu li a {
-      height: 75px; }
 
 #main_slider {
   position: relative;
@@ -64,7 +62,8 @@ img {
     margin: auto; }
     #main_slider .header .logo {
       float: left;
-      margin-top: 15px; }
+      margin-top: 15px;
+      width: 60px; }
       #main_slider .header .logo a {
         font-family: Corbel, sans-serif;
         color: #ffffff;
@@ -78,6 +77,29 @@ img {
           text-decoration: none;
           -webkit-transition: all 0.35s;
           transition: all 0.35s; }
+    #main_slider .header .lang {
+      display: inline-block;
+      vertical-align: top;
+      padding-top: 20px;
+      margin-left: 20px; }
+      #main_slider .header .lang li {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        color: #fff;
+        cursor: pointer; }
+        #main_slider .header .lang li a {
+          color: #fff;
+          font-size: 14px;
+          text-transform: uppercase;
+          font-family: "SegoeUI-Semibold", sans-serif; }
+          #main_slider .header .lang li a:hover {
+            color: #0584af;
+            text-decoration: none; }
+        #main_slider .header .lang li.active a {
+          color: #0584af; }
+        #main_slider .header .lang li:last-child {
+          margin-right: 0; }
     #main_slider .header .menu {
       float: right; }
       #main_slider .header .menu #menu-icon {
@@ -99,22 +121,25 @@ img {
         #main_slider .header .menu ul.nav li {
           display: inline-block;
           vertical-align: top;
-          float: left; }
+          float: left;
+          margin-top: 27px; }
           #main_slider .header .menu ul.nav li:last-child {
             margin-right: 0; }
           #main_slider .header .menu ul.nav li.active a {
-            background: #059ed1; }
+            color: #0584af; }
           #main_slider .header .menu ul.nav li a {
             color: #fff;
             -webkit-transition: all 0.35s;
             transition: all 0.35s;
-            padding: 35px 15px 0;
-            height: 90px;
+            padding: 0 13px;
             display: block;
             text-align: center;
-            box-sizing: border-box; }
+            box-sizing: border-box;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-family: "SegoeUI-Semibold", sans-serif; }
             #main_slider .header .menu ul.nav li a:hover {
-              background: #059ed1;
+              color: #0584af;
               -webkit-transition: all 0.35s;
               transition: all 0.35s;
               text-decoration: none; }
@@ -122,7 +147,8 @@ img {
         display: inline-block;
         vertical-align: top;
         padding-top: 30px;
-        margin-left: 20px; }
+        margin-left: 20px;
+        display: none; }
         #main_slider .header .menu .lang li {
           display: inline-block;
           vertical-align: middle;
@@ -1102,9 +1128,7 @@ footer {
   #contacts {
     padding: 70px 0; }
     #contacts .text-holder {
-      margin-bottom: 70px; }
-  #main_slider .header .menu ul.nav li a {
-    font-size: 16px; } }
+      margin-bottom: 70px; } }
 
 @media screen and (max-width: 959px) {
   body {
@@ -1158,7 +1182,9 @@ footer {
             color: #fff;
             width: 100%;
             height: auto;
-            padding: 10px; }
+            padding: 10px;
+            font-size: 16px;
+            text-transform: uppercase; }
   #main_slider .slider_main li .text-slider .info-slider {
     width: 100%;
     padding: 90px 20px 0;
@@ -1287,7 +1313,9 @@ footer {
   #main_slider .header .logo {
     width: 60px; }
     #main_slider .header .logo a {
-      display: block; } }
+      display: block; }
+  #main_slider .header > .lang {
+    display: none; } }
 
 @media screen and (max-width: 900px) {
   #comment .content .bx-wrapper .bx-viewport li .info_personal:before {
