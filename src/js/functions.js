@@ -1,19 +1,19 @@
 jQuery(document).ready(function() {
 
-
+    jQuery(window).load(function() {
         jQuery('.slider_about').bxSlider({
             auto: true,
             controls: false
 
         });
 
-        jQuery('.slider_works, .slider_comment, .slider_who_we_are_mobile').bxSlider({
+        jQuery('.slider_works, .slider_comment, .slider_who_we_are_mobile, .slider_product').bxSlider({
 
             nextText: "",
             prevText: ""
 
         });
-
+    });
 
         var slider_main = jQuery('.slider_main').bxSlider({
             auto: true,
@@ -40,8 +40,8 @@ jQuery(document).ready(function() {
             slideMargin: 20
         });
 
-        var slideQty_who_we_are = 100/jQuery('#who_we_are .bx-controls .bx-pager .bx-pager-item').length+'%';
-
+        var slideQty_who_we_are = 100/jQuery('#slider_who_we_are .bx-pager-item').length+'%';
+        console.log(slideQty_who_we_are);
 
         jQuery("#who_we_are .bx-controls .bx-pager .bx-pager-item").each(function(){
             jQuery(this).css('width', slideQty_who_we_are);

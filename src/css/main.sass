@@ -81,7 +81,7 @@ img
     margin: auto
     .logo
       float: left
-      margin-top: 30px
+      margin-top: 15px
       a
         font-family: Corbel, sans-serif
         color:  #ffffff
@@ -132,12 +132,17 @@ img
           a
             color: #fff
             transition: all 0.35s
-            width: 100px
+            //width: 100px
+            padding: 35px 15px 0
             height: 90px
             display: block
             text-align: center
             box-sizing: border-box
-            padding-top: 35px
+            //font-family: "SegoeUI-Semibold", sans-serif
+
+
+            //font-size: 14px
+            //text-transform: uppercase
             &:hover
               //color: #059ed1
               background:  #059ed1
@@ -149,11 +154,11 @@ img
         display: inline-block
         vertical-align: top
         padding-top: 30px
-        margin-left: 60px
+        margin-left: 20px
         li
           display: inline-block
           vertical-align: middle
-          margin-right: 40px
+          margin-right: 10px
           color: #fff
           cursor: pointer
           &.active
@@ -463,7 +468,28 @@ img
     .bx-pager
       display: none
 
-
+  .link
+    text-align: center
+    a
+      margin-top: 50px
+      display: inline-block
+      vertical-align: middle
+      text-align: center
+      text-transform: uppercase
+      color: #059ed1
+      border: 4px solid #059ed1
+      transition: all 0.35s
+      line-height: 1em
+      font-size: 14px
+      font-family: "SegoeUI-Semibold" ,sans-serif
+      letter-spacing: 1px
+      box-sizing: border-box
+      padding: 15px 25px
+      &:hover
+        transition: all 0.35s
+        background: #059ed1
+        text-decoration: none
+        color: #fff
 
 
 #about
@@ -546,6 +572,43 @@ img
         text-decoration: none
         color: #fff
 
+
+  .bx-wrapper
+    margin-bottom: 40px
+    img
+      margin: auto
+
+
+    .bx-controls-direction
+      a
+        background: url("../img/icons/readmore.png") no-repeat rgba(163, 163, 163, 0.8)
+        background-size: 45%
+        width: 50px
+        height: 50px
+        display: block
+        background-position: 50% center
+        transition: all 0.35s
+        top: 50%
+        margin-top: -25px
+        &.bx-prev
+          left: 0
+          transform: rotate(180deg)
+        &.bx-next
+          right: 0
+
+        &:hover
+          background: url("../img/icons/readmore.png") no-repeat rgba(163, 163, 163, 0.9)
+          background-size: 45%
+          background-position: 50% center
+          transition: all 0.35s
+  .bx-controls
+    .bx-pager
+      display: none
+
+
+
+
+
 #who_we_are
   //padding-top: 80px
   padding-bottom: 100px
@@ -566,8 +629,6 @@ img
       text-align: center
   #slider_who_we_are_mobile
     .bx-wrapper
-
-
 
       .bx-controls-direction
         display: block
@@ -601,11 +662,36 @@ img
   .bx-wrapper
     padding-bottom: 100px
     li
-      .img-holder
-        width: 100%
+      .foto-holder
         margin-bottom: 30px
-        img
-          margin: auto
+        position: relative
+        &:hover
+          .img-holder
+
+            transition: all 0.35s
+            opacity: 0
+            &.maska
+              transition: all 0.35s
+              opacity: 1
+
+
+
+
+        .img-holder
+          width: 100%
+          transition: all 0.35s
+          opacity: 1
+          &.maska
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            opacity: 0
+            transition: all 0.35s
+
+          img
+            margin: auto
       .info_personal
         h4
           margin-bottom: 20px
@@ -733,8 +819,10 @@ img
         z-index: 2
         li
           text-align: center
+          .br-wrapper
+            padding-bottom: 30px
           .br-widget
-            margin-bottom: 30px
+
             .br-current-rating
               display: none
             a
@@ -762,6 +850,7 @@ img
 
           .info_personal
             position: relative
+            height: 60px
             &:before
               position: absolute
               content: ""
@@ -801,12 +890,14 @@ img
 
           .comment-holder
             clear: both
-            padding: 0 70px
+            padding: 0 70px 20px
             box-sizing: border-box
+            //padding-bottom: 20px
+            min-width: 130px
             p
 
               line-height: 2em
-              margin-bottom: 20px
+
 
 
 
@@ -1183,7 +1274,8 @@ footer
     .text-holder
       margin-bottom: 70px
 
-
+  #main_slider .header .menu ul.nav li a
+    font-size: 16px
 @media screen and (max-width: 959px)
   body
     font-size: 16px
@@ -1205,7 +1297,7 @@ footer
         //top: 15px
         //left: 20px
         position: relative
-        z-index: 3
+        z-index: 102
         padding: 15px 0
         margin-left: 20px
         a
@@ -1216,7 +1308,7 @@ footer
         top: 20px
         right: 0
         //position: relative
-        z-index: 2
+        z-index: 101
         background: #4d4d4d
 
         #menu-icon
@@ -1437,6 +1529,10 @@ footer
       width: 100%
       background: #4d4d4d
 
+  #main_slider .header .logo
+    width: 60px
+    a
+      display: block
 @media screen and (max-width: 900px)
   #comment
     .content

@@ -13,7 +13,8 @@ html(lang="ru")
                     #main_slider
                         .header.cf
                             .logo
-                                a(href="index.html") Intertech
+                                a(href="index.html")
+                                    img(src="img/icons/Logo-mini.png")
                             .menu
                                 #menu-icon
                                     span.icon-bar
@@ -24,15 +25,23 @@ html(lang="ru")
                                         li.active
                                             a(href="index.html") Home
                                         li
-                                            a(href="index.html#about") About us
+                                            a(href="#services") Services
                                         li
-                                            a(href="#") Services
+                                            a(href="#works") Works
+                                        li
+                                            a(href="#about") About us
+                                        li
+                                            a(href="#product") Products
+                                        li
+                                            a(href="#who_we_are") Our team
+                                        li
+                                            a(href="#comment") Reviews
                                         li
                                             a(href="#contacts") Contacts
 
                                     ul.lang
                                         li.active En
-                                        li De
+                                        li Rus
 
                         ul.slider_main
 
@@ -120,12 +129,13 @@ html(lang="ru")
 
                                 ul.slider_works
                                     li
-
-                                        img(src="img/content/work.png")
+                                        a(href="#")
+                                            img(src="img/content/work.png")
 
 
                                     li
-                                        img(src="img/content/work.png")
+                                        a(href="#")
+                                            img(src="img/content/work.png")
 
                             .text-works
                                 p.
@@ -135,7 +145,8 @@ html(lang="ru")
                                     Lorem ipsum dolor sit amet, electram gubergren interesset et usu, inani iriure accusam mei no. Graeco singulis necessitatibus id sea. Lorem viris ex his, has in tota quaestio praesent. Debet ludus ius ei, viderer repudiare sea et.
                                     Ex ipsum iriure vim, mutat deseruisse pri ut, semper euismod consequuntur id mea. Ea pri diam ponderum, ad nam autem solet nemore.
 
-
+                            .link
+                                a(href="#" target="_blank") Our portfolio
                     #about
                         .content
                             h3 About us
@@ -168,19 +179,36 @@ html(lang="ru")
                             .text-holder
                                 p Lorem ipsum dolor sit amet, electram gubergren interesset et usu, inani iriure accusam mei no. Graeco singulis necessitatibus id sea. Lorem viris ex his, has in tota quaestio praesent.
 
-                            .img-holder
-                                img(src="img/content/product.png")
+                            .slider_product
+                                div
+                                        .img-holder
+                                            img(src="img/content/product.png")
+
+                                        .text-product
+                                            p.
+                                                Lorem ipsum dolor sit amet, electram gubergren interesset et usu, inani iriure accusam mei no. Graeco singulis necessitatibus id sea. Lorem viris ex his, has in tota quaestio praesent. Debet ludus ius ei, viderer repudiare sea et.
+                                                Ex ipsum iriure vim, mutat deseruisse pri ut, semper euismod consequuntur id mea. Ea pri diam ponderum, ad nam autem solet nemore.
+                                            p.
+                                                Lorem ipsum dolor sit amet, electram gubergren interesset et usu, inani iriure accusam mei no. Graeco singulis necessitatibus id sea. Lorem viris ex his, has in tota quaestio praesent. Debet ludus ius ei, viderer repudiare sea et.
+                                                Ex ipsum iriure vim, mutat deseruisse pri ut, semper euismod consequuntur id mea. Ea pri diam ponderum, ad nam autem solet nemore.
+                                        .link
+                                            a(href="#" target="_blank") Visit website
+
+                                div
+                                        .img-holder
+                                            img(src="img/content/product.png")
+
+                                        .text-product
+                                            p.
+                                                Lorem ipsum dolor sit amet, electram gubergren interesset et usu, inani iriure accusam mei no. Graeco singulis necessitatibus id sea. Lorem viris ex his, has in tota quaestio praesent. Debet ludus ius ei, viderer repudiare sea et.
+                                                Ex ipsum iriure vim, mutat deseruisse pri ut, semper euismod consequuntur id mea. Ea pri diam ponderum, ad nam autem solet nemore.
+                                            p.
+                                                Lorem ipsum dolor sit amet, electram gubergren interesset et usu, inani iriure accusam mei no. Graeco singulis necessitatibus id sea. Lorem viris ex his, has in tota quaestio praesent. Debet ludus ius ei, viderer repudiare sea et.
+                                                Ex ipsum iriure vim, mutat deseruisse pri ut, semper euismod consequuntur id mea. Ea pri diam ponderum, ad nam autem solet nemore.
+                                        .link
+                                            a(href="#" target="_blank") Visit website
 
 
-                            .text-product
-                                p.
-                                    Lorem ipsum dolor sit amet, electram gubergren interesset et usu, inani iriure accusam mei no. Graeco singulis necessitatibus id sea. Lorem viris ex his, has in tota quaestio praesent. Debet ludus ius ei, viderer repudiare sea et.
-                                    Ex ipsum iriure vim, mutat deseruisse pri ut, semper euismod consequuntur id mea. Ea pri diam ponderum, ad nam autem solet nemore.
-                                p.
-                                    Lorem ipsum dolor sit amet, electram gubergren interesset et usu, inani iriure accusam mei no. Graeco singulis necessitatibus id sea. Lorem viris ex his, has in tota quaestio praesent. Debet ludus ius ei, viderer repudiare sea et.
-                                    Ex ipsum iriure vim, mutat deseruisse pri ut, semper euismod consequuntur id mea. Ea pri diam ponderum, ad nam autem solet nemore.
-                            .link
-                                a(href="#" target="_blank") Visit website
                     #who_we_are
                         .content
                             h3 Who we are
@@ -191,23 +219,32 @@ html(lang="ru")
 
                                 ul.slider_who_we_are_mobile
                                     li
-                                        .img-holder
-                                            img(src="img/content/sergii.jpg")
+                                        .foto-holder
+                                            .img-holder
+                                                img(src="img/content/sergii.jpg")
+                                            .img-holder.maska
+                                                img(src="img/content/sergii2.jpg")
                                         .info_personal
                                             h4 Zanizdra Sergii
                                             .text-holder
                                                 p Lorem ipsum dolor sit amet, electram gubergren interesset et usu, inani iriure accusam mei no.
 
                                     li
-                                        .img-holder
-                                            img(src="img/content/egor.jpg")
+                                        .foto-holder
+                                            .img-holder
+                                                img(src="img/content/egor.jpg")
+                                            .img-holder.maska
+                                                img(src="img/content/sergii2.jpg")
                                         .info_personal
                                             h4 Larionov Egor
                                             .text-holder
                                                 p Lorem ipsum dolor sit amet, electram gubergren interesset et usu, inani iriure accusam mei no.
                                     li
-                                        .img-holder
-                                            img(src="img/content/oleksandr.jpg")
+                                        .foto-holder
+                                            .img-holder
+                                                img(src="img/content/oleksandr.jpg")
+                                            .img-holder.maska
+                                                img(src="img/content/sergii2.jpg")
                                         .info_personal
                                             h4 Koshovyi Oleksandr
                                             .text-holder
@@ -216,82 +253,115 @@ html(lang="ru")
 
                                 ul.slider_who_we_are
                                     li
-                                        .img-holder
-                                            img(src="img/content/sergii.jpg")
+                                        .foto-holder
+                                            .img-holder
+                                                img(src="img/content/sergii.jpg")
+                                            .img-holder.maska
+                                                img(src="img/content/sergii2.jpg")
                                         .info_personal
                                             h4 Zanizdra Sergii
                                             .text-holder
                                                 p Lorem ipsum dolor sit amet, electram gubergren interesset et usu, inani iriure accusam mei no.
 
                                     li
-                                        .img-holder
-                                            img(src="img/content/egor.jpg")
+                                        .foto-holder
+                                            .img-holder
+                                                img(src="img/content/egor.jpg")
+                                            .img-holder.maska
+                                                img(src="img/content/sergii2.jpg")
                                         .info_personal
                                             h4 Larionov Egor
                                             .text-holder
                                                 p Lorem ipsum dolor sit amet, electram gubergren interesset et usu, inani iriure accusam mei no.
                                     li
-                                        .img-holder
-                                            img(src="img/content/oleksandr.jpg")
+                                        .foto-holder
+                                            .img-holder
+                                                img(src="img/content/oleksandr.jpg")
+                                            .img-holder.maska
+                                                img(src="img/content/sergii2.jpg")
                                         .info_personal
                                             h4 Koshovyi Oleksandr
                                             .text-holder
                                                 p Lorem ipsum dolor sit amet, electram gubergren interesset et usu, inani iriure accusam mei no.
                                     li
-                                        .img-holder
-                                            img(src="img/content/sergii.jpg")
+                                        .foto-holder
+                                            .img-holder
+                                                img(src="img/content/sergii.jpg")
+                                            .img-holder.maska
+                                                img(src="img/content/sergii2.jpg")
                                         .info_personal
                                             h4 Zanizdra Sergii
                                             .text-holder
                                                 p Lorem ipsum dolor sit amet, electram gubergren interesset et usu, inani iriure accusam mei no.
 
                                     li
-                                        .img-holder
-                                            img(src="img/content/egor.jpg")
+                                        .foto-holder
+                                            .img-holder
+                                                img(src="img/content/egor.jpg")
+                                            .img-holder.maska
+                                                img(src="img/content/sergii2.jpg")
                                         .info_personal
                                             h4 Larionov Egor
                                             .text-holder
                                                 p Lorem ipsum dolor sit amet, electram gubergren interesset et usu, inani iriure accusam mei no.
                                     li
-                                        .img-holder
-                                            img(src="img/content/oleksandr.jpg")
+                                        .foto-holder
+                                            .img-holder
+                                                img(src="img/content/oleksandr.jpg")
+                                            .img-holder.maska
+                                                img(src="img/content/sergii2.jpg")
                                         .info_personal
                                             h4 Koshovyi Oleksandr
                                             .text-holder
                                                 p Lorem ipsum dolor sit amet, electram gubergren interesset et usu, inani iriure accusam mei no.
                                     li
-                                        .img-holder
-                                            img(src="img/content/sergii.jpg")
+                                        .foto-holder
+                                            .img-holder
+                                                img(src="img/content/sergii.jpg")
+                                            .img-holder.maska
+                                                img(src="img/content/sergii2.jpg")
                                         .info_personal
                                             h4 Zanizdra Sergii
                                             .text-holder
                                                 p Lorem ipsum dolor sit amet, electram gubergren interesset et usu, inani iriure accusam mei no.
 
                                     li
-                                        .img-holder
-                                            img(src="img/content/egor.jpg")
+                                        .foto-holder
+                                            .img-holder
+                                                img(src="img/content/egor.jpg")
+                                            .img-holder.maska
+                                                img(src="img/content/sergii2.jpg")
                                         .info_personal
                                             h4 Larionov Egor
                                             .text-holder
                                                 p Lorem ipsum dolor sit amet, electram gubergren interesset et usu, inani iriure accusam mei no.
                                     li
-                                        .img-holder
-                                            img(src="img/content/oleksandr.jpg")
+                                        .foto-holder
+                                            .img-holder
+                                                img(src="img/content/oleksandr.jpg")
+                                            .img-holder.maska
+                                                img(src="img/content/sergii2.jpg")
                                         .info_personal
                                             h4 Koshovyi Oleksandr
                                             .text-holder
                                                 p Lorem ipsum dolor sit amet, electram gubergren interesset et usu, inani iriure accusam mei no.
 
                                     li
-                                        .img-holder
-                                            img(src="img/content/egor.jpg")
+                                        .foto-holder
+                                            .img-holder
+                                                img(src="img/content/egor.jpg")
+                                            .img-holder.maska
+                                                img(src="img/content/sergii2.jpg")
                                         .info_personal
                                             h4 Larionov Egor
                                             .text-holder
                                                 p Lorem ipsum dolor sit amet, electram gubergren interesset et usu, inani iriure accusam mei no.
                                     li
-                                        .img-holder
-                                            img(src="img/content/oleksandr.jpg")
+                                        .foto-holder
+                                            .img-holder
+                                                img(src="img/content/oleksandr.jpg")
+                                            .img-holder.maska
+                                                img(src="img/content/sergii2.jpg")
                                         .info_personal
                                             h4 Koshovyi Oleksandr
                                             .text-holder
