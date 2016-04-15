@@ -1030,6 +1030,26 @@ footer {
       background: #0584af;
       -webkit-transition: all 0.35s;
       transition: all 0.35s; }
+  #modal_form #modal_close {
+    z-index: 10; }
+  #modal_form .message_modal {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: #fff;
+    box-sizing: border-box;
+    padding-top: 250px;
+    display: none;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    font-size: 24px;
+    text-align: center; }
+    #modal_form .message_modal.show {
+      display: block;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s; }
 
 #service {
   padding-top: 80px;

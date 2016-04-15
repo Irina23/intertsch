@@ -110,6 +110,7 @@ jQuery(document).ready(function() {
             function(){ // пoсле aнимaции
                 $(this).css('display', 'none');
                 $('#overlay').fadeOut(400);
+                $(".message_modal").removeClass("show");
             }
         );
     });
