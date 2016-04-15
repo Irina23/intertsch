@@ -911,7 +911,7 @@ footer {
     footer .menu li {
       display: inline-block;
       vertical-align: top;
-      margin-right: 40px; }
+      margin-right: 20px; }
       footer .menu li:last-child {
         margin-right: 0; }
       footer .menu li.active a {
