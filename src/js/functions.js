@@ -60,6 +60,15 @@ jQuery(document).ready(function() {
     });
 
 
+    $(document).ready(function(){
+        $("#menu").on("click","a", function (event) {
+            event.preventDefault();
+            var id  = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 1500);
+            //console.log(id);
+        });
+    });
 
         var slideQty_who_we_are = 100/jQuery('#slider_who_we_are .bx-pager-item').length+'%';
         console.log(slideQty_who_we_are);
