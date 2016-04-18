@@ -54,6 +54,19 @@ img {
     z-index: 2;
     top: 0; }
 
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #fff url("../img/icons/Logo.png") no-repeat center center;
+  background-size: 8%;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
+
 #main_slider {
   position: relative;
   background: #4d4d4d; }

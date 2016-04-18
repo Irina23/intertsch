@@ -1,10 +1,10 @@
 jQuery(document).ready(function() {
 
     jQuery(window).load(function() {
+        $('#preloader').fadeOut('slow',function(){$(this).remove();});
         jQuery('.slider_about').bxSlider({
             auto: true,
             controls: false
-
         });
 
         jQuery('.slider_works, .slider_comment, .slider_who_we_are_mobile, .slider_product').bxSlider({
@@ -13,8 +13,6 @@ jQuery(document).ready(function() {
             prevText: ""
 
         });
-    });
-
         var slider_main = jQuery('.slider_main').bxSlider({
             auto: true,
             controls: false,
@@ -39,6 +37,29 @@ jQuery(document).ready(function() {
             prevText: "",
             slideMargin: 20
         });
+
+
+
+        $(function() {
+            $('a[href*="#"]:not([href="#"])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+
+        });
+
+
+    });
+
+
 
         var slideQty_who_we_are = 100/jQuery('#slider_who_we_are .bx-pager-item').length+'%';
         console.log(slideQty_who_we_are);
@@ -140,20 +161,7 @@ jQuery(document).ready(function() {
 
 
 
-    $(function() {
-        $('a[href*="#"]:not([href="#"])').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                if (target.length) {
-                    $('html, body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
+
 
 
 ////rating
