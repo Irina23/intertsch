@@ -59,7 +59,8 @@ img {
   background: #4d4d4d; }
   #main_slider .header {
     width: 940px;
-    margin: auto; }
+    margin: auto;
+    padding-bottom: 15px; }
     #main_slider .header .logo {
       float: left;
       margin-top: 15px;
@@ -1138,7 +1139,8 @@ footer {
   #main_slider .bx-controls .bx-pager {
     width: 900px; }
   #main_slider .header {
-    width: 900px; }
+    width: 900px;
+    padding-bottom: 0; }
   #main_slider .slider_main li .text-slider .info-slider {
     width: 900px; }
   .content {
