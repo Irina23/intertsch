@@ -1467,6 +1467,18 @@ footer {
     #connect_us a:first-letter {
       font-size: 24px; }
 
+.scrollTop {
+  display: none;
+  z-index: 9999;
+  position: fixed;
+  bottom: 5%;
+  right: 2%;
+  width: 19px;
+  height: 43px;
+  background: url("../img/icons/up.png") no-repeat; }
+  .scrollTop:hover {
+    background-position: top right; }
+
 @media screen and (max-width: 1023px) {
   .home #main_slider .header {
     margin-left: -450px; }

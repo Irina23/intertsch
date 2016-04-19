@@ -171,17 +171,6 @@ jQuery(document).ready(function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 ////rating
     $('.rating').barrating({
         theme: ''
@@ -192,17 +181,8 @@ jQuery(document).ready(function() {
     });
 });
 
-
-
-
-//up
 jQuery(document).ready(function($){
 
-    $('<style>'+
-        '.scrollTop{ display:none; z-index:9999; position:fixed;'+
-        'bottom:5%; right:2%; width:49px; height:49px;'+
-        'background:url(/templates/abphoto/images/up.png) no-repeat #727272; }'
-        +'</style>').appendTo('body');
     var
         speed = 500,
         $scrollTop = $('<a href="#" class="scrollTop">').appendTo('body');
@@ -219,3 +199,5 @@ jQuery(document).ready(function($){
     show_scrollTop();
 
 });
+
+
