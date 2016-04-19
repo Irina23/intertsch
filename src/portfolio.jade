@@ -288,34 +288,7 @@ html(lang="ru")
                         .btn.submit Send massage
 
 
-            #modal_form.modal_div
-                #modal_close
-                .message_modal.confirm-container-review.show  Форма успешно отправлена
-                #modal_holder
 
-                    form.comment-form
-
-                        h4 Leave a comment
-                        .row.input
-                            div
-
-                                input(type="text", placeholder="Name:", name="name", minlength="2", data-validate="name")
-                            div
-                                input(type="text", placeholder="Project name:", name="project", data-validate="name")
-
-                        .row
-                            div
-                                textarea( placeholder="Your message:", name="message",data-validate="name")
-                        .rating_block
-                            .title_rating Evaluate the work
-                            select.rating
-                                option(value="1") 1
-                                option(value="2") 2
-                                option(value="3") 3
-                                option(value="4") 4
-                                option(value="5") 5
-                        //button(type="submit") Отправить
-                        .btn.submit Send massage
             #overlay
             include ./footer.jade
 
