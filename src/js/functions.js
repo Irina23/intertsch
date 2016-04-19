@@ -191,3 +191,31 @@ jQuery(document).ready(function() {
         readonly: true
     });
 });
+
+
+
+
+//up
+jQuery(document).ready(function($){
+
+    $('<style>'+
+        '.scrollTop{ display:none; z-index:9999; position:fixed;'+
+        'bottom:5%; right:2%; width:49px; height:49px;'+
+        'background:url(/templates/abphoto/images/up.png) no-repeat #727272; }'
+        +'</style>').appendTo('body');
+    var
+        speed = 500,
+        $scrollTop = $('<a href="#" class="scrollTop">').appendTo('body');
+    $scrollTop.click(function(e){
+        e.preventDefault();
+
+        $( 'html:not(:animated),body:not(:animated)' ).animate({ scrollTop: 0}, speed );
+    });
+
+    function show_scrollTop(){
+        ( $(window).scrollTop() > 300 ) ? $scrollTop.fadeIn(600) : $scrollTop.fadeOut(600);
+    }
+    $(window).scroll( function(){ show_scrollTop(); } );
+    show_scrollTop();
+
+});
