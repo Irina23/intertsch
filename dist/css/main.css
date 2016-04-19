@@ -480,6 +480,46 @@ img {
         text-decoration: none;
         color: #fff; }
 
+#advantages {
+  padding: 90px 0 0;
+  text-align: center; }
+  #advantages h3 {
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 1em;
+    font-size: 60px;
+    color: #313131; }
+  #advantages .text-holder {
+    margin-bottom: 90px;
+    padding: 0 50px; }
+    #advantages .text-holder p {
+      line-height: 2em;
+      text-align: center; }
+  #advantages .list_advantages li {
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 60px;
+    box-sizing: border-box;
+    padding: 0 20px; }
+    #advantages .list_advantages li .img-holder {
+      height: 70px;
+      text-align: center;
+      margin-bottom: 40px; }
+    #advantages .list_advantages li h4 {
+      margin-bottom: 40px;
+      color: #313030;
+      font-size: 20px;
+      font-weight: normal;
+      font-family: "SegoeUI" , sans-serif;
+      line-height: 36px;
+      text-align: center; }
+    #advantages .list_advantages li .text-block {
+      color: #313030;
+      font-size: 15px;
+      line-height: 2em;
+      text-align: center; }
+
 #about {
   margin-bottom: 90px; }
   #about h3 {
@@ -1477,7 +1517,8 @@ footer {
     background-position: top right; }
 
 .page_service #works {
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  padding-top: 30px; }
 
 .page_service #contacts {
   padding-top: 30px; }
@@ -1584,7 +1625,7 @@ footer {
   #service {
     padding: 30px 0; }
     #service .content h3 {
-      font-size: 24px;
+      font-size: 36px;
       margin-bottom: 20px; }
     #service .content .text-holder {
       margin-bottom: 30px;
@@ -1730,7 +1771,26 @@ footer {
     padding: 30px 0; }
   .portfolio .text-header .text-holder h4 {
     line-height: 1.3em;
-    font-size: 36px; } }
+    font-size: 36px; }
+  #works .content h3,
+  #about .content h3,
+  #product h3,
+  #who_we_are .content h3,
+  #comment h3,
+  #contacts .content h3 {
+    font-size: 36px; }
+  #advantages {
+    padding-top: 40px; }
+    #advantages h3 {
+      font-size: 36px; }
+    #advantages .list_advantages li {
+      margin-bottom: 30px; }
+      #advantages .list_advantages li .img-holder {
+        margin-bottom: 20px; }
+      #advantages .list_advantages li h4 {
+        margin-bottom: 15px; }
+    #advantages .text-holder {
+      margin-bottom: 40px; } }
 
 @media screen and (max-width: 900px) {
   #comment .content .bx-wrapper .bx-viewport li .info_personal:before {
@@ -1748,7 +1808,9 @@ footer {
   #who_we_are .bx-wrapper {
     padding-bottom: 70px; }
     #who_we_are .bx-wrapper li .info_personal h4 {
-      font-size: 24px; } }
+      font-size: 24px; }
+  #advantages .list_advantages li {
+    width: 49%; } }
 
 @media screen and (max-width: 830px) {
   #comment .content .bx-wrapper .bx-viewport li .info_personal:before {
@@ -1767,13 +1829,6 @@ footer {
       height: 58px; } }
 
 @media screen and (max-width: 800px) {
-  #works .content h3,
-  #about .content h3,
-  #product h3,
-  #who_we_are .content h3,
-  #comment h3,
-  #contacts .content h3 {
-    font-size: 36px; }
   #product .text-holder,
   #who_we_are .text-holder {
     padding: 0;
@@ -1830,7 +1885,9 @@ footer {
   .portfolio .portfolio_list .item .wrap .list_characteristics > div h4 {
     margin-bottom: 20px; }
   .portfolio .portfolio_list .item .wrap .list_characteristics {
-    margin-bottom: 40px; } }
+    margin-bottom: 40px; }
+  #advantages .text-holder {
+    padding: 0; } }
 
 @media screen and (max-width: 720px) {
   #main_slider .slider_main li .text-slider .info-slider .text-holder {
@@ -1888,7 +1945,9 @@ footer {
   .portfolio .portfolio_list .item .wrap .list_characteristics > div {
     display: block;
     width: 100%;
-    padding: 0 !important; } }
+    padding: 0 !important; }
+  #advantages .list_advantages li {
+    width: 100%; } }
 
 @media screen and (max-width: 430px) {
   .home #main_slider .slider_main li .text-slider .info-slider {
