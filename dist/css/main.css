@@ -19,6 +19,20 @@
   font-style: normal;
   font-weight: normal; }
 
+@font-face {
+  font-family: "MyanmarText-Bold";
+  src: url("../fonts/MyanmarText-Bold.eot");
+  src: url("../fonts/MyanmarText-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyanmarText-Bold.woff") format("woff"), url("../fonts/MyanmarText-Bold.svg") format("svg"), url("../fonts/MyanmarText-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "MyanmarText";
+  src: url("../fonts/MyanmarText.eot");
+  src: url("../fonts/MyanmarText.eot?#iefix") format("embedded-opentype"), url("../fonts/MyanmarText.woff") format("woff"), url("../fonts/MyanmarText.svg") format("svg"), url("../fonts/MyanmarText.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
 body {
   font-family: "SegoeUILight", sans-serif;
   padding: 0;
@@ -1145,6 +1159,199 @@ footer {
     #sub_services .content-holder ul li .description p {
       line-height: 1.5em;
       color: #313131; }
+
+.portfolio .text-header {
+  padding: 250px 0 150px; }
+  .portfolio .text-header .text-holder {
+    width: 940px;
+    margin: auto;
+    text-align: center; }
+    .portfolio .text-header .text-holder h4 {
+      color: #ffffff;
+      font-size: 40px;
+      font-weight: normal;
+      line-height: 1em;
+      font-family: "MyanmarText-Bold", sans-serif;
+      text-transform: uppercase;
+      text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.41);
+      margin-bottom: 25px; }
+      .portfolio .text-header .text-holder h4:first-letter {
+        font-size: 55px; }
+      .portfolio .text-header .text-holder h4 span {
+        display: inline-block;
+        vertical-align: bottom;
+        margin-left: 5px;
+        font-size: 55px;
+        color: #059ed1;
+        text-transform: uppercase; }
+    .portfolio .text-header .text-holder .text {
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.3em;
+      text-align: center;
+      text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.39);
+      text-transform: uppercase;
+      font-family: "MyanmarText", sans-serif; }
+      .portfolio .text-header .text-holder .text:first-letter {
+        font-size: 24px; }
+
+.portfolio .info_portfolio {
+  padding: 50px 0;
+  width: 940px;
+  margin: auto;
+  text-align: center; }
+  .portfolio .info_portfolio h1 {
+    color: #313030;
+    font-size: 60px;
+    margin-bottom: 30px;
+    line-height: 1em;
+    text-align: center;
+    letter-spacing: 2px; }
+  .portfolio .info_portfolio .text_holder {
+    padding: 0 50px; }
+    .portfolio .info_portfolio .text_holder p {
+      line-height: 2em; }
+
+.portfolio .portfolio_list .item:nth-child(2n+1) {
+  padding: 100px 0; }
+  .portfolio .portfolio_list .item:nth-child(2n+1) .img-holder {
+    float: left;
+    margin-right: 70px; }
+
+.portfolio .portfolio_list .item:nth-child(2n) {
+  background: #f2f2f2;
+  padding: 40px 0; }
+  .portfolio .portfolio_list .item:nth-child(2n) .img-holder {
+    float: right;
+    margin-left: 70px; }
+
+.portfolio .portfolio_list .item .wrap {
+  width: 940px;
+  margin: auto; }
+  .portfolio .portfolio_list .item .wrap .description {
+    margin-bottom: 80px; }
+  .portfolio .portfolio_list .item .wrap .text_holder {
+    overflow: hidden; }
+    .portfolio .portfolio_list .item .wrap .text_holder h3 {
+      font-family: "SegoeUI-Semibold" , sans-serif;
+      color: #059ed1;
+      font-size: 30px;
+      line-height: 1em;
+      text-align: left;
+      margin-bottom: 30px; }
+    .portfolio .portfolio_list .item .wrap .text_holder p {
+      font-size: 14px;
+      color: #3b3b3b;
+      line-height: 2em;
+      font-family: "SegoeUI" , sans-serif; }
+  .portfolio .portfolio_list .item .wrap .list_characteristics {
+    margin-bottom: 60px; }
+    .portfolio .portfolio_list .item .wrap .list_characteristics > div {
+      margin-bottom: 40px;
+      display: inline-block;
+      vertical-align: top;
+      width: 49%;
+      box-sizing: border-box; }
+      .portfolio .portfolio_list .item .wrap .list_characteristics > div:nth-child(2n+1) {
+        padding-right: 10px; }
+      .portfolio .portfolio_list .item .wrap .list_characteristics > div:nth-child(2n) {
+        padding-left: 10px; }
+      .portfolio .portfolio_list .item .wrap .list_characteristics > div h4 {
+        padding-left: 60px;
+        color: #313030;
+        font-size: 30px;
+        font-weight: normal;
+        line-height: 45px;
+        text-align: left;
+        margin-bottom: 40px;
+        background: url("../img/icons/design_icons.png") no-repeat top left; }
+      .portfolio .portfolio_list .item .wrap .list_characteristics > div.design h4 {
+        background: url("../img/icons/design_icons.png") no-repeat top left; }
+      .portfolio .portfolio_list .item .wrap .list_characteristics > div.content h4 {
+        background: url("../img/icons/content_icons.png") no-repeat top left; }
+      .portfolio .portfolio_list .item .wrap .list_characteristics > div.creativity h4 {
+        background: url("../img/icons/creativity_icons.png") no-repeat top left; }
+      .portfolio .portfolio_list .item .wrap .list_characteristics > div.usability h4 {
+        background: url("../img/icons/usability_icons.png") no-repeat top left; }
+  .portfolio .portfolio_list .item .wrap .feedback .link {
+    width: 195px;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: "SegoeUI" , sans-serif;
+    background: #059ed1;
+    display: block;
+    margin: auto;
+    line-height: 50px;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    cursor: pointer; }
+    .portfolio .portfolio_list .item .wrap .feedback .link:hover {
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+      background: #0584af;
+      text-decoration: none; }
+      .portfolio .portfolio_list .item .wrap .feedback .link:hover:after {
+        border-top: 10px solid #0584af;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s; }
+    .portfolio .portfolio_list .item .wrap .feedback .link:after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      margin-left: -10px;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #059ed1;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s; }
+  .portfolio .portfolio_list .item .wrap .feedback .list_feedback {
+    display: none;
+    margin-top: 30px; }
+    .portfolio .portfolio_list .item .wrap .feedback .list_feedback .item_feedback {
+      margin-bottom: 30px; }
+      .portfolio .portfolio_list .item .wrap .feedback .list_feedback .item_feedback:last-child {
+        margin-bottom: 0; }
+      .portfolio .portfolio_list .item .wrap .feedback .list_feedback .item_feedback .name {
+        color: #222222;
+        font-size: 18px;
+        font-style: italic;
+        line-height: 1em;
+        font-family: "SegoeUI" , sans-serif;
+        margin-bottom: 5px; }
+      .portfolio .portfolio_list .item .wrap .feedback .list_feedback .item_feedback .data {
+        margin-bottom: 20px;
+        color: #666565;
+        font-size: 14px;
+        font-style: italic; }
+      .portfolio .portfolio_list .item .wrap .feedback .list_feedback .item_feedback .comment {
+        margin-bottom: 25px;
+        color: #666565;
+        font-size: 14px;
+        font-style: italic;
+        line-height: 2em; }
+      .portfolio .portfolio_list .item .wrap .feedback .list_feedback .item_feedback .br-widget {
+        text-align: center; }
+        .portfolio .portfolio_list .item .wrap .feedback .list_feedback .item_feedback .br-widget .br-current-rating {
+          display: none; }
+        .portfolio .portfolio_list .item .wrap .feedback .list_feedback .item_feedback .br-widget a {
+          display: inline-block;
+          vertical-align: middle;
+          width: 15px;
+          height: 15px;
+          margin: 0 5px;
+          background: url("../img/icons/star.png") no-repeat;
+          background-size: 100%;
+          cursor: default; }
+          .portfolio .portfolio_list .item .wrap .feedback .list_feedback .item_feedback .br-widget a.br-active, .portfolio .portfolio_list .item .wrap .feedback .list_feedback .item_feedback .br-widget a.br-current, .portfolio .portfolio_list .item .wrap .feedback .list_feedback .item_feedback .br-widget a.br-selected {
+            background: url("../img/icons/star_active.png") no-repeat;
+            background-size: 100%; }
 
 @media screen and (max-width: 1023px) {
   .home #main_slider .header {

@@ -60,7 +60,7 @@ jQuery(document).ready(function() {
     });
 
 
-    $(document).ready(function(){
+    /*$(document).ready(function(){
         $("#menu").on("click","a", function (event) {
             event.preventDefault();
             var id  = $(this).attr('href'),
@@ -68,7 +68,7 @@ jQuery(document).ready(function() {
             $('body,html').animate({scrollTop: top}, 1500);
             //console.log(id);
         });
-    });
+    });*/
 
         var slideQty_who_we_are = 100/jQuery('#slider_who_we_are .bx-pager-item').length+'%';
         console.log(slideQty_who_we_are);
@@ -156,7 +156,11 @@ jQuery(document).ready(function() {
         //jQuery(".menu").toggleClass("active")
     });
 
-
+    jQuery(".feedback .link").on("click", function(){
+        jQuery(this).next().slideToggle();
+        //jQuery(this).toggleClass("active");
+        //jQuery(".menu").toggleClass("active")
+    });
 
 
 
