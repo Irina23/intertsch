@@ -1560,6 +1560,8 @@ footer {
 @media screen and (max-width: 959px) {
   body {
     font-size: 16px; }
+  #main_slider .header .menu ul.nav li {
+    margin-top: 10px; }
   #main_slider .bx-controls .bx-pager {
     width: 100%;
     padding: 20px;
