@@ -105,7 +105,7 @@ img
     .logo
       float: left
       margin-top: 15px
-      width: 60px
+      //width: 60px
       a
         font-family: Corbel, sans-serif
         color:  #ffffff
@@ -123,7 +123,7 @@ img
     .lang
         display: inline-block
         vertical-align: top
-        padding-top: 20px
+        padding-top: 35px
         margin-left: 20px
 
         li
@@ -170,7 +170,7 @@ img
           display: inline-block
           vertical-align: top
           float: left
-          margin-top: 27px
+          margin-top: 38px
 
           &:last-child
             margin-right: 0
@@ -914,7 +914,7 @@ img
               position: absolute
               content: ""
               top: 5px
-              left: 85px
+              left: 60px
               background: url("../img/icons/portfolio.png") no-repeat
               width: 241px
               height: 56px
@@ -935,14 +935,14 @@ img
               text-align: left
               padding: 0
               h4
-                font-size: 24px
-                line-height: 1em
+                font-size: 18px
+                line-height: 1.3em
                 font-weight: normal
                 margin-bottom: 10px
                 text-overflow: ellipsis
                 white-space: nowrap
                 overflow: hidden
-                max-width: 190px
+                //max-width: 190px
               .data
                 font-size: 16px
                 line-height: 1em
@@ -1125,6 +1125,8 @@ footer
 
 #modal_form
   box-sizing: border-box
+  height: 640px
+  margin-top: -320px
   h4
     font-size: 36px
     line-height: 1em
@@ -1686,6 +1688,14 @@ footer
 
     width: 50%
 
+  #comment
+    .content
+      .bx-wrapper
+        .bx-viewport
+          li
+            .info_personal
+              &:before
+                left: 25px
 
 @media screen and (max-width: 959px)
   body
@@ -1999,7 +2009,7 @@ footer
           li
             .info_personal
               &:before
-                left: 65px
+                left: 15px
 
   #services .content .item-holder .img-block h3
     font-size: 18px
@@ -2014,7 +2024,7 @@ footer
           li
             .info_personal
               &:before
-                left: 45px
+                left: 0
 
 
 
@@ -2024,6 +2034,16 @@ footer
     li .info_personal h4
       font-size: 24px
 
+  //#comment .content .bx-wrapper .bx-viewport li .info_personal
+    padding-bottom: 65px
+    &:before
+      top: inherit
+      bottom: 0
+      left: 50%
+      margin-left: -121px
+      background: url("../img/icons/portfolio_mobile.png") no-repeat
+      width: 243px
+      height: 58px
 
 @media screen and (max-width: 830px)
   #comment
@@ -2037,6 +2057,19 @@ footer
 
   #services .content .item-holder .img-block h3
       font-size: 17px
+
+  #comment .content .bx-wrapper .bx-viewport li .info_personal
+      padding-bottom: 65px
+      &:before
+        top: inherit
+        bottom: 0
+        left: 50%
+        margin-left: -121px
+        background: url("../img/icons/portfolio_mobile.png") no-repeat
+        width: 243px
+        height: 58px
+
+
 
 @media screen and (max-width: 800px)
   #works .content h3,
@@ -2059,6 +2092,7 @@ footer
    padding: 20px
    margin-top: -230px
    height: 460px
+   overflow: auto
    h4
      font-size: 24px
      margin-bottom: 30px
@@ -2075,16 +2109,7 @@ footer
          display: block
          margin-bottom: 20px
 
-  #comment .content .bx-wrapper .bx-viewport li .info_personal
-    padding-bottom: 65px
-    &:before
-      top: inherit
-      bottom: 0
-      left: 50%
-      margin-left: -121px
-      background: url("../img/icons/portfolio_mobile.png") no-repeat
-      width: 243px
-      height: 58px
+
     
 
   #main_slider

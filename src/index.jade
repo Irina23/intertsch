@@ -411,7 +411,7 @@ html(lang="ru")
                                                     a(href="#")
                                                         img(src="img/content/avatar.jpg")
                                                 .text-holder
-                                                    h4 Svetlana Zarva
+                                                    h4 Svetlana Zarva (Project Manager)
                                                     .data 14 march 2016
 
 
@@ -434,7 +434,7 @@ html(lang="ru")
                                                     a(href="#")
                                                         img(src="img/content/avatar.jpg")
                                                 .text-holder
-                                                    h4 Svetlana Zarva
+                                                    h4 Svetlana Zarva (Project Manager)
                                                     .data 14 march 2016
 
                                 .link_comment
@@ -472,12 +472,16 @@ html(lang="ru")
                                         h4 Contact form
 
                                         form.contacts-form
-                                            .row.input
+                                            .row
                                                 div
 
                                                     input(type="text", placeholder="Name:", name="name", minlength="2", data-validate="name")
+
+                                            .row.input
                                                 div
-                                                    input(type="email", placeholder="E-mail:", name="email", data-validate="email")
+                                                    input(type="text", placeholder="Mail:", name="email", data-validate="email")
+                                                div
+                                                    input(type="text", placeholder="Phone:", name="phone", data-validate="phone")
 
                                             .row
                                                 div
@@ -503,7 +507,9 @@ html(lang="ru")
                                 input(type="text", placeholder="Name:", name="name", minlength="2", data-validate="name")
                             div
                                 input(type="text", placeholder="Project name:", name="project", data-validate="name")
-
+                        .row
+                            div
+                                input(type="text", placeholder="Website:", name="website")
                         .row
                             div
                                 textarea( placeholder="Your message:", name="message",data-validate="name")

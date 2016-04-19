@@ -90,8 +90,7 @@ img {
     padding-bottom: 15px; }
     #main_slider .header .logo {
       float: left;
-      margin-top: 15px;
-      width: 60px; }
+      margin-top: 15px; }
       #main_slider .header .logo a {
         font-family: Corbel, sans-serif;
         color: #ffffff;
@@ -108,7 +107,7 @@ img {
     #main_slider .header .lang {
       display: inline-block;
       vertical-align: top;
-      padding-top: 20px;
+      padding-top: 35px;
       margin-left: 20px; }
       #main_slider .header .lang li {
         display: inline-block;
@@ -150,7 +149,7 @@ img {
           display: inline-block;
           vertical-align: top;
           float: left;
-          margin-top: 27px; }
+          margin-top: 38px; }
           #main_slider .header .menu ul.nav li:last-child {
             margin-right: 0; }
           #main_slider .header .menu ul.nav li.active a {
@@ -805,7 +804,7 @@ img {
             position: absolute;
             content: "";
             top: 5px;
-            left: 85px;
+            left: 60px;
             background: url("../img/icons/portfolio.png") no-repeat;
             width: 241px;
             height: 56px; }
@@ -824,14 +823,13 @@ img {
             text-align: left;
             padding: 0; }
             #comment .content .bx-wrapper .bx-viewport li .info_personal .text-holder h4 {
-              font-size: 24px;
-              line-height: 1em;
+              font-size: 18px;
+              line-height: 1.3em;
               font-weight: normal;
               margin-bottom: 10px;
               text-overflow: ellipsis;
               white-space: nowrap;
-              overflow: hidden;
-              max-width: 190px; }
+              overflow: hidden; }
             #comment .content .bx-wrapper .bx-viewport li .info_personal .text-holder .data {
               font-size: 16px;
               line-height: 1em; }
@@ -994,7 +992,9 @@ footer {
       margin-left: 7px; }
 
 #modal_form {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  height: 640px;
+  margin-top: -320px; }
   #modal_form h4 {
     font-size: 36px;
     line-height: 1em;
@@ -1497,7 +1497,9 @@ footer {
   .portfolio .portfolio_list .item .wrap {
     width: 900px; }
   .portfolio .portfolio_list .item .img-holder {
-    width: 50%; } }
+    width: 50%; }
+  #comment .content .bx-wrapper .bx-viewport li .info_personal:before {
+    left: 25px; } }
 
 @media screen and (max-width: 959px) {
   body {
@@ -1717,7 +1719,7 @@ footer {
 
 @media screen and (max-width: 900px) {
   #comment .content .bx-wrapper .bx-viewport li .info_personal:before {
-    left: 65px; }
+    left: 15px; }
   #services .content .item-holder .img-block h3 {
     font-size: 18px; }
   .portfolio .text-header {
@@ -1725,7 +1727,7 @@ footer {
 
 @media screen and (max-width: 870px) {
   #comment .content .bx-wrapper .bx-viewport li .info_personal:before {
-    left: 45px; } }
+    left: 0; } }
 
 @media screen and (max-width: 850px) {
   #who_we_are .bx-wrapper {
@@ -1737,7 +1739,17 @@ footer {
   #comment .content .bx-wrapper .bx-viewport li .info_personal:before {
     left: 25px; }
   #services .content .item-holder .img-block h3 {
-    font-size: 17px; } }
+    font-size: 17px; }
+  #comment .content .bx-wrapper .bx-viewport li .info_personal {
+    padding-bottom: 65px; }
+    #comment .content .bx-wrapper .bx-viewport li .info_personal:before {
+      top: inherit;
+      bottom: 0;
+      left: 50%;
+      margin-left: -121px;
+      background: url("../img/icons/portfolio_mobile.png") no-repeat;
+      width: 243px;
+      height: 58px; } }
 
 @media screen and (max-width: 800px) {
   #works .content h3,
@@ -1757,7 +1769,8 @@ footer {
     left: 20px;
     padding: 20px;
     margin-top: -230px;
-    height: 460px; }
+    height: 460px;
+    overflow: auto; }
     #modal_form h4, #modal_form_connect h4 {
       font-size: 24px;
       margin-bottom: 30px; }
@@ -1771,16 +1784,6 @@ footer {
         width: 100%;
         display: block;
         margin-bottom: 20px; }
-  #comment .content .bx-wrapper .bx-viewport li .info_personal {
-    padding-bottom: 65px; }
-    #comment .content .bx-wrapper .bx-viewport li .info_personal:before {
-      top: inherit;
-      bottom: 0;
-      left: 50%;
-      margin-left: -121px;
-      background: url("../img/icons/portfolio_mobile.png") no-repeat;
-      width: 243px;
-      height: 58px; }
   #main_slider .slider_main li .text-slider .info-slider {
     padding: 140px 20px 0; }
   #main_slider .bx-controls .bx-pager {
