@@ -974,7 +974,7 @@ img
     color: #313131
 
   .text-holder
-    margin-bottom: 140px
+    margin-bottom: 80px
     padding: 0 50px
     p
       line-height: 2em
@@ -1374,7 +1374,7 @@ footer
         box-sizing: border-box
         .name-holder
           position: relative
-          .number
+          //.number
             background: #059ed1
             width: 40px
             height: 40px
@@ -1399,8 +1399,19 @@ footer
             height: 40px
             width: 100%
             overflow: hidden
-            padding-left: 55px
+            padding-left: 20px
             box-sizing: border-box
+            position: relative
+            &:before 
+              position: absolute
+              top: 50%
+              left: 0
+              border-radius: 8px
+              width: 8px
+              height: 8px
+              background: #059ed1
+              margin-top: -4px
+              content: ""
 
         .description
           p
@@ -1650,7 +1661,11 @@ footer
   &:hover
     background-position: top right
 
-
+.page_service
+  #works
+    padding-bottom: 40px
+  #contacts
+    padding-top: 30px
 
 @media screen and (max-width: 1023px)
   .home

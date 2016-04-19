@@ -851,7 +851,7 @@ img {
     font-size: 60px;
     color: #313131; }
   #contacts .text-holder {
-    margin-bottom: 140px;
+    margin-bottom: 80px;
     padding: 0 50px; }
     #contacts .text-holder p {
       line-height: 2em;
@@ -1218,20 +1218,6 @@ footer {
     box-sizing: border-box; }
     #sub_services .content-holder ul li .name-holder {
       position: relative; }
-      #sub_services .content-holder ul li .name-holder .number {
-        background: #059ed1;
-        width: 40px;
-        height: 40px;
-        display: inline-block;
-        vertical-align: middle;
-        color: #fff;
-        text-align: center;
-        line-height: 35px;
-        font-size: 21px;
-        margin-right: 15px;
-        position: absolute;
-        top: 0;
-        left: 0; }
       #sub_services .content-holder ul li .name-holder .name {
         color: #000;
         font-size: 20px;
@@ -1243,8 +1229,19 @@ footer {
         height: 40px;
         width: 100%;
         overflow: hidden;
-        padding-left: 55px;
-        box-sizing: border-box; }
+        padding-left: 20px;
+        box-sizing: border-box;
+        position: relative; }
+        #sub_services .content-holder ul li .name-holder .name:before {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          border-radius: 8px;
+          width: 8px;
+          height: 8px;
+          background: #059ed1;
+          margin-top: -4px;
+          content: ""; }
     #sub_services .content-holder ul li .description p {
       line-height: 1.5em;
       color: #313131; }
@@ -1478,6 +1475,12 @@ footer {
   background: url("../img/icons/up.png") no-repeat; }
   .scrollTop:hover {
     background-position: top right; }
+
+.page_service #works {
+  padding-bottom: 40px; }
+
+.page_service #contacts {
+  padding-top: 30px; }
 
 @media screen and (max-width: 1023px) {
   .home #main_slider .header {
