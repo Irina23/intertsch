@@ -336,7 +336,37 @@
           </div>
         </div>
       </div>
-      <div id="modal_form">
+      <div id="connect_us"><a href="#modal_form_connect" class="open_modal">Connect with us</a></div>
+      <div id="modal_form_connect" class="modal_div">
+        <div id="modal_close"></div>
+        <div class="message_modal confirm-container-review show"> Форма успешно отправлена</div>
+        <div id="modal_holder">
+          <form class="comment-form">
+            <h4>Send a message</h4>
+            <div class="row">
+              <div>
+                <input type="text" placeholder="Name:" name="name" minlength="2" data-validate="name">
+              </div>
+            </div>
+            <div class="row input">
+              <div>
+                <input type="text" placeholder="Mail:" name="email" data-validate="email">
+              </div>
+              <div>
+                <input type="text" placeholder="Phone:" name="phone" data-validate="phone">
+              </div>
+            </div>
+            <div class="row">
+              <div>
+                <textarea placeholder="Your message:" name="message" data-validate="name"></textarea>
+              </div>
+            </div>
+            <!--button(type="submit") Отправить-->
+            <div class="btn submit">Send massage</div>
+          </form>
+        </div>
+      </div>
+      <div id="modal_form" class="modal_div">
         <div id="modal_close"></div>
         <div class="message_modal confirm-container-review show"> Форма успешно отправлена</div>
         <div id="modal_holder">

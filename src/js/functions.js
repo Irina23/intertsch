@@ -71,7 +71,7 @@ jQuery(document).ready(function() {
     });*/
 
         var slideQty_who_we_are = 100/jQuery('#slider_who_we_are .bx-pager-item').length+'%';
-        console.log(slideQty_who_we_are);
+        //console.log(slideQty_who_we_are);
 
         jQuery("#who_we_are .bx-controls .bx-pager .bx-pager-item").each(function(){
             jQuery(this).css('width', slideQty_who_we_are);
@@ -123,29 +123,34 @@ jQuery(document).ready(function() {
 
 
 
-        ///modal
-    $('a[href="#modal_form"]').click( function(event){
+    //modal form
+    var overlay = $('#overlay');
+    var open_modal = $('.open_modal');
+    var close = $('#modal_close, #overlay');
+    var modal = $('.modal_div');
+
+    open_modal.click( function(event){
         event.preventDefault();
-        $('#overlay').fadeIn(400,
+
+        var div = $(this).attr('href');
+        overlay.fadeIn(400,
             function(){
-                $('#modal_form')
+                $(div)
                     .css('display', 'block')
-                .animate({opacity: 1, top: '50%'}, 200);
+                    .animate({opacity: 1, top: '50%'}, 200);
             });
     });
 
-    $('#modal_close, #overlay').click( function(){
-        $('#modal_form')
+    close.click( function(){
+        modal
             .animate({opacity: 0, top: '45%'}, 200,
-            function(){ // пoсле aнимaции
+            function(){
                 $(this).css('display', 'none');
-                $('#overlay').fadeOut(400);
+                overlay.fadeOut(400);
                 $(".message_modal").removeClass("show");
             }
         );
     });
-
-
 
 
 

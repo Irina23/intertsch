@@ -202,7 +202,7 @@ input[type="text"]{
 
 
 
-#modal_form {
+.modal_div {
     width: 780px;
     height: 575px;
     background: #fff;
@@ -217,7 +217,7 @@ input[type="text"]{
     padding: 50px 80px;
 }
 /*  нoпкa зaкрыть дл€ тех ктo в тaнке) */
-#modal_form #modal_close {
+.modal_div #modal_close {
     width: 31px;
     height: 31px;
     position: absolute;

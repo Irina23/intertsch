@@ -1079,6 +1079,94 @@ footer {
       -webkit-transition: all 0.35s;
       transition: all 0.35s; }
 
+#modal_form_connect {
+  box-sizing: border-box; }
+  #modal_form_connect h4 {
+    font-size: 30px;
+    line-height: 1em;
+    color: #059ed1;
+    margin-bottom: 40px;
+    font-family: "SegoeUI-Semibold" , sans-serif;
+    text-transform: uppercase; }
+  #modal_form_connect .comment-form .row {
+    margin-bottom: 20px; }
+    #modal_form_connect .comment-form .row.input > div {
+      width: 300px;
+      margin-right: 15px;
+      display: inline-block;
+      vertical-align: middle; }
+      #modal_form_connect .comment-form .row.input > div:last-child {
+        margin-right: 0; }
+    #modal_form_connect .comment-form .row input, #modal_form_connect .comment-form .row textarea {
+      border: 1px solid #c5c4c4;
+      box-sizing: border-box; }
+    #modal_form_connect .comment-form .row .error input, #modal_form_connect .comment-form .row .error textarea {
+      border-color: red; }
+    #modal_form_connect .comment-form .row input {
+      padding: 12px;
+      width: 100%; }
+    #modal_form_connect .comment-form .row textarea {
+      width: 100%;
+      height: 190px;
+      padding: 12px; }
+  #modal_form_connect .comment-form .rating_block {
+    margin-bottom: 20px; }
+    #modal_form_connect .comment-form .rating_block .title_rating {
+      color: #9c9b9b;
+      font-size: 18px;
+      line-height: 1em;
+      margin-bottom: 10px; }
+    #modal_form_connect .comment-form .rating_block .br-widget .br-current-rating {
+      display: none; }
+    #modal_form_connect .comment-form .rating_block .br-widget a {
+      display: inline-block;
+      vertical-align: middle;
+      width: 26px;
+      height: 25px;
+      margin: 0 2px;
+      background: url("../img/icons/star.png") no-repeat; }
+      #modal_form_connect .comment-form .rating_block .br-widget a:first-child {
+        margin-left: 0; }
+      #modal_form_connect .comment-form .rating_block .br-widget a.br-active, #modal_form_connect .comment-form .rating_block .br-widget a.br-selected {
+        background: url("../img/icons/star_active.png") no-repeat; }
+  #modal_form_connect .comment-form .submit {
+    background: #059ed1;
+    width: 195px;
+    height: 45px;
+    color: #feffff;
+    font-size: 20px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+    cursor: pointer;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s; }
+    #modal_form_connect .comment-form .submit:hover {
+      background: #0584af;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s; }
+  #modal_form_connect #modal_close {
+    z-index: 10; }
+  #modal_form_connect .message_modal {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: #fff;
+    box-sizing: border-box;
+    padding-top: 250px;
+    display: none;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    font-size: 24px;
+    text-align: center; }
+    #modal_form_connect .message_modal.show {
+      display: block;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s; }
+
 #service {
   padding-top: 80px;
   padding-bottom: 110px; }
@@ -1353,6 +1441,31 @@ footer {
             background: url("../img/icons/star_active.png") no-repeat;
             background-size: 100%; }
 
+#connect_us {
+  position: fixed;
+  bottom: 0;
+  width: 940px;
+  left: 50%;
+  margin-left: -470px; }
+  #connect_us a {
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    background: #059ed1;
+    color: #fff;
+    font-size: 18px;
+    font-family: "SegoeUI-Semibold" , sans-serif;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s; }
+    #connect_us a:hover {
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      background: #0584af;
+      text-decoration: none; }
+    #connect_us a:first-letter {
+      font-size: 24px; }
+
 @media screen and (max-width: 1023px) {
   .home #main_slider .header {
     margin-left: -450px; }
@@ -1593,23 +1706,23 @@ footer {
   #who_we_are .text-holder {
     padding: 0;
     margin-bottom: 40px; }
-  #modal_form {
+  #modal_form, #modal_form_connect {
     width: calc( 100% - 40px);
     margin-left: 0;
     left: 20px;
     padding: 20px;
     margin-top: -230px;
     height: 460px; }
-    #modal_form h4 {
+    #modal_form h4, #modal_form_connect h4 {
       font-size: 24px;
       margin-bottom: 30px; }
-    #modal_form .comment-form .row input {
+    #modal_form .comment-form .row input, #modal_form_connect .comment-form .row input {
       padding: 7px 10px; }
-    #modal_form .comment-form .row textarea {
+    #modal_form .comment-form .row textarea, #modal_form_connect .comment-form .row textarea {
       height: 120px; }
-    #modal_form .comment-form .row.input {
+    #modal_form .comment-form .row.input, #modal_form_connect .comment-form .row.input {
       margin-bottom: 0; }
-      #modal_form .comment-form .row.input > div {
+      #modal_form .comment-form .row.input > div, #modal_form_connect .comment-form .row.input > div {
         width: 100%;
         display: block;
         margin-bottom: 20px; }

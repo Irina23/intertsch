@@ -438,7 +438,7 @@ html(lang="ru")
                                                     .data 14 march 2016
 
                                 .link_comment
-                                    a(href="#modal_form") Leave comment
+                                    a.open_modal(href="#modal_form") Leave comment
 
                     #contacts
                             .content
@@ -485,7 +485,11 @@ html(lang="ru")
 
                                             //button(type="submit") Отправить
                                             .btn.submit Send massage
-            #modal_form
+
+
+
+
+            #modal_form.modal_div
                 #modal_close
                 .message_modal.confirm-container-review.show  Форма успешно отправлена
                 #modal_holder

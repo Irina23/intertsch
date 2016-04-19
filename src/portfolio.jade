@@ -302,7 +302,37 @@ html(lang="ru")
 
                                             //button(type="submit") Отправить
                                             .btn.submit Send massage
-            #modal_form
+
+            #connect_us
+                a.open_modal(href="#modal_form_connect") Connect with us
+
+            #modal_form_connect.modal_div
+                #modal_close
+                .message_modal.confirm-container-review.show  Форма успешно отправлена
+                #modal_holder
+
+                    form.comment-form
+
+                        h4 Send a message
+                        .row
+                            div
+
+                                input(type="text", placeholder="Name:", name="name", minlength="2", data-validate="name")
+
+                        .row.input
+                            div
+                                input(type="text", placeholder="Mail:", name="email", data-validate="email")
+                            div
+                                input(type="text", placeholder="Phone:", name="phone", data-validate="phone")
+                        .row
+                            div
+                                textarea( placeholder="Your message:", name="message",data-validate="name")
+
+                        //button(type="submit") Отправить
+                        .btn.submit Send massage
+
+
+            #modal_form.modal_div
                 #modal_close
                 .message_modal.confirm-container-review.show  Форма успешно отправлена
                 #modal_holder

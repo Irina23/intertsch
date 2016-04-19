@@ -1216,6 +1216,98 @@ footer
 
 
 
+#modal_form_connect
+  box-sizing: border-box
+  h4
+    font-size: 30px
+    line-height: 1em
+    color: #059ed1
+    margin-bottom: 40px
+    font-family: "SegoeUI-Semibold" , sans-serif
+    text-transform: uppercase
+  .comment-form
+    .row
+      margin-bottom: 20px
+      &.input>div
+        width: 300px
+        margin-right: 15px
+        display: inline-block
+        vertical-align: middle
+        &:last-child
+          margin-right: 0
+
+      input,textarea
+        border: 1px solid #c5c4c4
+        box-sizing: border-box
+      .error
+        input,textarea
+          border-color: red
+      input
+        padding: 12px
+        width: 100%
+
+
+      textarea
+        width: 100%
+        height: 190px
+        padding: 12px
+
+    .rating_block
+      margin-bottom: 20px
+      .title_rating
+        color: #9c9b9b
+        font-size: 18px
+        line-height: 1em
+        margin-bottom: 10px
+
+
+      .br-widget
+        .br-current-rating
+          display: none
+        a
+          display: inline-block
+          vertical-align: middle
+          width: 26px
+          height: 25px
+          margin: 0 2px
+          background: url("../img/icons/star.png") no-repeat
+          &:first-child
+            margin-left: 0
+          &.br-active, &.br-selected
+            background: url("../img/icons/star_active.png") no-repeat
+    .submit
+      background:  #059ed1
+      width: 195px
+      height: 45px
+      color:  #feffff
+      font-size: 20px
+      line-height: 42px
+      text-align: center
+      text-transform: uppercase
+      margin: auto
+      cursor: pointer
+      transition: all 0.35s
+      &:hover
+        background: #0584af
+        transition: all 0.35s
+  #modal_close
+    z-index: 10
+  .message_modal
+    position: absolute
+    top: 0
+    height: 100%
+    width: 100%
+    left: 0
+    background: #fff
+    box-sizing: border-box
+    padding-top: 250px
+    display: none
+    transition: all 0.35s
+    font-size: 24px
+    text-align: center
+    &.show
+      display: block
+      transition: all 0.35s
 
 #service
   padding-top: 80px
@@ -1520,7 +1612,28 @@ footer
                     background-size: 100%
 
 
-
+#connect_us
+  position: fixed
+  bottom: 0
+  width: 940px
+  left: 50%
+  margin-left: -470px
+  a
+    display: block
+    line-height: 50px
+    text-align: center
+    text-transform: uppercase
+    background: #059ed1
+    color: #fff
+    font-size: 18px
+    font-family: "SegoeUI-Semibold" , sans-serif
+    transition: all 0.35s
+    &:hover
+      transition: all 0.35s
+      background: #0584af
+      text-decoration: none
+    &:first-letter
+      font-size: 24px
 
 
 @media screen and (max-width: 1023px)
@@ -1878,7 +1991,7 @@ footer
     padding: 0
     margin-bottom: 40px
 
-  #modal_form
+  #modal_form, #modal_form_connect
    width: calc( 100% - 40px )
 
    margin-left: 0
