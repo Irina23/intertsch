@@ -1483,7 +1483,20 @@ footer {
   #contacts {
     padding: 70px 0; }
     #contacts .text-holder {
-      margin-bottom: 70px; } }
+      margin-bottom: 70px; }
+  .portfolio .text-header .text-holder {
+    width: 900px; }
+    .portfolio .text-header .text-holder h4 {
+      font-size: 38px; }
+  #connect_us {
+    width: 900px;
+    margin-left: -450px; }
+  .portfolio .info_portfolio {
+    width: 900px; }
+  .portfolio .portfolio_list .item .wrap {
+    width: 900px; }
+  .portfolio .portfolio_list .item .img-holder {
+    width: 50%; } }
 
 @media screen and (max-width: 959px) {
   body {
