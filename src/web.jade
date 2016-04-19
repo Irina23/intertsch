@@ -193,12 +193,16 @@ html(lang="ru")
                                     h4 Contact form
 
                                     form.contacts-form
-                                        .row.input
+                                        .row
                                             div
 
                                                 input(type="text", placeholder="Name:", name="name", minlength="2", data-validate="name")
+
+                                        .row.input
                                             div
-                                                input(type="email", placeholder="E-mail:", name="email", data-validate="email")
+                                                input(type="text", placeholder="Mail:", name="email", data-validate="email")
+                                            div
+                                                input(type="text", placeholder="website:", name="website")
 
                                         .row
                                             div
