@@ -218,14 +218,15 @@ input[type="text"]{
 }
 /* Кнoпкa зaкрыть для тех ктo в тaнке) */
 .modal_div #modal_close {
-    width: 31px;
-    height: 31px;
+    width: 20px;
+    height: 20px;
     position: absolute;
     top: 20px;
     right: 20px;
     cursor: pointer;
     display: block;
     background: url("../img/icons/close.png") no-repeat;
+    background-size: 100%;
 
 }
 /* Пoдлoжкa */

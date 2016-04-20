@@ -1036,13 +1036,13 @@ footer {
   height: 640px;
   margin-top: -320px; }
   #modal_form h4 {
-    font-size: 36px;
+    font-size: 30px;
     line-height: 1em;
-    color: #000;
+    color: #059ed1;
     margin-bottom: 40px;
     font-weight: normal; }
   #modal_form .comment-form .row {
-    margin-bottom: 20px; }
+    margin-bottom: 15px; }
     #modal_form .comment-form .row.input > div {
       width: 300px;
       margin-right: 15px;
@@ -1063,12 +1063,18 @@ footer {
       height: 190px;
       padding: 12px; }
   #modal_form .comment-form .rating_block {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-align: center; }
     #modal_form .comment-form .rating_block .title_rating {
       color: #9c9b9b;
       font-size: 18px;
       line-height: 1em;
-      margin-bottom: 10px; }
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px; }
+    #modal_form .comment-form .rating_block .br-wrapper {
+      display: inline-block;
+      vertical-align: middle; }
     #modal_form .comment-form .rating_block .br-widget .br-current-rating {
       display: none; }
     #modal_form .comment-form .rating_block .br-widget a {
@@ -1115,6 +1121,12 @@ footer {
     transition: all 0.35s;
     font-size: 24px;
     text-align: center; }
+    #modal_form .message_modal i {
+      display: block;
+      margin-bottom: 30px;
+      font-size: 85px;
+      line-height: 1em;
+      color: #059ed1; }
     #modal_form .message_modal.show {
       display: block;
       -webkit-transition: all 0.35s;
@@ -1831,6 +1843,8 @@ footer {
       height: 58px; } }
 
 @media screen and (max-width: 800px) {
+  #modal_form .message_modal {
+    padding-top: 150px; }
   #product .text-holder,
   #who_we_are .text-holder {
     padding: 0;
