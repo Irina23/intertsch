@@ -198,6 +198,30 @@ jQuery(document).ready(function($){
     $(window).scroll( function(){ show_scrollTop(); } );
     show_scrollTop();
 
+
+
+    //scroll
+    (function () {
+
+        var $mainNavigation = $(".header");
+        $mainNavigation.status = 0;
+
+
+        $(document).on('scroll', function () {
+
+            var top = $(this).scrollTop();
+            if (top > 20 && $mainNavigation.status !== 2) {
+                $mainNavigation.addClass("background");
+                $mainNavigation.status = 2;
+            } else if (top < 20 && $mainNavigation.status !== 1) {
+                $mainNavigation.removeClass("background");
+                $mainNavigation.status = 1;
+            }
+
+
+        });
+
+    })();
 });
 
 

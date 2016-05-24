@@ -69,11 +69,12 @@ img
   #main_slider
     height: 670px
     .header
-      position: absolute
-      left: 50%
-      margin-left: -470px
-      z-index: 2
+      position: fixed
+      left: 0
+      ///margin-left: -470px
+      //z-index: 2
       top: 0
+      width: 100%
 
       //.menu
         li
@@ -99,12 +100,21 @@ img
   background: #4d4d4d
   .header
 
-    width: 940px
+    //width: 940px
     margin: auto
     padding-bottom: 15px
+    z-index: 101
+    position: fixed
+    width: 100%
+    top: 0
+    left: 0
+    background: #4d4d4d
+    &.background
+      background: #4d4d4d
     .logo
       float: left
       margin-top: 15px
+
       //width: 60px
       a
         font-family: Corbel, sans-serif
@@ -606,7 +616,7 @@ img
 
 
 #about
-  margin-bottom: 90px
+  padding-top: 100px
 
   h3
     margin-bottom: 30px
@@ -637,7 +647,7 @@ img
 
 
 #product
-  margin-bottom: 90px
+  padding-top: 100px
 
   h3
     margin-bottom: 30px
@@ -725,7 +735,7 @@ img
 
 
 #who_we_are
-  //padding-top: 80px
+  padding-top: 100px
   padding-bottom: 100px
 
   h3
@@ -863,7 +873,7 @@ img
 #comment
   background: url("../img/bg/bg_comment.png") no-repeat
   background-size: cover
-  padding: 50px 0
+  padding: 100px 0
   h3
     margin-bottom: 20px
     text-align: center
@@ -1397,7 +1407,7 @@ footer
       transition: all 0.35s
 
 #service
-  padding-top: 80px
+  padding-top: 110px
   padding-bottom: 110px
 
   h3
@@ -1829,6 +1839,8 @@ footer
       width: 100%
       //padding: 20px
       box-sizing: border-box
+      .lang
+        display: none
       .logo
         margin-top: 0
         //position: absolute
@@ -1934,7 +1946,7 @@ footer
 
 
   #contacts
-    padding: 30px 0
+    padding: 80px 0 30px
     .content
       h3
         font-size: 45px
@@ -1999,7 +2011,7 @@ footer
 
 
   #about
-    margin-bottom: 50px
+    //margin-bottom: 50px
     .content
       h3
         font-size: 45px
@@ -2014,7 +2026,7 @@ footer
 
 
   #works
-    padding: 50px 0
+    padding: 80px 0 0
     .content
       h3
         font-size: 45px
@@ -2024,7 +2036,7 @@ footer
 
 
   #who_we_are
-    padding: 0 0 50px
+    padding: 80px 0 50px
     .content
       h3
         font-size: 45px
@@ -2033,7 +2045,7 @@ footer
         padding: 0
 
   #product
-    margin-bottom: 50px
+    //margin-bottom: 50px
     h3
       font-size: 45px
   #comment

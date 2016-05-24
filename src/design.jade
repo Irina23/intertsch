@@ -3,7 +3,7 @@ html(lang="ru")
     include ./head.jade
 
 
-    body
+    body(data-spy="scroll" data-target="#menu-block" data-offset="105")
         .page_wrapper.page_service
 
             #preloader
@@ -12,48 +12,49 @@ html(lang="ru")
 
                 #main_slider
                     .header.cf
-                        .logo
-                            a(href="index.html")
-                                img(src="img/icons/Logo-mini.png")
-                        ul.lang
-                            li.active
-                                a(href="#") En
+                        .content
+                            .logo
+                                a(href="index.html")
+                                    img(src="img/icons/Logo-mini.png")
+                            ul.lang
+                                li.active
+                                    a(href="#") En
 
-                            li
-                                a(href="#") Ru
+                                li
+                                    a(href="#") Ru
 
 
 
-                        .menu
-                            #menu-icon
-                                span.icon-bar
-                                span.icon-bar
-                                span.icon-bar
-                            .mobile-menu
-                                ul.nav
-                                    li.active
-                                        a(href="index.html") Home
-                                    li
-                                        a(href="#services") Services
-                                    li
-                                        a(href="#works") Portfolio
-                                    li
-                                        a(href="#about") About us
-                                    li
-                                        a(href="#product") Products
-                                    li
-                                        a(href="#who_we_are") Our team
-                                    li
-                                        a(href="#comment") Reviews
-                                    li
-                                        a(href="#contacts") Contacts
+                            #menu-block.menu
+                                #menu-icon
+                                    span.icon-bar
+                                    span.icon-bar
+                                    span.icon-bar
+                                .mobile-menu
+                                    ul.nav
+                                        li.active
+                                            a(href="index.html") Home
+                                        li
+                                            a(href="#services") Services
+                                        li
+                                            a(href="#works") Portfolio
+                                        li
+                                            a(href="#about") About us
+                                        li
+                                            a(href="#product") Products
+                                        li
+                                            a(href="#who_we_are") Our team
+                                        li
+                                            a(href="#comment") Reviews
+                                        li
+                                            a(href="#contacts") Contacts
 
-                                ul.lang
-                                    li.active
-                                        a(href="#") En
+                                    ul.lang
+                                        li.active
+                                            a(href="#") En
 
-                                    li
-                                        a(href="#") Ru
+                                        li
+                                            a(href="#") Ru
                 #service
                     .content
                         h3
