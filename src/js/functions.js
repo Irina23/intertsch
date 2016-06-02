@@ -3,8 +3,8 @@ jQuery(document).ready(function() {
     jQuery(window).load(function() {
         $('#preloader').fadeOut('slow',function(){$(this).remove();});
         jQuery('.slider_about').bxSlider({
-            auto: true,
-            controls: false
+            //auto: true,
+            //controls: false
         });
 
         jQuery('.slider_works, .slider_comment, .slider_who_we_are_mobile, .slider_product').bxSlider({
@@ -17,7 +17,7 @@ jQuery(document).ready(function() {
             auto: true,
             controls: false,
             speed: 1500,
-            pause: 7000,
+            pause: 4000,
             onSliderLoad: function () {
                 $('.slider_main>li:not(.bx-clone)').eq(0).addClass('active-slide').siblings().removeClass('active-slide');
             },
@@ -26,6 +26,16 @@ jQuery(document).ready(function() {
             }
 
         });
+
+
+        $('.bx-next, .bx-prev, .bx-pager a').click(function(){
+            // time to wait (in ms)
+            var wait = 1000;
+            setTimeout(function(){
+                slider_main.startAuto();
+            }, wait);
+        });
+
 
 
 

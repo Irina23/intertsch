@@ -642,8 +642,24 @@ img
 
   #slider
     margin-bottom: 40px
-    .bx-controls
+    .bx-controls-direction
       display: none
+    .bx-wrapper
+      .bx-pager.bx-default-pager
+        padding-top: 15px
+        position: inherit
+        bottom: inherit
+
+        a
+          font-size: 0
+          width: 15px
+          height: 15px
+          border-radius: 15px
+          //margin: 0 7px
+          background: #4d4d4d
+          &:hover, &.active
+            background: #059ed1
+
 
 
 #product
@@ -885,11 +901,12 @@ img
 
 
   .text-holder
-    margin-bottom: 1px
+    //margin-bottom: 1px
     padding: 0 50px
     p
       line-height: 2em
       text-align: center
+      margin-bottom: 30px
 
   .content
     color: #fff
@@ -1766,7 +1783,7 @@ footer
     padding-top: 30px
 
 @media screen and (max-width: 1023px)
-  .home
+  //.home
     #main_slider
       .header
         margin-left: -450px
@@ -1779,8 +1796,8 @@ footer
       .bx-pager
         width: 900px
     .header
-      width: 900px
-      padding-bottom: 0
+      //width: 900px
+      //padding-bottom: 0
 
     .slider_main
       li
@@ -2383,3 +2400,13 @@ footer
         line-height: 45px
         height: 50px
         font-size: 24px
+
+
+  #comment .content .bx-wrapper .bx-viewport li .info_personal
+    .img-holder
+      width: 55px
+      height: 55px
+
+    .text-holder
+      h4, .data
+        font-size: 14px
