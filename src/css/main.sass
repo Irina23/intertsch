@@ -71,8 +71,10 @@ img
     .header
       position: fixed
       left: 0
+      background: none
       ///margin-left: -470px
       //z-index: 2
+      transform: all 0.35s
       top: 0
       width: 100%
 
@@ -97,7 +99,7 @@ img
 #main_slider
   //height: 670px
   position: relative
-  background: #4d4d4d
+  background: #000
   .header
 
     //width: 940px
@@ -108,9 +110,10 @@ img
     width: 100%
     top: 0
     left: 0
-    background: #4d4d4d
+    background: #000
     &.background
-      background: #4d4d4d
+      background: #000
+      transition: all 0.35s
     .logo
       float: left
       margin-top: 15px
@@ -1217,8 +1220,8 @@ footer
 
 #modal_form
   box-sizing: border-box
-  height: 640px
-  margin-top: -320px
+  //height: 640px
+  //margin-top: -320px
   h4
     font-size: 30px
     line-height: 1em
@@ -1227,7 +1230,7 @@ footer
     font-weight: normal
   .comment-form
     .row
-      margin-bottom: 15px
+      margin-bottom: 20px
       &.input>div
         width: 300px
         margin-right: 15px
@@ -1854,6 +1857,7 @@ footer
         bottom: 140px
     .header
       width: 100%
+      padding-bottom: 0
       //padding: 20px
       box-sizing: border-box
       .lang
@@ -1876,7 +1880,7 @@ footer
         right: 0
         //position: relative
         z-index: 101
-        background: #4d4d4d
+        background: #000
 
         #menu-icon
           display: block
@@ -1884,8 +1888,9 @@ footer
           margin-right: 20px
         .mobile-menu
           display: none
-          padding: 50px 0 20px
+          padding: 30px 0
           width: 100%
+          clear: both
         ul
           clear: both
           display: block
@@ -2096,9 +2101,10 @@ footer
       margin-left: 0
       left: 0
       width: 100%
-      background: #4d4d4d
+      background: #000
+      padding-bottom: 0
   #main_slider .header
-    background: #4d4d4d
+    background: #000
   #main_slider .header .logo
     width: 60px
     a

@@ -64,6 +64,9 @@ img {
   .home #main_slider .header {
     position: fixed;
     left: 0;
+    background: none;
+    -webkit-transform: all 0.35s;
+            transform: all 0.35s;
     top: 0;
     width: 100%; }
 
@@ -82,7 +85,7 @@ img {
 
 #main_slider {
   position: relative;
-  background: #4d4d4d; }
+  background: #000; }
   #main_slider .header {
     margin: auto;
     padding-bottom: 15px;
@@ -91,9 +94,11 @@ img {
     width: 100%;
     top: 0;
     left: 0;
-    background: #4d4d4d; }
+    background: #000; }
     #main_slider .header.background {
-      background: #4d4d4d; }
+      background: #000;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s; }
     #main_slider .header .logo {
       float: left;
       margin-top: 15px; }
@@ -1062,9 +1067,7 @@ footer {
       margin-left: 7px; }
 
 #modal_form {
-  box-sizing: border-box;
-  height: 640px;
-  margin-top: -320px; }
+  box-sizing: border-box; }
   #modal_form h4 {
     font-size: 30px;
     line-height: 1em;
@@ -1072,7 +1075,7 @@ footer {
     margin-bottom: 40px;
     font-weight: normal; }
   #modal_form .comment-form .row {
-    margin-bottom: 15px; }
+    margin-bottom: 20px; }
     #modal_form .comment-form .row.input > div {
       width: 300px;
       margin-right: 15px;
@@ -1613,6 +1616,7 @@ footer {
     bottom: 140px; }
   #main_slider .header {
     width: 100%;
+    padding-bottom: 0;
     box-sizing: border-box; }
     #main_slider .header .lang {
       display: none; }
@@ -1630,15 +1634,16 @@ footer {
       top: 20px;
       right: 0;
       z-index: 101;
-      background: #4d4d4d; }
+      background: #000; }
       #main_slider .header .menu #menu-icon {
         display: block;
         float: right;
         margin-right: 20px; }
       #main_slider .header .menu .mobile-menu {
         display: none;
-        padding: 50px 0 20px;
-        width: 100%; }
+        padding: 30px 0;
+        width: 100%;
+        clear: both; }
       #main_slider .header .menu ul {
         clear: both;
         display: block;
@@ -1780,9 +1785,10 @@ footer {
       margin-left: 0;
       left: 0;
       width: 100%;
-      background: #4d4d4d; }
+      background: #000;
+      padding-bottom: 0; }
   #main_slider .header {
-    background: #4d4d4d; }
+    background: #000; }
   #main_slider .header .logo {
     width: 60px; }
     #main_slider .header .logo a {
