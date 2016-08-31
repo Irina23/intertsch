@@ -1452,11 +1452,48 @@ footer
       margin-bottom: 40px
       img
         width: 100%
+    h4, h5, h6
+      margin-bottom: 30px
+      text-align: left
+      line-height: 1.3em
+      font-size: 36px
+      color: #313131
+      font-weight: normal
+    h5
+      font-size: 28px
+    h6
+      font-size: 24px
     p
       line-height: 2em
       margin-bottom: 50px
       &:last-child
         margin-bottom: 0
+    ol, ul
+      margin-bottom: 50px
+      &:last-child
+        margin-bottom: 0
+      li
+        line-height: 2em
+
+        position: relative
+    ol
+      li
+        list-style: decimal
+        margin-left: 20px
+    ul
+      li
+        padding-left: 20px
+        &:before
+          position: absolute
+          top: 50%
+          left: 0
+          border-radius: 8px
+          width: 8px
+          height: 8px
+          background: #059ed1
+          margin-top: -4px
+          content: ""
+
 
 
 #sub_services

@@ -1281,11 +1281,44 @@ footer {
     margin-bottom: 40px; }
     #service .content-holder .img-holder img {
       width: 100%; }
+  #service .content-holder h4, #service .content-holder h5, #service .content-holder h6 {
+    margin-bottom: 30px;
+    text-align: left;
+    line-height: 1.3em;
+    font-size: 36px;
+    color: #313131;
+    font-weight: normal; }
+  #service .content-holder h5 {
+    font-size: 28px; }
+  #service .content-holder h6 {
+    font-size: 24px; }
   #service .content-holder p {
     line-height: 2em;
     margin-bottom: 50px; }
     #service .content-holder p:last-child {
       margin-bottom: 0; }
+  #service .content-holder ol, #service .content-holder ul {
+    margin-bottom: 50px; }
+    #service .content-holder ol:last-child, #service .content-holder ul:last-child {
+      margin-bottom: 0; }
+    #service .content-holder ol li, #service .content-holder ul li {
+      line-height: 2em;
+      position: relative; }
+  #service .content-holder ol li {
+    list-style: decimal;
+    margin-left: 20px; }
+  #service .content-holder ul li {
+    padding-left: 20px; }
+    #service .content-holder ul li:before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      border-radius: 8px;
+      width: 8px;
+      height: 8px;
+      background: #059ed1;
+      margin-top: -4px;
+      content: ""; }
 
 #sub_services {
   background: #edf9fd;
