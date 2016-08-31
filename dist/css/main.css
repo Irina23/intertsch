@@ -533,7 +533,7 @@ img {
       color: #313030;
       font-size: 15px;
       line-height: 2em;
-      text-align: center; }
+      text-align: justify; }
 
 #about {
   padding-top: 100px; }
@@ -1423,6 +1423,9 @@ footer {
     padding: 0 50px; }
     .portfolio .info_portfolio .text_holder p {
       line-height: 2em; }
+
+.portfolio .portfolio_list .item .img-holder {
+  width: 60%; }
 
 .portfolio .portfolio_list .item:nth-child(2n+1) {
   padding: 100px 0; }
