@@ -51,18 +51,38 @@ jQuery(document).ready(function() {
 
 
         $(function() {
-            $('a[href*="#"]:not([href="#"])').click(function() {
-                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                    if (target.length) {
+
+            var clickFunction = function(hash) {
+                var hrefVal, target;
+
+                if (typeof hash === 'string') {
+                    hrefVal = hash;
+                } else {
+                    hrefVal = $(this).attr('href');
+                }
+
+                target = $(hrefVal);
+
+                if (target.length) {
+                    if (hrefVal == '#services'){
+                        $('html, body').animate({
+                            scrollTop: target.offset().top - 235
+                        }, 1000);
+                    } else {
                         $('html, body').animate({
                             scrollTop: target.offset().top
                         }, 1000);
-                        return false;
                     }
+
+                    return false;
                 }
-            });
+            };
+
+            $('a[href*="#"]:not([href="#"])').click(clickFunction);
+
+            if (window.location.hash) {
+                clickFunction(window.location.hash);
+            }
 
         });
 
