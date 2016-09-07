@@ -17,7 +17,7 @@ jQuery(document).ready(function() {
             auto: true,
             controls: false,
             speed: 1500,
-            pause: 4000,
+            pause: 9000,
             onSliderLoad: function () {
                 $('.slider_main>li:not(.bx-clone)').eq(0).addClass('active-slide').siblings().removeClass('active-slide');
             },
@@ -254,4 +254,56 @@ jQuery(document).ready(function($){
     })();
 });
 
+
+
+
+$(window).on('scroll', function() {
+    if($('#info_servise').length) {
+        var targOffsetTop = $('.counters-holder').offset().top,
+            targScrollTop = $(window).scrollTop(),
+            winHeight =$(window).height();
+        if (!targOffsetTop) {
+            targOffsetTop = 100000;
+        }
+        if (targOffsetTop - winHeight < targScrollTop) {
+            if (!$('.counters-holder').hasClass('numbers')) {
+                $('#animateNumber1')
+                    .prop('number', 0)
+                    .animateNumber(
+                        {
+                            number: 1765
+                        },
+                        2000
+                    );
+
+                $('#animateNumber2')
+                    .prop('number', 0)
+                    .animateNumber(
+                        {
+                            number: 365
+                        },
+                        2000
+                    );
+                $('#animateNumber3')
+                    .prop('number', 0)
+                    .animateNumber(
+                        {
+                            number: 1034
+                        },
+                        2000
+                    );
+                $('#animateNumber4')
+                    .prop('number', 0)
+                    .animateNumber(
+                        {
+                            number: 765
+                        },
+                        2000
+                    );
+            }
+            $('.counters-holder').addClass('numbers')
+        }
+
+    }
+});
 
