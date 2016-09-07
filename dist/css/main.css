@@ -1981,7 +1981,31 @@ footer {
     display: block;
     padding: 0 0 0 25px; }
   #service .content-holder ol li {
-    padding-left: 80px; } }
+    padding-left: 80px; }
+  #chart-info .chart {
+    display: block;
+    width: 280px;
+    margin: 0 auto 30px !important;
+    box-sizing: border-box;
+    height: 280px; }
+    #chart-info .chart ul {
+      top: 50px;
+      left: 90px; }
+    #chart-info .chart .title {
+      width: 80px;
+      height: 80px;
+      line-height: 80px; }
+  #chart-info .row {
+    margin-bottom: 0; }
+    #chart-info .row .text-chart {
+      width: 100%;
+      margin-bottom: 40px; }
+  #info_servise h3 {
+    font-size: 28px;
+    line-height: 1em;
+    margin-bottom: 30px; }
+  #info_servise ul li {
+    width: 100%; } }
 
 @media screen and (max-width: 900px) {
   #comment .content .bx-wrapper .bx-viewport li .info_personal:before {
