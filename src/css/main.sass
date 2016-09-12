@@ -1101,18 +1101,27 @@ img
               vertical-align: top
               width: 35px
               height: 35px
-              background: url("../img/icons/social.png") no-repeat
+              background: url("../img/icons/social.png") no-repeat #626262
               margin-right: 20px
               transition: all 0.35s
+              color: #fff
+              text-align: center
+              line-height: 35px
+
               &:hover
                 opacity: 0.8
                 transition: all 0.35s
+
               &:last-child
                 margin-right: 0
               &.vk
                 background-position: -55px 0
               &.google
                 background-position: top right
+              &.linkedin
+                background: #626262
+                &:hover
+                  background: rgba(98, 98, 98, 0.8)
           h5
             font-size: 18px
             line-height: 1em
