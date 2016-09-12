@@ -1005,6 +1005,8 @@ img
           .info_personal
             position: relative
             height: 60px
+            padding-left: 310px
+            text-align: left
             &:before
               position: absolute
               content: ""
@@ -2115,14 +2117,7 @@ footer
 
     width: 50%
 
-  #comment
-    .content
-      .bx-wrapper
-        .bx-viewport
-          li
-            .info_personal
-              &:before
-                left: 25px
+
 
 @media screen and (max-width: 959px)
   body
@@ -2495,29 +2490,13 @@ footer
       width: 100%
 
 @media screen and (max-width: 900px)
-  #comment
-    .content
-      .bx-wrapper
-        .bx-viewport
-          li
-            .info_personal
-              &:before
-                left: 15px
+
 
   #services .content .item-holder .img-block h3
     font-size: 18px
 
   .portfolio .text-header
     padding: 150px 0 100px
-@media screen and (max-width: 870px)
-  #comment
-    .content
-      .bx-wrapper
-        .bx-viewport
-          li
-            .info_personal
-              &:before
-                left: 0
 
 
 
@@ -2541,7 +2520,7 @@ footer
     width: 49%
 
 @media screen and (max-width: 830px)
-  #comment
+  //#comment
     .content
       .bx-wrapper
         .bx-viewport
@@ -2553,7 +2532,7 @@ footer
   #services .content .item-holder .img-block h3
       font-size: 17px
 
-  #comment .content .bx-wrapper .bx-viewport li .info_personal
+  //#comment .content .bx-wrapper .bx-viewport li .info_personal
       padding-bottom: 65px
       &:before
         top: inherit
@@ -2643,6 +2622,21 @@ footer
     margin-bottom: 40px
   #advantages .text-holder
     padding: 0
+
+  #comment .content .bx-wrapper .bx-viewport li .info_personal
+    padding-bottom: 65px
+    padding-left: 0
+    text-align: center
+    height: auto
+    &:before
+      top: inherit
+      bottom: 0
+      left: 50%
+      margin-left: -121px
+      background: url("../img/icons/portfolio_mobile.png") no-repeat
+      width: 243px
+      height: 58px
+
 @media screen and (max-width: 720px)
   #main_slider .slider_main li .text-slider .info-slider .text-holder
     width: 500px
@@ -2670,7 +2664,7 @@ footer
 
 
   #comment .content .bx-wrapper .bx-viewport li .comment-holder
-    padding: 0 20px
+    padding: 0 20px 20px
   #comment .content .bx-wrapper .bx-controls-direction a.bx-next
     right: -10px
   #comment .content .bx-wrapper .bx-controls-direction a.bx-prev

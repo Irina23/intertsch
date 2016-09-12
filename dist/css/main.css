@@ -856,7 +856,9 @@ img {
             background-size: 100%; }
         #comment .content .bx-wrapper .bx-viewport li .info_personal {
           position: relative;
-          height: 60px; }
+          height: 60px;
+          padding-left: 310px;
+          text-align: left; }
           #comment .content .bx-wrapper .bx-viewport li .info_personal:before {
             position: absolute;
             content: "";
@@ -1781,9 +1783,7 @@ footer {
   .portfolio .portfolio_list .item .wrap {
     width: 900px; }
   .portfolio .portfolio_list .item .img-holder {
-    width: 50%; }
-  #comment .content .bx-wrapper .bx-viewport li .info_personal:before {
-    left: 25px; } }
+    width: 50%; } }
 
 @media screen and (max-width: 959px) {
   body {
@@ -2054,16 +2054,10 @@ footer {
     width: 100%; } }
 
 @media screen and (max-width: 900px) {
-  #comment .content .bx-wrapper .bx-viewport li .info_personal:before {
-    left: 15px; }
   #services .content .item-holder .img-block h3 {
     font-size: 18px; }
   .portfolio .text-header {
     padding: 150px 0 100px; } }
-
-@media screen and (max-width: 870px) {
-  #comment .content .bx-wrapper .bx-viewport li .info_personal:before {
-    left: 0; } }
 
 @media screen and (max-width: 850px) {
   #who_we_are .bx-wrapper {
@@ -2074,20 +2068,8 @@ footer {
     width: 49%; } }
 
 @media screen and (max-width: 830px) {
-  #comment .content .bx-wrapper .bx-viewport li .info_personal:before {
-    left: 25px; }
   #services .content .item-holder .img-block h3 {
-    font-size: 17px; }
-  #comment .content .bx-wrapper .bx-viewport li .info_personal {
-    padding-bottom: 65px; }
-    #comment .content .bx-wrapper .bx-viewport li .info_personal:before {
-      top: inherit;
-      bottom: 0;
-      left: 50%;
-      margin-left: -121px;
-      background: url("../img/icons/portfolio_mobile.png") no-repeat;
-      width: 243px;
-      height: 58px; } }
+    font-size: 17px; } }
 
 @media screen and (max-width: 800px) {
   #modal_form .message_modal {
@@ -2150,7 +2132,20 @@ footer {
   .portfolio .portfolio_list .item .wrap .list_characteristics {
     margin-bottom: 40px; }
   #advantages .text-holder {
-    padding: 0; } }
+    padding: 0; }
+  #comment .content .bx-wrapper .bx-viewport li .info_personal {
+    padding-bottom: 65px;
+    padding-left: 0;
+    text-align: center;
+    height: auto; }
+    #comment .content .bx-wrapper .bx-viewport li .info_personal:before {
+      top: inherit;
+      bottom: 0;
+      left: 50%;
+      margin-left: -121px;
+      background: url("../img/icons/portfolio_mobile.png") no-repeat;
+      width: 243px;
+      height: 58px; } }
 
 @media screen and (max-width: 720px) {
   #main_slider .slider_main li .text-slider .info-slider .text-holder {
@@ -2178,7 +2173,7 @@ footer {
       #product .text-product p:last-child {
         margin-bottom: 0; }
   #comment .content .bx-wrapper .bx-viewport li .comment-holder {
-    padding: 0 20px; }
+    padding: 0 20px 20px; }
   #comment .content .bx-wrapper .bx-controls-direction a.bx-next {
     right: -10px; }
   #comment .content .bx-wrapper .bx-controls-direction a.bx-prev {
