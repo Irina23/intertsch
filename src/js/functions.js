@@ -2,9 +2,11 @@ jQuery(document).ready(function() {
 
     jQuery(window).load(function() {
         $('#preloader').fadeOut('slow',function(){$(this).remove();});
-        jQuery('.slider_about').bxSlider({
+        jQuery('.slider_about, .service--item-slider').bxSlider({
             //auto: true,
             //controls: false
+            nextText: "",
+            prevText: ""
         });
 
         jQuery('.slider_works, .slider_comment, .slider_who_we_are_mobile, .slider_product').bxSlider({

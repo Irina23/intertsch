@@ -52,7 +52,8 @@ body
   height: 100%
 img
    max-width: 100%
-
+.hidden
+  display: none!important
 
 
 
@@ -1726,6 +1727,14 @@ footer
             color: #3b3b3b
             line-height: 2em
             font-family: "SegoeUI" , sans-serif
+            margin-bottom: 15px
+          .link
+            color: #059ed1
+            font-size: 14px
+            font-family: "SegoeUI" , sans-serif
+            &:hover
+              text-decoration: none
+
         .list_characteristics
           margin-bottom: 60px
           >div
@@ -2015,7 +2024,36 @@ footer
           content: ""
 
 
+.slider-servise
+  .bx-wrapper
+    margin-bottom: 40px
 
+
+    .bx-controls-direction
+      a
+        background: url("../img/icons/readmore.png") no-repeat rgba(163, 163, 163, 0.8)
+        background-size: 45%
+        width: 50px
+        height: 50px
+        display: block
+        background-position: 50% center
+        transition: all 0.35s
+        top: 50%
+        margin-top: -25px
+        &.bx-prev
+          left: 0
+          transform: rotate(180deg)
+        &.bx-next
+          right: 0
+
+        &:hover
+          background: url("../img/icons/readmore.png") no-repeat rgba(163, 163, 163, 0.9)
+          background-size: 45%
+          background-position: 50% center
+          transition: all 0.35s
+  .bx-controls
+    .bx-pager
+      display: none
 
 
 
