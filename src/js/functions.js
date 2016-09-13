@@ -3,7 +3,7 @@ jQuery(document).ready(function() {
     jQuery(window).load(function() {
         $('#preloader').fadeOut('slow',function(){$(this).remove();});
         jQuery('.slider_about, .service--item-slider').bxSlider({
-            //auto: true,
+            auto: true,
             //controls: false
             nextText: "",
             prevText: ""
