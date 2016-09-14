@@ -180,6 +180,7 @@ jQuery(document).ready(function() {
         $(this).next().slideToggle();
 
     });
+    
     if($(window).width()<959){
         $(".mobile-menu a").on("click", function(){
             $(this).closest('.mobile-menu').slideUp();
