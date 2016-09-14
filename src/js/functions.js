@@ -9,12 +9,21 @@ jQuery(document).ready(function() {
             prevText: ""
         });
 
-        jQuery('.slider_works, .slider_comment, .slider_who_we_are_mobile, .slider_product').bxSlider({
+        jQuery('.slider_works, .slider_who_we_are_mobile, .slider_product').bxSlider({
 
             nextText: "",
             prevText: ""
 
+
         });
+        jQuery('.slider_comment').bxSlider({
+
+            nextText: "",
+            prevText: "",
+            adaptiveHeight: true
+
+        });
+
         var slider_main = jQuery('.slider_main').bxSlider({
             auto: true,
             controls: false,
@@ -56,17 +65,14 @@ jQuery(document).ready(function() {
 
             var clickFunction = function(hash) {
                 var hrefVal, target;
-
                 if (typeof hash === 'string') {
                     hrefVal = hash;
                 } else {
                     hrefVal = $(this).attr('href');
                 }
-
                 target = $(hrefVal);
-
                 if (target.length) {
-                    if (hrefVal == '#services'){
+                    if (($( window ).width() > 800) && (hrefVal == '#services')){
                         $('html, body').animate({
                             scrollTop: target.offset().top - 235
                         }, 1000);
@@ -75,13 +81,10 @@ jQuery(document).ready(function() {
                             scrollTop: target.offset().top
                         }, 1000);
                     }
-
                     return false;
                 }
             };
-
             $('a[href*="#"]:not([href="#"])').click(clickFunction);
-
             if (window.location.hash) {
                 clickFunction(window.location.hash);
             }
@@ -112,7 +115,6 @@ jQuery(document).ready(function() {
 
 
         jQuery(window).resize(function() {
-
             jQuery("#who_we_are .bx-wrapper .bx-default-pager .bx-pager-item").each(function(){
                 jQuery(this).css('width', slideQty_who_we_are);
             });
@@ -122,15 +124,11 @@ jQuery(document).ready(function() {
 
 
         jQuery("form").validate({
-
             rules:{
-
                 name:{
                     required: true,
                     minlength: 2
-
                 },
-
                 email:{
                     required: true,
                     email: true
@@ -138,18 +136,9 @@ jQuery(document).ready(function() {
                 message:{
                     required: true
                 }
-
             }
 
-
-
         });
-
-
-
-
-
-
 
 
 
@@ -186,31 +175,31 @@ jQuery(document).ready(function() {
 
 
 
-    //menu
-    jQuery("#menu-icon").on("click", function(){
-        jQuery(this).next().slideToggle();
-        //jQuery(this).toggleClass("active");
-        //jQuery(".menu").toggleClass("active")
-    });
+    //menu, feedback open
+    $("#menu-icon, .feedback .link").on("click", function(){
+        $(this).next().slideToggle();
 
-    jQuery(".feedback .link").on("click", function(){
-        jQuery(this).next().slideToggle();
-        //jQuery(this).toggleClass("active");
-        //jQuery(".menu").toggleClass("active")
     });
+    if($(window).width()<959){
+        $(".mobile-menu a").on("click", function(){
+            $(this).closest('.mobile-menu').slideUp();
+        });
+    }
+
+
 
 
 
 
 
 ////rating
-    $('.rating').barrating({
+    /*$('.rating').barrating({
         theme: ''
     });
     $('.rating_show').barrating({
         theme: '',
         readonly: true
-    });
+    });*/
 });
 
 jQuery(document).ready(function($){

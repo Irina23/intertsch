@@ -106,7 +106,7 @@ img
     //width: 940px
     margin: auto
     padding-bottom: 15px
-    z-index: 20
+    z-index: 101
     position: fixed
     width: 100%
     top: 0
@@ -2133,6 +2133,12 @@ footer
         padding: 20px
         box-sizing: border-box
         bottom: 140px
+        .bx-pager-item a
+          &:hover
+            border-color: rgba(255, 255, 255, 0.35)
+          &.active
+            border-color: #fff
+
     .header
       width: 100%
       padding-bottom: 0
@@ -2593,7 +2599,7 @@ footer
       .bx-pager-item a:after
         display: none
   #services
-    padding-top: 50px
+    padding-top: 80px
     .content
       margin-top: 0
       .item-holder

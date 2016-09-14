@@ -92,7 +92,7 @@ img {
   #main_slider .header {
     margin: auto;
     padding-bottom: 15px;
-    z-index: 20;
+    z-index: 101;
     position: fixed;
     width: 100%;
     top: 0;
@@ -1797,6 +1797,10 @@ footer {
     padding: 20px;
     box-sizing: border-box;
     bottom: 140px; }
+    #main_slider .bx-controls .bx-pager .bx-pager-item a:hover {
+      border-color: rgba(255, 255, 255, 0.35); }
+    #main_slider .bx-controls .bx-pager .bx-pager-item a.active {
+      border-color: #fff; }
   #main_slider .header {
     width: 100%;
     padding-bottom: 0;
@@ -2108,7 +2112,7 @@ footer {
     #main_slider .bx-controls .bx-pager .bx-pager-item a:after {
       display: none; }
   #services {
-    padding-top: 50px; }
+    padding-top: 80px; }
     #services .content {
       margin-top: 0; }
       #services .content .item-holder {
