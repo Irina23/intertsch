@@ -92,7 +92,7 @@ img {
   #main_slider .header {
     margin: auto;
     padding-bottom: 15px;
-    z-index: 101;
+    z-index: 9;
     position: fixed;
     width: 100%;
     top: 0;
@@ -216,7 +216,11 @@ img {
                 animation-fill-mode: both;
         -webkit-animation: flipInY 0.8s;
                 animation: flipInY 0.8s;
-        opacity: 1; }
+        opacity: 1;
+        -webkit-perspective: 1000;
+        -webkit-backface-visibility: hidden;
+        webkit-animation-fill-mode: both;
+        -webkit-transform: translate3d(0, 0, 0); }
       #main_slider .slider_main li.active-slide .text-slider .info-slider .text-holder h4 {
         -webkit-animation-duration: 1s;
                 animation-duration: 1s;
@@ -225,8 +229,10 @@ img {
         -webkit-animation: flipInX 1.5s;
                 animation: flipInX 1.5s;
         opacity: 1;
-        font-family: "SegoeUILight" , sans-serif;
-        font-weight: normal; }
+        -webkit-perspective: 1000;
+        -webkit-backface-visibility: hidden;
+        webkit-animation-fill-mode: both;
+        -webkit-transform: translate3d(0, 0, 0); }
       #main_slider .slider_main li.active-slide .text-slider .info-slider .text-holder .text {
         -webkit-animation-duration: 1s;
                 animation-duration: 1s;
@@ -234,7 +240,11 @@ img {
                 animation-fill-mode: both;
         -webkit-animation: flipInX 1.7s;
                 animation: flipInX 1.7s;
-        opacity: 1; }
+        opacity: 1;
+        -webkit-perspective: 1000;
+        -webkit-backface-visibility: hidden;
+        webkit-animation-fill-mode: both;
+        -webkit-transform: translate3d(0, 0, 0); }
       #main_slider .slider_main li.active-slide .text-slider .info-slider .text-holder .link_readmore a {
         -webkit-animation-duration: 1s;
                 animation-duration: 1s;
@@ -242,7 +252,11 @@ img {
                 animation-fill-mode: both;
         -webkit-animation: flipInX 2s;
                 animation: flipInX 2s;
-        opacity: 1; }
+        opacity: 1;
+        -webkit-perspective: 1000;
+        -webkit-backface-visibility: hidden;
+        webkit-animation-fill-mode: both;
+        -webkit-transform: translate3d(0, 0, 0); }
       #main_slider .slider_main li .text-slider {
         background: url("../img/bg/shadow.png") repeat-x;
         width: 100%;
@@ -279,7 +293,8 @@ img {
               overflow: hidden;
               box-sizing: border-box;
               font-weight: normal;
-              opacity: 0; }
+              opacity: 0;
+              font-family: "SegoeUILight" , sans-serif; }
             #main_slider .slider_main li .text-slider .info-slider .text-holder .text {
               width: 100%;
               height: 120px;
@@ -359,6 +374,18 @@ img {
           transition: all 0.35s;
           text-decoration: none; }
 
+.client-ios #main_slider .slider_main li.active-slide .text-slider .info-slider .text-holder h4 {
+  -webkit-animation: zoomIn .5s;
+          animation: zoomIn .5s; }
+
+.client-ios #main_slider .slider_main li.active-slide .text-slider .info-slider .text-holder .text {
+  -webkit-animation: zoomIn 1s;
+          animation: zoomIn 1s; }
+
+.client-ios #main_slider .slider_main li.active-slide .text-slider .info-slider .text-holder .link_readmore a {
+  -webkit-animation: zoomIn 1.5s;
+          animation: zoomIn 1.5s; }
+
 #services {
   background: #daf0f7;
   padding-bottom: 60px;
@@ -419,7 +446,7 @@ img {
             content: ""; }
 
 #works {
-  padding: 90px 0; }
+  padding: 90px 0 0; }
   #works h3 {
     margin-bottom: 30px;
     text-align: center;
@@ -574,7 +601,8 @@ img {
           background: #059ed1; }
 
 #product {
-  padding-top: 100px; }
+  padding-top: 100px;
+  padding-bottom: 50px; }
   #product h3 {
     margin-bottom: 30px;
     text-align: center;
@@ -588,9 +616,16 @@ img {
     #product .text-holder p {
       line-height: 2em;
       text-align: center; }
-  #product .text-product p {
-    line-height: 2em;
+  #product .text-product {
     text-align: center; }
+    #product .text-product h4 {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 1em;
+      margin-bottom: 20px; }
+    #product .text-product p {
+      line-height: 2em;
+      text-align: center; }
   #product .img-holder {
     margin-bottom: 40px;
     text-align: center; }
@@ -1132,7 +1167,7 @@ footer {
       background: #0584af;
       -webkit-transition: all 0.35s;
       transition: all 0.35s; }
-  #modal_form #modal_close {
+  #modal_form #modal_close, #modal_form .modal_close {
     z-index: 10; }
   #modal_form .message_modal {
     position: absolute;
@@ -1226,7 +1261,7 @@ footer {
       background: #0584af;
       -webkit-transition: all 0.35s;
       transition: all 0.35s; }
-  #modal_form_connect #modal_close {
+  #modal_form_connect #modal_close, #modal_form_connect .modal_close {
     z-index: 10; }
   #modal_form_connect .message_modal {
     position: absolute;
@@ -1475,6 +1510,9 @@ footer {
         font-family: "SegoeUI" , sans-serif; }
         .portfolio .portfolio_list .item .wrap .text_holder .link:hover {
           text-decoration: none; }
+        .portfolio .portfolio_list .item .wrap .text_holder .link .fa {
+          vertical-align: middle;
+          margin-right: 7px; }
     .portfolio .portfolio_list .item .wrap .list_characteristics {
       margin-bottom: 60px; }
       .portfolio .portfolio_list .item .wrap .list_characteristics > div {
@@ -1610,9 +1648,9 @@ footer {
 
 .scrollTop {
   display: none;
-  z-index: 9999;
+  z-index: 9;
   position: fixed;
-  bottom: 7%;
+  bottom: 10%;
   right: 2%;
   width: 19px;
   height: 43px;
@@ -1759,6 +1797,18 @@ footer {
 
 .slider-servise .bx-controls .bx-pager {
   display: none; }
+
+[id^="image"].modal_div {
+  width: 100%;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  margin-left: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  height: auto;
+  margin-top: 0;
+  padding: 40px; }
 
 @media screen and (max-width: 1023px) {
   #main_slider .bx-controls .bx-pager {
@@ -1962,7 +2012,9 @@ footer {
     .home #main_slider .slider_main li .text-slider .info-slider .text-holder .text {
       font-size: 14px;
       padding: 12px;
-      height: auto; }
+      height: auto;
+      max-height: 190px;
+      overflow: hidden; }
     .home #main_slider .slider_main li .text-slider .info-slider .number {
       width: 55px;
       height: 50px;
@@ -2057,7 +2109,9 @@ footer {
     line-height: 1em;
     margin-bottom: 30px; }
   #info_servise ul li {
-    width: 100%; } }
+    width: 100%; }
+  #product .text-product h4 {
+    font-size: 18px; } }
 
 @media screen and (max-width: 900px) {
   #services .content .item-holder .img-block h3 {

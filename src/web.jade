@@ -79,11 +79,13 @@ html(lang="ru")
                                 Usu malis alienum ex, te pri tollit explicari voluptatum.
                                 Cum at fugit equidem, mei soluta accumsan an, odio impetus temporibus nec in.
                             .slider-servise
-                                .service--item-slider
+                                .service-item-slider
 
                                     div
+                                        a.open_modal(href="#image1")
                                                 img(src="img/content/work.png")
                                     div
+                                        a.open_modal(href="#image2")
                                                 img(src="img/content/work.png")
 
                         #chart-info.cf
@@ -310,6 +312,20 @@ html(lang="ru")
                                         //button(type="submit") Отправить
                                         .btn.submit Send massage
 
+            #image1.modal_div
+                .modal_close
+
+                .modal_holder
+
+                        img(src="img/content/work.png")
+            #image2.modal_div
+                .modal_close
+
+                .modal_holder
+
+                        img(src="img/content/work.png")
+
+            #overlay
 
             include ./footer.jade
 
