@@ -1867,11 +1867,17 @@ footer {
       box-sizing: border-box;
       text-align: center; }
       #site_do .list_item .item .img-holder {
-        margin-bottom: 25px; }
+        margin-bottom: 25px;
+        -webkit-perspective: 50px;
+                perspective: 50px;
+        height: 80px; }
+        #site_do .list_item .item .img-holder img {
+          height: 100%;
+          width: auto; }
       #site_do .list_item .item h3 {
         font-size: 24px;
         line-height: 1em;
-        margin-bottom: 20px; }
+        margin-bottom: 10px; }
       #site_do .list_item .item p {
         font-size: 14px;
         text-align: left;
@@ -1899,6 +1905,22 @@ footer {
       background: #059ed1;
       text-decoration: none;
       color: #fff; }
+
+#info_technology {
+  padding: 100px 0;
+  text-align: center; }
+  #info_technology h3 {
+    margin-bottom: 60px;
+    text-align: center;
+    line-height: 1em;
+    font-size: 36px;
+    color: #313131;
+    font-weight: normal; }
+  #info_technology .text-holder {
+    padding: 0 50px;
+    margin-bottom: 30px; }
+    #info_technology .text-holder p {
+      line-height: 2em; }
 
 @media screen and (max-width: 1023px) {
   #main_slider .bx-controls .bx-pager {

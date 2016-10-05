@@ -1,5 +1,15 @@
 jQuery(document).ready(function() {
 
+    $(".srvIcon").length && $(window).on("mousemove", function(e) {
+        var t = e.pageX,
+            i = 90 / $(window).width(),
+            n = -(45 - i * t);
+        $(".srvIconWrap").css({
+            transform: "rotate3d(0, 1, 0, " + -n + "deg )"
+        })
+    });
+
+
     
     jQuery(window).load(function() {
         $('#preloader').fadeOut('slow',function(){$(this).remove();});
