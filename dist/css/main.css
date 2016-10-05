@@ -99,7 +99,7 @@ img {
     left: 0;
     background: #000; }
     #main_slider .header.background {
-      background: #000;
+      background: rgba(0, 0, 0, 0.7);
       -webkit-transition: all 0.35s;
       transition: all 0.35s; }
     #main_slider .header .logo {
@@ -283,7 +283,7 @@ img {
               width: 100%;
               height: 90px;
               color: #fff;
-              font-size: 48px;
+              font-size: 47px;
               line-height: 77px;
               text-align: left;
               background: #059ed1;
@@ -455,7 +455,7 @@ img {
     color: #313131;
     font-weight: normal; }
   #works .text-holder {
-    margin-bottom: 90px;
+    margin-bottom: 30px;
     padding: 0 50px; }
     #works .text-holder p {
       line-height: 2em;
@@ -502,7 +502,6 @@ img {
   #works .link {
     text-align: center; }
     #works .link a {
-      margin-top: 50px;
       display: inline-block;
       vertical-align: middle;
       text-align: center;
@@ -575,7 +574,7 @@ img {
     color: #313131;
     font-weight: normal; }
   #about .text-holder {
-    margin-bottom: 70px;
+    margin-bottom: 30px;
     padding: 0 50px; }
     #about .text-holder p {
       line-height: 2em;
@@ -611,7 +610,7 @@ img {
     color: #313131;
     font-weight: normal; }
   #product .text-holder {
-    margin-bottom: 70px;
+    margin-bottom: 30px;
     padding: 0 50px; }
     #product .text-holder p {
       line-height: 2em;
@@ -632,7 +631,7 @@ img {
   #product .link {
     text-align: center; }
     #product .link a {
-      margin-top: 50px;
+      margin-top: 30px;
       display: inline-block;
       vertical-align: middle;
       text-align: center;
@@ -1846,6 +1845,60 @@ footer {
       display: inline-block;
       margin-left: 10px;
       content: ""; }
+
+#site_do {
+  padding: 100px 0;
+  text-align: center; }
+  #site_do h2 {
+    margin-bottom: 60px;
+    text-align: center;
+    line-height: 1em;
+    font-size: 36px;
+    color: #313131;
+    font-weight: normal; }
+  #site_do .list_item {
+    text-align: center; }
+    #site_do .list_item .item {
+      width: 33%;
+      display: inline-block;
+      vertical-align: top;
+      padding: 0 20px;
+      margin-bottom: 30px;
+      box-sizing: border-box;
+      text-align: center; }
+      #site_do .list_item .item .img-holder {
+        margin-bottom: 25px; }
+      #site_do .list_item .item h3 {
+        font-size: 24px;
+        line-height: 1em;
+        margin-bottom: 20px; }
+      #site_do .list_item .item p {
+        font-size: 14px;
+        text-align: left;
+        line-height: 1.5em; }
+  #site_do p {
+    margin-bottom: 30px; }
+  #site_do .link_portfolio {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+    color: #059ed1;
+    border: 4px solid #059ed1;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    line-height: 1em;
+    font-size: 14px;
+    font-family: "SegoeUI-Semibold" ,sans-serif;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    padding: 15px 25px; }
+    #site_do .link_portfolio:hover {
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      background: #059ed1;
+      text-decoration: none;
+      color: #fff; }
 
 @media screen and (max-width: 1023px) {
   #main_slider .bx-controls .bx-pager {
