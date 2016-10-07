@@ -68,8 +68,8 @@ img {
     position: fixed;
     left: 0;
     background: none;
-    -webkit-transform: all 0.35s;
-            transform: all 0.35s;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
     top: 0;
     width: 100%; }
 
@@ -1921,117 +1921,115 @@ footer {
     margin-bottom: 30px; }
     #info_technology .text-holder p {
       line-height: 2em; }
-  #info_technology .list_technology {
-    margin-bottom: 100px; }
-    #info_technology .list_technology .item {
-      width: calc(49% - 10px);
-      display: inline-block;
-      vertical-align: middle;
-      height: 360px;
-      margin-right: 20px;
+  #info_technology .list_technology .item {
+    width: calc(49% - 10px);
+    display: inline-block;
+    vertical-align: middle;
+    height: 360px;
+    margin-right: 20px;
+    position: relative;
+    padding: 30px;
+    box-sizing: border-box;
+    overflow: hidden; }
+    #info_technology .list_technology .item:before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(255, 255, 255, 0.05);
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      content: ""; }
+    #info_technology .list_technology .item:after {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      bottom: 30px;
+      left: 30px;
+      border: 1px solid #fff;
+      content: '';
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+      opacity: 0;
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s; }
+    #info_technology .list_technology .item:nth-child(2n) {
+      margin-right: 0; }
+    #info_technology .list_technology .item ul {
+      -webkit-transform: scale(1.5);
+              transform: scale(1.5);
+      color: #fff;
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+      opacity: 0;
+      position: relative; }
+      #info_technology .list_technology .item ul li {
+        width: 100%;
+        padding-right: 0;
+        font-size: 16px;
+        padding-left: 25px;
+        position: relative;
+        line-height: 1.5em;
+        text-align: left; }
+        #info_technology .list_technology .item ul li:before {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          border-radius: 8px;
+          width: 8px;
+          height: 8px;
+          background: #059ed1;
+          margin-top: -4px;
+          content: ""; }
+    #info_technology .list_technology .item h4 {
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 1em;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #fff;
+      margin: 80px auto 30px;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      position: relative; }
+    #info_technology .list_technology .item .content-holder {
+      background: none;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
       position: relative;
       padding: 30px;
-      box-sizing: border-box;
-      overflow: hidden; }
-      #info_technology .list_technology .item:before {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: rgba(255, 255, 255, 0.05);
-        -webkit-transition: all 0.35s;
-        transition: all 0.35s;
-        content: ""; }
-      #info_technology .list_technology .item:after {
-        position: absolute;
-        top: 30px;
-        right: 30px;
-        bottom: 30px;
-        left: 30px;
-        border: 1px solid #fff;
-        content: '';
-        -webkit-transform: scale(1.1);
-                transform: scale(1.1);
-        opacity: 0;
-        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-        transition: opacity 0.35s, -webkit-transform 0.35s;
-        transition: opacity 0.35s, transform 0.35s;
-        transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s; }
-      #info_technology .list_technology .item:nth-child(2n) {
-        margin-right: 0; }
-      #info_technology .list_technology .item ul {
-        -webkit-transform: scale(1.5);
-                transform: scale(1.5);
-        color: #fff;
-        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-        transition: opacity 0.35s, -webkit-transform 0.35s;
-        transition: opacity 0.35s, transform 0.35s;
-        transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
-        opacity: 0;
-        position: relative; }
-        #info_technology .list_technology .item ul li {
-          width: 100%;
-          padding-right: 0;
-          font-size: 16px;
-          padding-left: 25px;
-          position: relative;
-          line-height: 1.5em;
-          text-align: left; }
-          #info_technology .list_technology .item ul li:before {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            border-radius: 8px;
-            width: 8px;
-            height: 8px;
-            background: #059ed1;
-            margin-top: -4px;
-            content: ""; }
-      #info_technology .list_technology .item h4 {
-        text-align: center;
-        text-transform: uppercase;
-        color: #fff;
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 1em;
-        padding-bottom: 20px;
-        border-bottom: 1px solid #fff;
-        margin: 80px auto 30px;
-        -webkit-transition: all 0.35s;
-        transition: all 0.35s;
-        position: relative; }
-      #info_technology .list_technology .item .content-holder {
-        background: none;
-        -webkit-transition: all 0.35s;
-        transition: all 0.35s;
-        position: relative;
-        padding: 30px;
-        height: calc(100% - 60px); }
-      #info_technology .list_technology .item:hover ul {
-        opacity: 1;
-        -webkit-transform: scale(1);
-                transform: scale(1); }
-      #info_technology .list_technology .item:hover:after {
-        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-        transition: opacity 0.35s, -webkit-transform 0.35s;
-        transition: opacity 0.35s, transform 0.35s;
-        transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
-        opacity: 1;
-        -webkit-transform: scale(1);
-                transform: scale(1); }
-      #info_technology .list_technology .item:hover h4 {
-        margin-top: 0;
-        -webkit-transition: all 0.35s;
-        transition: all 0.35s; }
-      #info_technology .list_technology .item:hover:before {
-        background-color: rgba(255, 255, 255, 0.5);
-        -webkit-transition: all 0.35s;
-        transition: all 0.35s; }
-      #info_technology .list_technology .item:hover .content-holder {
-        background: rgba(0, 0, 0, 0.6);
-        -webkit-transition: all 0.35s;
-        transition: all 0.35s; }
+      height: calc(100% - 60px); }
+    #info_technology .list_technology .item:hover ul {
+      opacity: 1;
+      -webkit-transform: scale(1);
+              transform: scale(1); }
+    #info_technology .list_technology .item:hover:after {
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+      opacity: 1;
+      -webkit-transform: scale(1);
+              transform: scale(1); }
+    #info_technology .list_technology .item:hover h4 {
+      margin-top: 0;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s; }
+    #info_technology .list_technology .item:hover:before {
+      background-color: rgba(255, 255, 255, 0.5);
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s; }
+    #info_technology .list_technology .item:hover .content-holder {
+      background: rgba(0, 0, 0, 0.6);
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s; }
   #info_technology .list_technology2 {
     margin-bottom: 100px; }
     #info_technology .list_technology2 .item {
@@ -2205,15 +2203,15 @@ footer {
       position: absolute;
       top: 20px;
       right: 0;
-      z-index: 101;
-      background: #000; }
+      z-index: 101; }
       #main_slider .header .menu #menu-icon {
         display: block;
         float: right;
-        margin-right: 20px; }
+        margin-right: 20px;
+        margin-bottom: 30px; }
       #main_slider .header .menu .mobile-menu {
         display: none;
-        padding: 30px 0;
+        padding: 0 0 30px;
         width: 100%;
         clear: both; }
       #main_slider .header .menu ul {
@@ -2359,8 +2357,9 @@ footer {
       margin-left: 0;
       left: 0;
       width: 100%;
-      background: #000;
       padding-bottom: 0; }
+  #main_slider .header .menu .mobile-menu {
+    background: rgba(0, 0, 0, 0.7); }
   #main_slider .header {
     background: #000; }
   #main_slider .header .logo {
@@ -2401,7 +2400,9 @@ footer {
   #product h3,
   #who_we_are .content h3,
   #comment h3,
-  #contacts .content h3 {
+  #contacts .content h3,
+  #advantages_block_home h3,
+  #info_technology h3 {
     font-size: 36px; }
   #advantages {
     padding-top: 40px; }
@@ -2452,7 +2453,28 @@ footer {
     .error404 .container .content .logo {
       width: 150px; }
     .error404 .container .content .error404_text {
-      font-size: 100px; } }
+      font-size: 100px; }
+  #advantages_block_home .content-holder ol li {
+    width: 100%;
+    padding-right: 0;
+    font-size: 16px; }
+  #advantages_block_home .content-holder ol li:before {
+    font-size: 50px; }
+  #info_technology {
+    padding: 50px 0; }
+  #info_technology .text-holder {
+    padding: 0; }
+  #info_technology .list_technology .item {
+    width: 100%;
+    margin-bottom: 40px; }
+  #info_technology .list_technology .item h4 {
+    font-size: 24px; }
+  #site_do h2 {
+    font-size: 24px; }
+  #site_do .list_item .item h3 {
+    font-size: 20px; }
+  #site_do .list_item .item {
+    width: 49%; } }
 
 @media screen and (max-width: 900px) {
   #services .content .item-holder .img-block h3 {
@@ -2560,7 +2582,9 @@ footer {
   #product h3,
   #who_we_are .content h3,
   #comment h3,
-  #contacts .content h3 {
+  #contacts .content h3,
+  #advantages_block_home h3,
+  #info_technology h3 {
     font-size: 24px; }
   #works .text-works, #about .text-about,
   #product .text-product {
@@ -2606,6 +2630,8 @@ footer {
     width: 100%;
     padding: 0 !important; }
   #advantages .list_advantages li {
+    width: 100%; }
+  #site_do .list_item .item {
     width: 100%; } }
 
 @media screen and (max-width: 430px) {

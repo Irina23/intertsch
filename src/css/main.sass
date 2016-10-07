@@ -75,7 +75,7 @@ img
       background: none
       ///margin-left: -470px
       //z-index: 2
-      transform: all 0.35s
+      transition: all 0.35s
       top: 0
       width: 100%
 
@@ -2246,7 +2246,7 @@ footer
     p
       line-height: 2em
   .list_technology
-    margin-bottom: 100px
+    //margin-bottom: 100px
     .item
       width: calc(49% - 10px)
       display: inline-block
@@ -2550,15 +2550,16 @@ footer
         right: 0
         //position: relative
         z-index: 101
-        background: #000
+        //background: #000
 
         #menu-icon
           display: block
           float: right
           margin-right: 20px
+          margin-bottom: 30px
         .mobile-menu
           display: none
-          padding: 30px 0
+          padding: 0 0 30px
           width: 100%
           clear: both
         ul
@@ -2775,8 +2776,11 @@ footer
       margin-left: 0
       left: 0
       width: 100%
-      background: #000
+      //background: #000
       padding-bottom: 0
+
+  #main_slider .header .menu .mobile-menu
+    background: rgba(0, 0, 0, 0.7)
   #main_slider .header
     background: #000
   #main_slider .header .logo
@@ -2828,7 +2832,10 @@ footer
   #product h3,
   #who_we_are .content h3,
   #comment h3,
-  #contacts .content h3
+  #contacts .content h3,
+  #advantages_block_home h3,
+  #info_technology h3
+
     font-size: 36px
 
 
@@ -2897,6 +2904,33 @@ footer
 
       .error404_text
         font-size: 100px
+
+  #advantages_block_home .content-holder ol li
+    width: 100%
+    padding-right: 0
+    font-size: 16px
+
+  #advantages_block_home .content-holder ol li:before
+    font-size: 50px
+
+  #info_technology
+    padding: 50px 0
+  #info_technology .text-holder
+    padding: 0
+
+
+  #info_technology .list_technology .item
+    width: 100%
+    margin-bottom: 40px
+  #info_technology .list_technology .item h4
+    font-size: 24px
+
+  #site_do h2
+    font-size: 24px
+  #site_do .list_item .item h3
+    font-size: 20px
+  #site_do .list_item .item
+    width: 49%
 
 
 
@@ -3062,7 +3096,9 @@ footer
   #product h3,
   #who_we_are .content h3,
   #comment h3,
-  #contacts .content h3
+  #contacts .content h3,
+  #advantages_block_home h3,
+  #info_technology h3
     font-size: 24px
 
   #works .text-works, #about .text-about,
@@ -3118,6 +3154,8 @@ footer
   #advantages .list_advantages li
     width: 100%
 
+  #site_do .list_item .item
+    width: 100%
 
 @media screen and (max-width: 430px)
   .home #main_slider .slider_main li .text-slider .info-slider
