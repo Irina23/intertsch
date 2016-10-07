@@ -598,6 +598,20 @@ img {
         background: #4d4d4d; }
         #about #slider .bx-wrapper .bx-pager.bx-default-pager a:hover, #about #slider .bx-wrapper .bx-pager.bx-default-pager a.active {
           background: #059ed1; }
+  #about .slider_about li {
+    position: relative; }
+    #about .slider_about li .text-slider {
+      padding: 20px 0;
+      background: rgba(255, 255, 255, 0.7);
+      color: #000;
+      font-size: 24px;
+      line-height: 1.3em;
+      position: absolute;
+      bottom: 80px;
+      width: 100%;
+      left: 0;
+      text-align: center;
+      font-weight: 600; }
 
 #product {
   padding-top: 100px;
@@ -2474,7 +2488,11 @@ footer {
   #site_do .list_item .item h3 {
     font-size: 20px; }
   #site_do .list_item .item {
-    width: 49%; } }
+    width: 49%; }
+  #about .slider_about li .text-slider {
+    font-size: 14px;
+    bottom: 20px;
+    padding: 15px 0; } }
 
 @media screen and (max-width: 900px) {
   #services .content .item-holder .img-block h3 {
