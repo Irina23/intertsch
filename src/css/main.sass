@@ -255,47 +255,43 @@ img
               animation-fill-mode: both
               animation: flipInY 0.8s
               opacity: 1
-              -webkit-perspective: 1000
+              //-webkit-perspective: 1000
               -webkit-backface-visibility: hidden
               webkit-animation-fill-mode: both
               -webkit-transform: translate3d(0,0,0)
+              //-webkit-transition-property: opacity, translate3d
             .text-holder
-
               h4
-
                 animation-duration: 1s
                 animation-fill-mode: both
                 animation: flipInX 1.5s
                 opacity: 1
-                -webkit-perspective: 1000
+                //-webkit-perspective: 1000
                 -webkit-backface-visibility: hidden
                 webkit-animation-fill-mode: both
                 -webkit-transform: translate3d(0,0,0)
-
-
               .text
-
                 animation-duration: 1s
                 animation-fill-mode: both
                 animation: flipInX 1.7s
                 opacity: 1
-                -webkit-perspective: 1000
+                //-webkit-perspective: 1000
                 -webkit-backface-visibility: hidden
                 webkit-animation-fill-mode: both
                 -webkit-transform: translate3d(0,0,0)
-
+                //-webkit-transition-property: opacity, translate3d
               .link_readmore
-
                 a
 
                   animation-duration: 1s
                   animation-fill-mode: both
                   animation: flipInX 2s
                   opacity: 1
-                  -webkit-perspective: 1000
+                  //-webkit-perspective: 1000
                   -webkit-backface-visibility: hidden
                   webkit-animation-fill-mode: both
                   -webkit-transform: translate3d(0,0,0)
+                  //-webkit-transition-property: opacity, translate3d
 
       .text-slider
         //background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(7, 11, 14, 0.17) 16%, #2c3e50 100%)
@@ -448,12 +444,40 @@ img
 
               .text-holder
                 h4
-                  animation: zoomIn .5s
+                  animation: fadeIn 1.5s
                 .text
-                  animation: zoomIn 1s
+                  animation: fadeIn 1.7s
                 .link_readmore
                   a
-                    animation: zoomIn 1.5s
+                    animation: fadeIn 2s
+
+
+
+.client-safari
+  #main_slider
+    .slider_main
+      li
+        .text-slider
+          .info-slider
+            .number
+              //animation: none
+              -webkit-transition-property: opacity, translate3d
+              //animation-duration: 0s
+              animation: fadeIn 1s
+            .text-holder
+              h4
+                animation: fadeIn 1.5s
+                -webkit-transition-property: opacity, translate3d
+              .text
+                animation: fadeIn 1.7s
+                -webkit-transition-property: opacity, translate3d
+              .link_readmore
+                a
+                  animation: fadeIn 2s
+                  -webkit-transition-property: opacity, translate3d
+
+
+
 
 #services
   background: #daf0f7

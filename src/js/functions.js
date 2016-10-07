@@ -283,6 +283,7 @@ jQuery(document).ready(function($){
     })();
 
     if ($.browser.iphone || $.browser.ipad || $.browser.ipad) $('body').addClass('client-ios');
+    if ($.browser.safari && !$.browser.mobile ) $('body').addClass('client-safari');
 });
 
 

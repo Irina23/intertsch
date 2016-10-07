@@ -217,7 +217,6 @@ img {
         -webkit-animation: flipInY 0.8s;
                 animation: flipInY 0.8s;
         opacity: 1;
-        -webkit-perspective: 1000;
         -webkit-backface-visibility: hidden;
         webkit-animation-fill-mode: both;
         -webkit-transform: translate3d(0, 0, 0); }
@@ -229,7 +228,6 @@ img {
         -webkit-animation: flipInX 1.5s;
                 animation: flipInX 1.5s;
         opacity: 1;
-        -webkit-perspective: 1000;
         -webkit-backface-visibility: hidden;
         webkit-animation-fill-mode: both;
         -webkit-transform: translate3d(0, 0, 0); }
@@ -241,7 +239,6 @@ img {
         -webkit-animation: flipInX 1.7s;
                 animation: flipInX 1.7s;
         opacity: 1;
-        -webkit-perspective: 1000;
         -webkit-backface-visibility: hidden;
         webkit-animation-fill-mode: both;
         -webkit-transform: translate3d(0, 0, 0); }
@@ -253,7 +250,6 @@ img {
         -webkit-animation: flipInX 2s;
                 animation: flipInX 2s;
         opacity: 1;
-        -webkit-perspective: 1000;
         -webkit-backface-visibility: hidden;
         webkit-animation-fill-mode: both;
         -webkit-transform: translate3d(0, 0, 0); }
@@ -375,16 +371,36 @@ img {
           text-decoration: none; }
 
 .client-ios #main_slider .slider_main li.active-slide .text-slider .info-slider .text-holder h4 {
-  -webkit-animation: zoomIn .5s;
-          animation: zoomIn .5s; }
+  -webkit-animation: fadeIn 1.5s;
+          animation: fadeIn 1.5s; }
 
 .client-ios #main_slider .slider_main li.active-slide .text-slider .info-slider .text-holder .text {
-  -webkit-animation: zoomIn 1s;
-          animation: zoomIn 1s; }
+  -webkit-animation: fadeIn 1.7s;
+          animation: fadeIn 1.7s; }
 
 .client-ios #main_slider .slider_main li.active-slide .text-slider .info-slider .text-holder .link_readmore a {
-  -webkit-animation: zoomIn 1.5s;
-          animation: zoomIn 1.5s; }
+  -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s; }
+
+.client-safari #main_slider .slider_main li .text-slider .info-slider .number {
+  -webkit-transition-property: opacity, translate3d;
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s; }
+
+.client-safari #main_slider .slider_main li .text-slider .info-slider .text-holder h4 {
+  -webkit-animation: fadeIn 1.5s;
+          animation: fadeIn 1.5s;
+  -webkit-transition-property: opacity, translate3d; }
+
+.client-safari #main_slider .slider_main li .text-slider .info-slider .text-holder .text {
+  -webkit-animation: fadeIn 1.7s;
+          animation: fadeIn 1.7s;
+  -webkit-transition-property: opacity, translate3d; }
+
+.client-safari #main_slider .slider_main li .text-slider .info-slider .text-holder .link_readmore a {
+  -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+  -webkit-transition-property: opacity, translate3d; }
 
 #services {
   background: #daf0f7;
