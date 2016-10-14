@@ -1533,6 +1533,23 @@ footer {
         line-height: 2em;
         font-family: "SegoeUI" , sans-serif;
         margin-bottom: 15px; }
+      .portfolio .portfolio_list .item .wrap .text_holder ul li {
+        position: relative;
+        padding-left: 25px;
+        font-size: 14px;
+        color: #3b3b3b;
+        line-height: 2em;
+        font-family: "SegoeUI" , sans-serif;
+        margin-bottom: 15px; }
+        .portfolio .portfolio_list .item .wrap .text_holder ul li:before {
+          position: absolute;
+          top: 10px;
+          left: 0;
+          border-radius: 8px;
+          width: 8px;
+          height: 8px;
+          background: #059ed1;
+          content: ""; }
       .portfolio .portfolio_list .item .wrap .text_holder .link {
         color: #059ed1;
         font-size: 14px;
@@ -1571,6 +1588,14 @@ footer {
           background: url("../img/icons/creativity_icons.png") no-repeat top left; }
         .portfolio .portfolio_list .item .wrap .list_characteristics > div.usability h4 {
           background: url("../img/icons/usability_icons.png") no-repeat top left; }
+        .portfolio .portfolio_list .item .wrap .list_characteristics > div.task {
+          width: 100%; }
+          .portfolio .portfolio_list .item .wrap .list_characteristics > div.task h4 {
+            background: url("../img/icons/task.png") no-repeat top left; }
+        .portfolio .portfolio_list .item .wrap .list_characteristics > div.result {
+          width: 100%; }
+          .portfolio .portfolio_list .item .wrap .list_characteristics > div.result h4 {
+            background: url("../img/icons/result.png") no-repeat top left; }
     .portfolio .portfolio_list .item .wrap .feedback .link {
       width: 195px;
       position: relative;
