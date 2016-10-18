@@ -111,7 +111,7 @@ jQuery(document).ready(function() {
                 if (target.length) {
                     if (($( window ).width() > 800) && (hrefVal == '#services')){
                         $('html, body').animate({
-                            scrollTop: target.offset().top - 235
+                            scrollTop: target.offset().top - 205
                         }, 1000);
                     } else {
                         $('html, body').animate({
